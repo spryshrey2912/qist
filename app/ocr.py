@@ -9,6 +9,7 @@ def read_photo(img):
     img = img.convert("L")                                   # grey scale reads better
     if img.width > 1600:                                     # big phone photos can use too much memory on a free server
         img = img.resize((1600, round(img.height * 1600 / img.width)))
-    text = pytesseract.image_to_string(img, lang="ara+eng").strip()
+    import engine
+    text = engine.clean(pytesseract.image_to_string(img, lang="ara+eng").strip())     # '096 for 3 months' -> '0% for 3 months'; this is what the text box shows
     note = "" if len(text) >= 20 else "Very little text was read. Try a sharper, straighter photo, or paste the text. / لم يُقرأ إلا القليل من النص. جرّب صورة أوضح أو الصق النص."
     return text, note
