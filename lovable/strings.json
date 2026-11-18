@@ -12,7 +12,7 @@
   "sample": "Try a sample",
   "samples": {
    "tasaheal": "Al Rajhi Tasaheal",
-   "bsf": "BSF 0% card",
+   "riyad": "Riyad 0% wallet",
    "aljazira": "AlJazira card",
    "kia": "Kia lease"
   },
@@ -96,7 +96,7 @@
   "sample": "جرّب عرضاً",
   "samples": {
    "tasaheal": "تساهيل الراجحي",
-   "bsf": "البنك السعودي الفرنسي",
+   "riyad": "بنك الرياض قسّط 0%",
    "aljazira": "بنك الجزيرة",
    "kia": "تأجير كيا"
   },

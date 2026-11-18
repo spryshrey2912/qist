@@ -6,6 +6,17 @@ from cost import true_cost
 
 NOFEE = re.compile(r"no (?:hidden )?fees?|fee[- ]free|without (?:any )?fees?|zero fees?|0% fees?|"
                    r"بدون (?:أي |اي )?رسوم|بدون فوائد ورسوم|دون رسوم|مجان", re.I)
+# Fees that are not the price of the instalment itself: card fees, cash advances, late penalties, cash on delivery.
+NOTINSTAL = re.compile(r"annual|issu|renewal|replacement|cash (?:advance|withdrawal)|withdrawal|international|late|overdue|penalt|delay|"
+                       r"cash on delivery|\bCOD\b|statement|سنوي|السنوية|إصدار|اصدار|تجديد|بديل|سحب نقدي|رسوم السحب|دولية|تأخر|متأخر|غرامة|"
+                       r"الدفع عند الاستلام|كشف حساب", re.I)
+# 'free call number' is not a 'free instalments' claim.
+TOLL = re.compile(r"(?:الرقم|رقم|الاتصال|اتصل|هاتف)[^\n]{0,25}المجاني|toll[- ]free|free (?:phone|call|number|hotline)", re.I)
+# '0% installment', 'قسّط 0%', 'Qasset 0%': the zero sits next to the word for instalment, not next to 'interest'.
+ZERO2 = re.compile(r"(?:installments?|instalments?|qasset|qist|epp|قسّ?ط|تقسيط|أقساط|اقساط)\s*[:\-]?\s*[%٪]?\s*0\s*[%٪]|0\s*[%٪]\s*(?:installments?|instalments?|qasset|qist|قسّ?ط|تقسيط|أقساط|اقساط)", re.I)
+def _claim(t):
+    t = TOLL.sub(" ", t)
+    return (ZERO.search(t) or NOFEE.search(t) or ZERO2.search(t))
 MONTHLY = re.compile(r"monthly|per month|/ ?month|شهري|شهريا|شهرياً|كل شهر", re.I)
 ANNUAL = re.compile(r"annual|apr|per year|سنوي|السنوية|سنويا", re.I)
 
@@ -57,7 +68,9 @@ def _percents(text):
         v = float(m.group(1) or m.group(2))
         w = _line_window(t, m.start(), m.end(), 40, 45)
         if SKIPPCT.search(w): continue
-        if FEEPCT.search(w) and not re.search(r"profit|interest|ربح|فائدة|apr|monthly fees", w, re.I): fees.append(v); continue
+        if FEEPCT.search(w) and not re.search(r"profit|interest|ربح|فائدة|apr|monthly fees", w, re.I):
+            if not NOTINSTAL.search(w): fees.append(v)
+            continue
         kind = "monthly" if MONTHLY.search(w) else "annual" if ANNUAL.search(w) else "unknown"
         rates.append((v, kind))
     return rates, fees
@@ -140,15 +153,23 @@ def cost(price, n, inst=0.0, admin_fee_sar=0.0, rate=0.0, rate_kind="none", fee_
 
 FEEWORD = r"fees?|charges?|commission|one[- ]time|processing|administrative|عمولة|رسوم|مصاريف|لمرة واحدة"
 LIMITWORD = r"minimum|maximum|limit|الحد|at least|not less|لا تقل|أقل من|يجب"
-_MONEY = re.compile(r"(?:SAR|SR|S\.R\.?|ريال(?:\s+سعودي)?|ر\.?\s?س|⃁)\s*(\d[\d,]*(?:\.\d+)?)|(\d[\d,]*(?:\.\d+)?)\s*(?:SAR|SR|S\.R\.?|ريال(?:\s+سعودي)?|ر\.?\s?س|⃁)", re.I)
+_MONEY = re.compile(r"(?:SAR|SR|S\.{1,2}R\.?|ريال(?:\s+سعودي)?|ر\.?\s?س|⃁)\s*(\d[\d,]*(?:\.\d+)?)|(\d[\d,]*(?:\.\d+)?)\s*(?:SAR|SR|S\.{1,2}R\.?|ريال(?:\s+سعودي)?|ر\.?\s?س|⃁)", re.I)
+
+_LABEL = re.compile(r"^(?![#•])[^\n:：]{0,30}(?:%s)[^\n:：]{0,15}\n\s*(\d[\d,]*(?:\.\d+)?)\s*(?:فقط|only|SAR|SR|ريال|ر\.س)(?=\s|$)" % FEEWORD, re.I | re.M)
+
+def _label_fees(t):
+    """Table written one cell per line: a line that only says 'Service fee' and the next line is the amount."""
+    return [(float(m.group(1).replace(",", "")), m) for m in _LABEL.finditer(t)
+            if not NOTINSTAL.search(m.group(0)) and not re.search(LIMITWORD, m.group(0), re.I)]
 
 def fee_amounts(text, c):
     """Fee amounts in the text: what rules.py found, plus money written next to fee words (commission, one-time...)."""
     t = text.translate(AR); out = [v for v in _percents(text)[1] if v > 0]      # fees quoted as a %, found by our own stricter check
     for m in _MONEY.finditer(t):
-        w = t[max(0, m.start() - 45): min(len(t), m.end() + 20)]
-        if re.search(FEEWORD, w, re.I) and not re.search(LIMITWORD, w, re.I):
+        w = _line_window(t, m.start(), m.end(), 45, 20)
+        if re.search(FEEWORD, w, re.I) and not re.search(LIMITWORD, w, re.I) and not NOTINSTAL.search(_line_window(t, m.start(), m.end(), 60, 70)) and not MONTHLY.search(_line_window(t, m.start(), m.end(), 25, 8)):
             out.append(float((m.group(1) or m.group(2)).replace(",", "")))
+    out += [v for v, _ in _label_fees(t) if v > 0]
     out.sort(key=lambda v: (v < 5, v))          # SAR amounts first in the message, small % fees after
     return sorted(set(out), key=lambda v: (v < 5, v))
 
@@ -157,7 +178,7 @@ def flags(text, c=None):
     'zero_for_some_plans' is only an information note. Empty list = nothing found."""
     c = c or extract(text)
     t = text.translate(AR)
-    zero_claim = (0.0 in c["profit_rate"]) or bool(ZERO.search(t)) or bool(NOFEE.search(t))
+    zero_claim = (0.0 in c["profit_rate"]) or bool(_claim(t))
     fees = fee_amounts(text, c)
     rates = [v for v in c["profit_rate"] if v > 0]
     out = []
@@ -171,19 +192,26 @@ def evidence(text, fee):
     """Where in the pasted text the '0% / free' promise and the fee are written: each is (line, start, end) so the UI can
     quote the line and highlight the words. Digits are mapped one-to-one, so positions in the translated line fit the original line."""
     claim = feeloc = None
+    lab = [(v, m) for v, m in _label_fees(text.translate(AR)) if v == fee]
     for line in text.splitlines():
         t = line.translate(AR)
         if not claim:
-            m = ZERO.search(t) or NOFEE.search(t) or re.search(r"\b0\s*%", t)
+            m = _claim(t) or re.search(r"\b0\s*%", t)
             if m: claim = (line, m.start(), m.end())
         if not feeloc:
             for m in _MONEY.finditer(t):
-                w = t[max(0, m.start() - 45): min(len(t), m.end() + 20)]
-                if float((m.group(1) or m.group(2)).replace(",", "")) == fee and re.search(FEEWORD, w, re.I) and not re.search(LIMITWORD, w, re.I):
+                w = _line_window(t, m.start(), m.end(), 45, 20)
+                if float((m.group(1) or m.group(2)).replace(",", "")) == fee and re.search(FEEWORD, w, re.I) and not re.search(LIMITWORD, w, re.I) and not NOTINSTAL.search(w):
                     feeloc = (line, m.start(), m.end()); break
             else:
                 m = re.search(r"\b%g\s*%%" % fee, t)                      # a fee written as a percentage, e.g. 2%
                 if m and re.search(FEEWORD, t, re.I): feeloc = (line, m.start(), m.end())
+    if lab and not feeloc:                                   # amount on its own line under a 'Service fee' label line
+        ls = text.splitlines()
+        for i in range(1, len(ls)):
+            t = ls[i].translate(AR); m = re.match(r"\s*(\d[\d,]*(?:\.\d+)?)", t)
+            if m and float(m.group(1).replace(",", "")) == fee and re.search(FEEWORD, ls[i - 1], re.I):
+                feeloc = (ls[i], m.start(1), m.end(1)); break
     return {"claim": claim, "fee": feeloc, "same_line": bool(claim and feeloc and claim[0] == feeloc[0])}
 
 def is_misleading(fl):

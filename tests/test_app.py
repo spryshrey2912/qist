@@ -130,6 +130,25 @@ def test_ml_wording_model():
     ok = ml.p_misleading("Pay in 4 equal payments. No fees. No interest.")
     assert 0 <= ok <= 1 and 0 <= bad <= 1 and bad > ok          # a buried fee scores higher than a clean offer
 
+def test_wording_flag_fixes_from_new_real_offers():
+    """Each case below was a wrong answer on a real offer harvested from a bank/merchant page."""
+    import engine
+    hit = lambda t: any(k == "zero_but_fee" for k, _ in engine.flags(t, engine.candidates(t)))
+    assert not hit("قسّط مشترياتك لمدة 12 شهر.\nيرجى الاتصال على الرقم المجاني بعد 48 ساعة. رسوم تحويل العملية 50 ريال")  # 'free phone number' is not a free-fee claim
+    assert hit("قسّط 0%\n• يوجد عمولة برنامج قسط لمرة واحدة بقيمة 50 S..R .\n• يجب ألا تقل قيمة المشتريات 1000 S..R")      # '0%' next to the word instalment, 'S..R' currency, limit on the next line
+    assert hit("برنامج بدون هامش ربح\nرسوم الخدمة\n50 فقط (الرسوم ثابتة)")                                                  # fee label and amount on separate lines
+    assert not hit("Tabby is free and interest-free. A small fee (15 SAR) applies for the cash on delivery service.")        # cash-on-delivery fee is not the instalment fee
+    assert not hit("Interest-free plans. A late payment fee of SAR 100 applies if you miss a payment.")                      # late-payment fee is allowed by SAMA, not hidden
+    assert not hit("0% profit. Annual card fee SAR 425.")                                                                    # annual card fee is not the instalment price
+
+def test_sample_offers_not_in_training():
+    import pandas as pd, ml
+    df = pd.read_csv(os.path.join(ROOT, "data", "offers.csv"))
+    assert (df.demo == 1).sum() >= 6 and ml.info()["n"] == len(df) - int((df.demo == 1).sum())
+    from analyze import analyze
+    a = analyze("قسّط 0%\nسيتم فرض رسوم قدرها 50 ريال سعودي على كل عملية.", "ar")
+    assert a["verdict"]["level"] == "warning" and a["ml_info"]["n_real"] > 50
+
 def test_app_runs():
     for lang in ("en", "ar"):
         run_app(lang, "")
