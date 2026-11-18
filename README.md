@@ -47,7 +47,7 @@ python model/eval_rules.py data/new_real_051_070.csv -v   # rows the rules never
 
 ## Honest limits
 - Rules found 68% of terms on 20 offers they had never seen; weakest on amounts inside tables.
-- The wording flag agreed with the author's labels on 87% of the 70 labelled offers (tuned on them, so optimistic).
+- The wording flag agrees with the labels on 92% of the 100 real offers (tuned on them, so optimistic); on 30 offers it had never seen it scored 80% before the fixes.
 - It cannot read balloon / final-payment car leases correctly yet.
 - Not financial advice. Nothing is stored.
 
@@ -60,8 +60,20 @@ the other fonts load from Google Fonts, so the first load needs internet. To add
 All styling is in `app/ui.py` and `.streamlit/config.toml`.
 
 ## Machine learning
-- `app/ml.py`: the wording model. TF-IDF character n-grams plus 3 extractor features, into a logistic regression. It is trained at app start-up from `data/offers.csv` (250 offers, 70 real, each real row weighted 10x), so there is no model file to go stale. Its score shows in step 4 as "AI wording model".
-- `model/eval_wording.py`: honest score. 5-fold cross-validation, only the 70 real rows are scored, 3 splits. Result: about 87% accuracy, 88% precision, 65% recall (always saying "fine" scores 70%). The hand-written rules alone score 87%, so the model matches them rather than beating them; it is small data (21 misleading real rows).
+- `app/ml.py`: the wording model. TF-IDF character n-grams plus 3 features from the extractor, into a logistic regression. Trained at app start-up from `data/offers.csv` (280 labelled offers: 100 real, 180 synthetic; each real row weighted 10x), so there is no model file to go stale. The 6 real rows behind the app's sample buttons (`demo=1`) are left out of training, so the scores you see on the samples are real predictions.
+- Label rule (written down so labels stay consistent): **misleading = the offer promises 0% / free / no profit, and the same offer also charges a fee tied to getting that price.** Fees that are not the price of the instalment (annual card fee, cash-on-delivery, late-payment fee) do not count.
+- `model/eval_wording.py`: honest score. Only real offers are scored. **Grouped** 5-fold cross-validation (the same offer in Arabic and English, or the same bank template, always stays on one side of the split), 5 splits averaged. Result on 100 real offers (29 misleading; "always fine" scores 71%):
+
+| model | accuracy | precision | recall | F1 | AUC | Brier (lower is better) |
+|---|---|---|---|---|---|---|
+| text only | 78% | 70% | 45% | 55% | 0.78 | 0.16 |
+| rule flags only | 92% | 92% | 79% | 85% | 0.85 | 0.12 |
+| **hybrid (the app)** | **92%** | **92%** | **79%** | **85%** | **0.90** | **0.07** |
+
+  What this means: the text alone barely learns the idea; the hybrid matches the rules on yes/no but ranks offers better (AUC 0.90) and gives more honest percentages (Brier 0.07 vs 0.12). **The rules were refined after looking at these offers, so the 92% is optimistic.** The unbiased check: before refinement, the rules scored 80% accuracy / 57% precision / 100% recall on 30 offers they had never seen (6 false alarms, now fixed; those fixes are covered by `tests/`).
+- What the model cannot do: 5 of the 29 "misleading" labels rest on claims like "no hidden fees" with no fee visible in the text (Tamara, Tabby, a Kia lease). The text does not contain the evidence, so no model can learn them (recall ceiling about 83% on this data). They are kept in the data, not removed to look better.
+- Final answer shown to the user: a fee next to a 0%/free promise is a **warning** (it is written in the text; the model score is shown as support). No fee but a model score of 50% or more is **watch**. Otherwise **clear**.
+- Data sources: 70 earlier real offers plus 30 harvested from bank and merchant pages (Riyad Bank, BSF, SAIB, ANB, Alinma, Al Rajhi, IKEA, Tefal, Jarir, ...). Labels were written by Qist's builder with the rule above and still need a mentor check.
 - `model/train_extractor.py`: xlm-roberta-base term extractor, to be run in Google Colab (not run yet). The app currently extracts terms with rules (`model/rules.py`); the cost maths is plain code on purpose.
 
 ## Web API (for the Lovable website)
