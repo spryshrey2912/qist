@@ -141,6 +141,13 @@ def test_wording_flag_fixes_from_new_real_offers():
     assert not hit("Interest-free plans. A late payment fee of SAR 100 applies if you miss a payment.")                      # late-payment fee is allowed by SAMA, not hidden
     assert not hit("0% profit. Annual card fee SAR 425.")                                                                    # annual card fee is not the instalment price
 
+def test_ocr_096_and_exact_fee():
+    from analyze import analyze
+    a = analyze("Minimum Purchase : SR 1000\nInterest Rate : 096 for 3 months, 1.5% for 6 months, 1.2% for 9 months, 1% for 12 months\nProcessing Fees : SR 50", "en")
+    assert a["terms"]["plans"].get("3") == 0.0 or a["terms"]["plans"].get(3) == 0.0
+    assert a["cost"]["fee_total"] == 50.0 and a["cost"]["total_paid"] == 1170.0
+    assert any(f["code"] == "zero_but_fee" for f in a["flags"])
+
 def test_sample_offers_not_in_training():
     import pandas as pd, ml
     df = pd.read_csv(os.path.join(ROOT, "data", "offers.csv"))

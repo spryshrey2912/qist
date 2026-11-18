@@ -22,6 +22,10 @@ ANNUAL = re.compile(r"annual|apr|per year|سنوي|السنوية|سنويا", r
 
 NOTFINANCE = re.compile(r"warrant|guarantee|maintenance|roadside|\bkm\b|ضمان|صيانة|كم\b|مساعدة الطريق|assistance", re.I)
 
+def clean(text):
+    """OCR often reads '0%' as '096' ('096 for 3 months'). Put the % back, only in that exact spot."""
+    return re.sub(r"(?<![\d.,])0\s?96(?=\s*(?:for|over|لمدة)\s*\d)", "0%", text)
+
 def candidates(text):
     """rules.py output, except the instalment count ignores lines about warranty / maintenance / roadside cover
     ('5 years or 100,000 km' is the car warranty, not the financing period)."""
@@ -145,7 +149,7 @@ def cost(price, n, inst=0.0, admin_fee_sar=0.0, rate=0.0, rate_kind="none", fee_
         else:
             inst = price / n; how = "price divided equally (no profit rate found)"
     r = true_cost(price, inst, n, admin_fee_sar)
-    r["instalment"] = round(inst, 2); r["how"] = how
+    r["instalment"] = round(inst, 2); r["how"] = how; r["fee_total"] = round(admin_fee_sar, 2)
     r["warnings"] = []
     if r["total_paid"] < price - 0.01: r["warnings"].append("below_price")      # you would pay less than the price: inputs are inconsistent
     if r["effective_annual_rate"] > 150: r["warnings"].append("extreme_rate")  # almost always a wrong price or instalment

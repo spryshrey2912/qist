@@ -86,7 +86,7 @@ with panel("add"):
             st.button(T["samples"][key], key=f"sample_{key}", on_click=_set_sample, args=(key,))
     c_text, c_photo = st.columns([5, 1])
     with c_text:
-        text = st.text_area(T["paste"], key="offer_text", height=170)
+        text = engine.clean(st.text_area(T["paste"], key="offer_text", height=170))
     with c_photo:
         photo = st.file_uploader(T["upload"], type=["png", "jpg", "jpeg"])      # shown as an icon tile (see ui.css)
 
@@ -147,7 +147,7 @@ if text.strip():
             if inst > 0 and n > 0:
                 st.markdown(ui.verdict("note", T["payments_only"], f"{round(inst * int(n) + fee, 2):,.2f} SAR"), unsafe_allow_html=True)
         else:
-            fee_total = r["total_paid"] - r["instalment"] * int(n)
+            fee_total = r["fee_total"]
             out = "".join(ui.verdict("bad", "", T["w_" + w]) for w in r["warnings"])
             out += ui.results(T, r, price, int(n), fee_total)
             st.markdown(out, unsafe_allow_html=True)

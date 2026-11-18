@@ -8,7 +8,6 @@ def compute_cost(price, n, inst=0.0, fee=0.0, rate=0.0, rate_kind="none", fee_pc
     """The real cost, or None when the price or the number of instalments is missing."""
     r = engine.cost(float(price), int(n), float(inst), float(fee), float(rate), rate_kind, float(fee_pct), float(fee_cap))
     if r is None: return None
-    r["fee_total"] = round(r["total_paid"] - r["instalment"] * int(n), 2)
     return r
 
 def _verdict(hit, pm):
@@ -20,6 +19,7 @@ def _verdict(hit, pm):
 
 def analyze(text, lang="en"):
     lang = "ar" if lang == "ar" else "en"
+    text = engine.clean(text)
     c = engine.candidates(text); d = engine.defaults(c, text)
     plans = {int(k): v for k, v in d["plans"].items()}
     n, rate = int(d["n_installments"]), float(d["profit_rate"])
