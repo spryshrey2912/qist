@@ -1,0 +1,120 @@
+﻿id,source,lang,text,cash_price,n_installments,installment_amount,admin_fee,late_fee,profit_rate,shariah_claim,spans,misleading
+real_051,real,ar,"• العرض يشمل تحويل العمليات التي تتم عن طريق أي من المتاجر أدناه إلى أقساط شهرية متساوية لمدة تصل حتى إلى 24 شهر بدون رسوم أو أرباح تورق
+• يسري العرض من 13 أغسطس 2026 حتى 30 سبتمبر 2026
+• على العميل شراء الجهاز من التجار أدناه ليتم تطبيق العرض: (الحد الأدنى للمبلغ بالريال السعودي)
+• SAMSUNG.COM (الحد الأدنى 1000 ريال )
+• بمجرد اختيار العميل تقسيط عملية معينة، يصبح سداد العملية على أقساط شهرية بمعدل 0% ولا يصبح إجمالي مبلغ العملية مستحقاً مرة واحدة في تاريخ سداد ذلك الشهر",,24 شهر,,,,بدون رسوم أو أرباح تورق,,"[[106, 112, ""n_installments""], [113, 136, ""profit_rate""]]",0.0
+real_052,real,ar,"برنامج سهِّلها
+يمكنك من خلاله تقسيط مبالغ الخدمات لدى الجهات المعتمدة لدى المصرف بأقساط شهرية ميسرة ومن دون هامش ربح ورسوم إدارية.
+مبلغ التمويل | الاستحقاق بالسنوات | معدل النسبة السنوي | مبلغ القسط الشهري
+30,000 ريال | 2 | % 0 | 1,250
+بدون هامش ربح
+تمويل من دون رسوم إدارية
+استحقاق إلى 60 شهر
+يمكنك الحصول على تمويل بفترة استحقاق تصل الى 60 شهراً للمواطنين و المقيمين
+لا يشترط كفيل للحصول على التمويل.","30,000",60 شهراً,"1,250",من دون رسوم إدارية,,بدون هامش ربح,,"[[206, 212, ""cash_price""], [339, 347, ""n_installments""], [230, 235, ""installment_amount""], [256, 274, ""admin_fee""], [236, 249, ""profit_rate""]]",0.0
+real_053,real,ar,"الأول أقساط – خطط التقسيط
+حول مشترياتك إلى أقساط شهرية تصل مدة سدادها إلى 24 شهر!
+إمكانية تحويل أي عملية تزيد قيمتها عن 500 ريال سعودي الى خطة اقساط سهلة السداد
+سداد شهريا من 3 شهور الى 24 شهر
+معدلات ربح منخفض
+يمكن تحويل العمليات التي تتم من خلال التجار المشاركين الى برنامج الاول اقساط دون اي رسوم
+يوضح الجدول التالي كيفية عمل برنامج أقساط الأول باستخدام عملية شرائية قيمتها 5,000 ريالسعودي كمثال، تم تحويلها إلى برنامج أقساط الأول ليتم السداد على 3، 6، 12، 24 شهر
+يتم دفع رسوم الاجراءات بحسب نوع برنامج الاقساط المطلوب.","5,000",3، 6، 12، 24 شهر,,,,,,"[[376, 381, ""cash_price""], [449, 465, ""n_installments""]]",0.0
+real_054,real,ar,"تأجير الدراجات النارية بتحويل الراتب
+• *دفعة أولى 10%
+• *رسوم إدارية 1% أو 5,000 SAR أيهما أقل
+• الدفعة الأخيرة غير متاحة
+• المدة 60 شهر.
+• معدل النسبة السنوي يبدأ من %17.40
+نوع التمويل | مبلغ التمويل | مدة التأجير | معدل النسبة السنوي | القسط الشهري | دفعة التملك
+دراجات نارية | 50,000 SAR | 5 سنوات | 17.40% | 1,087 | غير متاحه","50,000",60 شهر,"1,087","1% أو 5,000 SAR أيهما أقل",,17.40%,,"[[280, 286, ""cash_price""], [130, 136, ""n_installments""], [312, 317, ""installment_amount""], [69, 94, ""admin_fee""], [303, 309, ""profit_rate""]]",0.0
+real_055,real,ar,"الأول يوفر لك تمويلاً شخصياً متوافقاً مع أحكام الشريعة الإسلامية لتحقيق رغباتك وأحلامك بمزايا جذابة.
+مبلغ التمويل | معدل النسبة السنوي | فترة التمويل | القسط الشهري | رسوم السداد المبكر
+100K | %3.21 | 60M | 1,782.55 | ارباح ثلاثة اشهر التالية
+ما المقصود بمعدل النسبة السنوي (APR)؟ يشير مصطلح APR إلى معدل الربح الفعلي المحتسب على فترة السداد والذي يتم احتسابه على أساس سنوي.",100K,60M,"1,782.55",,,%3.21,متوافقاً مع أحكام الشريعة الإسلامية,"[[186, 190, ""cash_price""], [201, 204, ""n_installments""], [207, 215, ""installment_amount""], [193, 198, ""profit_rate""], [29, 64, ""shariah_claim""]]",0.0
+real_056,real,ar,"• يمكن للعميل اختيار مدة التقسيط لمدة 3 أشهر أو 6 أشهر أو 12 شهر . تختلف فترات التقسيط باختلاف التاجر المشارك.
+• بمجرد اختيار العميل تقسيط عملية معينة، يصبح سداد العملية على أقساط شهرية بمعدل 0% ولا يصبح إجمالي مبلغ العملية مستحقاً مره واحدة في تاريخ سداد ذلك الشهر
+• في حال التأخر في السداد أو عدم دفع الأقساط سيتم إلغاء برنامج ""أقساط"" وتحويل العمليات الشرائية الخاصة بـ ""أقساط"" إلى عمليات شراء عادية وسيتم التعامل معها بموجب الأحكام والشروط الخاصة باتفاقية حامل البطاقة.",,3 أشهر أو 6 أشهر أو 12 شهر,,,,0%,,"[[38, 64, ""n_installments""], [192, 194, ""profit_rate""]]",0.0
+real_057,real,ar,"تمتع بأقصى مرونة من خلال تقسيط مشتريات البطاقة الائتمانية وإعفاء يصل إلى 100% من هامش الربح وفترات مختلفة تناسب احتياجاتك بمدة 3 أو 6 أو 9 أو 12 شهرًا
+• قسّط مشترياتك من ساكو بدون هامش ربح
+3 أشهر
+6 أشهر
+9 أشهر
+12 شهر
+معدل ربح التمويل المصاحب للبطاقة بعد الإعفاء الجزئي للعملية المقسطة
+%0 هامش ربح
+%0.90 شهري
+%0.95 شهري
+%0.99 شهري
+مثال: عملية شرائية بمبلغ 6 آلاف Ʀ بخطة التقسيط 3 أشهر",,3 أو 6 أو 9 أو 12 شهرًا,,,,%0 هامش ربح,,"[[127, 150, ""n_installments""], [285, 296, ""profit_rate""]]",1.0
+real_058,real,en,"Driven by social responsibility program of Bank Albilad “Albilad Mubadara”, we are glad to offer our customers with the education fees financing to allow our customers to get a financing to pay the education fees to educational institutions and then pay back the fees to the bank in an easy installments with 0% profit margin and zero management fees.
+• 0% profits and with no management fees on the financing.
+• Sharia-compliant financing services",,,,zero management fees,,0% profit margin,Sharia-compliant,"[[330, 350, ""admin_fee""], [309, 325, ""profit_rate""], [413, 429, ""shariah_claim""]]",0.0
+real_059,real,en,"Big Discounts on Profit Rates for New Personal Finance
+Discount on Profit Rates for new personal finance for both Saudis and Expats.
+Valid from 03 May until 30 June 2026
+• Competitive flat rates.
+• Finance period up to 60 months.
+• APR starts from 4.75%
+• *Admin fees is applicable 0.5% from finance amount or 2500 SAR whichever is less",,up to 60 months,,0.5% from finance amount or 2500 SAR whichever is less,,4.75%,,"[[213, 228, ""n_installments""], [282, 336, ""admin_fee""], [248, 253, ""profit_rate""]]",0.0
+real_060,real,en,"Personal Finance
+Enjoy attractive profit rates and up to 5 years tenure
+• Shariah-compliant
+• Competitive profit rates
+Administrative Fees | 0.50% of finance amount or SAR 2,500 (Whichever is less)
+Early Settlement Fee | The term cost for the next three months
+Finance amount (SAR) | Finance period (in years) | Annual profit rate* | Monthly payment amount (SAR)
+320,000 | 5 | 9.71% | 6,654.78","320,000",5 years,"6,654.78","0.50% of finance amount or SAR 2,500 (Whichever is less)",,9.71%,Shariah-compliant,"[[363, 370, ""cash_price""], [57, 64, ""n_installments""], [385, 393, ""installment_amount""], [141, 197, ""admin_fee""], [377, 382, ""profit_rate""], [74, 91, ""shariah_claim""]]",0.0
+real_061,real,en,"Annual Percentage Rate (APR)
+Micro-finance amount | Financing Period | Annual Percentage Rate | Monthly Installment
+SAR 30,000 | 12 Months | 56.77 % | SAR 3,100.00
+Example of administrative fees: 0,5% of the financing amount or 2,500 SAR, whichever is lower","SAR 30,000",12 Months,"SAR 3,100.00","0,5% of the financing amount or 2,500 SAR, whichever is lower",,56.77 %,,"[[116, 126, ""cash_price""], [129, 138, ""n_installments""], [151, 163, ""installment_amount""], [196, 257, ""admin_fee""], [141, 148, ""profit_rate""]]",0.0
+real_062,real,en,"0% Fees with Tasaheal
+Split your travel expenses into 3-month installments without any cost!
+Split your travel expenses into 3 month installments with Tasaheal, with ZERO fees, when using alrajhi bank credit cards.
+• The minimum purchase transaction amount eligible for the offer is SAR 1,000.
+• alrajhi bank Credit Cards Terms and Conditions and Tasaheal Program Terms and Conditions apply.",,3 month installments,,ZERO fees,,,,"[[125, 145, ""n_installments""], [166, 175, ""admin_fee""]]",0.0
+real_063,real,ar,"بدون فوائد ورسوم خفية
+بالضبط، تعطيك تمارا اللي تبي وبكل شفافية وبدون فوائد ورسوم خفية.
+تسوق وقسّم مدفوعاتك على دفعات بدون فوائد ورسوم خفية!
+أقل من 18 | غير مؤهل | - | -
+18-21 | مؤهل | 1 ريال | 1,500 ريال
+أكبر من 21 | مؤهل | 1 ريال | 7,000 ريال
+تكرار التأخير في السداد، قد يؤدي إلى حظر حسابك في تمارا",,,,,,بدون فوائد ورسوم خفية,,"[[0, 21, ""profit_rate""]]",1.0
+real_064,real,ar,"3. الحد الأدنى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 1,150 ريال، والحد الأقصى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 50,000 ريال لتكون مؤهلاً للدفع باستخدام تمارا.
+5. رسوم المعالجة/الرسوم الإدارية لعمليات الشراء عبر تمارا يتم إضافتها حسب سياسة تمارا واختيار العميل لنظام تقسيم المبلغ إلى دفعات، وفي حال وجود أي استفسارات بخصوص ذلك يتم التواصل مع فريق تمارا مباشرةً.",,,,الرسوم الإدارية,,,,"[[202, 217, ""admin_fee""]]",0.0
+real_065,real,en,"2025 Hyundai Elantra Offer Includes
+Monthly installment starting from 899 SAR
+Free maintenance for one year or 20,000 km
+0% down payment
+0% administrative fees
+Manufacturer warranty for 5 years or 100,000 km
+Roadside assistance for 5 years",,,899 SAR,0% administrative fees,,,,"[[70, 77, ""installment_amount""], [137, 159, ""admin_fee""]]",0.0
+real_066,real,en,"The offer on the KIA Sonet 1.5L GL
+Monthly installment 1370 SAR
+The first 3 installments are on us
+0% down payment
+No guarantor required
+• For individual financing leasing
+• Financing period is 60 months
+• Annual percentage rate (Pegas 20.23% – K3 20.21% – Sonet 20.21%) approximately
+• 1% administrative fee",,60 months,1370 SAR,1% administrative fee,,20.21%,,"[[194, 203, ""n_installments""], [55, 63, ""installment_amount""], [287, 308, ""admin_fee""], [263, 269, ""profit_rate""]]",1.0
+real_067,real,en,"Split your purchases into 4 interest-free payments or up to 12 monthly payments at more than 65,000 stores.
+No interest or fine print
+All fees are shown upfront, so what you see is what you pay.
+Pay in 4
+No interest or fees.
+Tabby partners with sellers, who pay a small fee each time Tabby is used at checkout. This helps sellers grow sales, while shoppers get flexible payments with no interest and no fees.
+A service fee may apply if you choose plans with more than 4 payments.",,4 interest-free payments or up to 12 monthly payments,,,,No interest,,"[[26, 79, ""n_installments""], [108, 119, ""profit_rate""]]",1.0
+real_068,real,en,"Tamara is a Saudi financial technology (FinTech) platform that provides smart payment solutions and flexible installment options, enabling students to pay their tuition fees with ease. The platform offers interest-free and fee-free installment plans in compliance with Islamic Sharia principles.
+• Interest-Free Installments: Pay educational fees over 12 months with no interest.",,12 months,,,,interest-free and fee-free,in compliance with Islamic Sharia principles,"[[352, 361, ""n_installments""], [205, 231, ""profit_rate""], [250, 294, ""shariah_claim""]]",1.0
+real_069,real,en,"Easy monthly payments for all your Electronics at Redsea and Abdul Latif Jameel Finance.
+Your dream electronics & appliances at 0% interest
+Easy 12 month installments at Redsea showrooms
+The monthly payments should not exceed 33% of your gross monthly income.
+Anyone with monthly income not less than SR 4,000 is eligible to apply for financing.",,12 month installments,,,,0% interest,,"[[145, 166, ""n_installments""], [128, 139, ""profit_rate""]]",0.0
+real_070,real,en,"Unlike other credit cards, where making purchases often leads to payment of accumulated interest amount, Tamkeen credit card allows the purchase of any product, anywhere, from any store and then pay back the due amount in an easy installments with no interest or profit margin!
+Monthly payment of only 5% of the due amount or 200 SAR, whichever is higher.
+Issuance fee-Renewal | 805
+Annual Fees | 770.5",,,,,,no interest or profit margin,,"[[248, 276, ""profit_rate""]]",0.0

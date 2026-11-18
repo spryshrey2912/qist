@@ -1,0 +1,739 @@
+﻿id,source,lang,text,cash_price,n_installments,installment_amount,admin_fee,late_fee,profit_rate,shariah_claim,spans,misleading
+syn_000,synthetic,ar,خطة التقسيط: السعر النقدي 8550 ريال، يُقسّم على 4 دفعات بقسط 2137.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,8550 ريال,4 دفعات,2137.5 ريال,19 ريال,75 ريال,٪0,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""], [182, 200, ""shariah_claim""]]",1
+syn_001,synthetic,en,CarFlex: Total price SAR 1750. Split into 24 installments of SAR 72.92 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 1750,24 installments,SAR 72.92,SAR 19,SAR 25,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 176, ""late_fee""], [191, 208, ""shariah_claim""]]",1
+syn_002,synthetic,ar,ادفع لاحقاً: السعر النقدي 11150 ريال، يُقسّم على 3 دفعات بقسط 3995.42 ريال شهرياً. نسبة الربح: 2.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,11150 ريال,3 دفعات,3995.42 ريال,29 ريال,75 ريال,2.5٪,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 99, ""profit_rate""], [147, 154, ""admin_fee""], [171, 178, ""late_fee""], [186, 204, ""shariah_claim""]]",0
+syn_003,synthetic,en,CarFlex: Total price SAR 1450. Split into 24 installments of SAR 82.17 per month. Profit rate: 1.5%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 1450,24 installments,SAR 82.17,SAR 29,SAR 75,1.5%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 70, ""installment_amount""], [95, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",0
+syn_004,synthetic,ar,بطاقة المتجر: السعر النقدي 5100 ريال، يُقسّم على 6 دفعات بقسط 850.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 25 ريال. ,5100 ريال,6 دفعات,850.0 ريال,99 ريال,25 ريال,٪0,,"[[27, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""]]",1
+syn_005,synthetic,en,HomeInstall: Total price SAR 13900. Split into 12 installments of SAR 1366.83 per month. Profit rate: 1.5%. ,SAR 13900,12 installments,SAR 1366.83,,,1.5%,,"[[25, 34, ""cash_price""], [47, 62, ""n_installments""], [66, 77, ""installment_amount""], [102, 106, ""profit_rate""]]",0
+syn_006,synthetic,ar,قسّطها: السعر النقدي 6500 ريال، يُقسّم على 3 دفعات بقسط 2296.67 ريال شهرياً. نسبة الربح: 2.0٪. ,6500 ريال,3 دفعات,2296.67 ريال,,,2.0٪,,"[[21, 30, ""cash_price""], [43, 50, ""n_installments""], [56, 68, ""installment_amount""], [89, 93, ""profit_rate""]]",0
+syn_007,synthetic,en,HomeInstall: Total price SAR 3300. Split into 24 installments of SAR 137.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 60. This plan is Shariah-compliant.,SAR 3300,24 installments,SAR 137.5,SAR 39,SAR 60,0%,Shariah-compliant,"[[25, 33, ""cash_price""], [46, 61, ""n_installments""], [65, 74, ""installment_amount""], [99, 101, ""profit_rate""], [140, 146, ""admin_fee""], [174, 180, ""late_fee""], [195, 212, ""shariah_claim""]]",1
+syn_008,synthetic,ar,بطاقة المتجر: السعر النقدي 2250 ريال، يُقسّم على 24 دفعات بقسط 150.0 ريال شهرياً. نسبة الربح: 2.5٪. غرامة التأخير: 100 ريال. ,2250 ريال,24 دفعات,150.0 ريال,,100 ريال,2.5٪,,"[[27, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 73, ""installment_amount""], [94, 98, ""profit_rate""], [115, 123, ""late_fee""]]",0
+syn_009,synthetic,en,HomeInstall: Total price SAR 2050. Split into 3 installments of SAR 724.33 per month. Profit rate: 2.0%. Late payment fee: SAR 25. ,SAR 2050,3 installments,SAR 724.33,,SAR 25,2.0%,,"[[25, 33, ""cash_price""], [46, 60, ""n_installments""], [64, 74, ""installment_amount""], [99, 103, ""profit_rate""], [123, 129, ""late_fee""]]",0
+syn_010,synthetic,ar,ادفع لاحقاً: السعر النقدي 11700 ريال، يُقسّم على 6 دفعات بقسط 2067.0 ريال شهرياً. نسبة الربح: 1.0٪. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,11700 ريال,6 دفعات,2067.0 ريال,,60 ريال,1.0٪,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 98, ""profit_rate""], [115, 122, ""late_fee""], [130, 148, ""shariah_claim""]]",0
+syn_011,synthetic,en,StoreCard Plan: Total price SAR 7650. Split into 4 installments of SAR 2065.5 per month. Profit rate: 2.0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 60. ,SAR 7650,4 installments,SAR 2065.5,SAR 49,SAR 60,2.0%,,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 106, ""profit_rate""], [145, 151, ""admin_fee""], [179, 185, ""late_fee""]]",0
+syn_012,synthetic,ar,ادفع لاحقاً: السعر النقدي 14350 ريال، يُقسّم على 6 دفعات بقسط 2606.92 ريال شهرياً. نسبة الربح: 1.5٪. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,14350 ريال,6 دفعات,2606.92 ريال,,60 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 99, ""profit_rate""], [116, 123, ""late_fee""], [131, 149, ""shariah_claim""]]",0
+syn_013,synthetic,en,StoreCard Plan: Total price SAR 6200. Split into 4 installments of SAR 1550.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 6200,4 installments,SAR 1550.0,SAR 59,SAR 45,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""], [198, 215, ""shariah_claim""]]",1
+syn_014,synthetic,ar,قسط الأسرة: السعر النقدي 13950 ريال، يُقسّم على 6 دفعات بقسط 2464.5 ريال شهرياً. نسبة الربح: 1.0٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,13950 ريال,6 دفعات,2464.5 ريال,29 ريال,75 ريال,1.0٪,متوافقة مع الشريعة,"[[25, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""], [184, 202, ""shariah_claim""]]",0
+syn_015,synthetic,en,SplitIt: Total price SAR 14600. Split into 12 installments of SAR 1216.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 14600,12 installments,SAR 1216.67,SAR 49,SAR 100,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 73, ""installment_amount""], [98, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 180, ""late_fee""], [195, 212, ""shariah_claim""]]",1
+syn_016,synthetic,ar,خطة التقسيط: السعر النقدي 2000 ريال، يُقسّم على 4 دفعات بقسط 500.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,2000 ريال,4 دفعات,500.0 ريال,19 ريال,25 ريال,٪0,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""], [181, 199, ""shariah_claim""]]",1
+syn_017,synthetic,en,CarFlex: Total price SAR 4150. Split into 24 installments of SAR 172.92 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 25. ,SAR 4150,24 installments,SAR 172.92,SAR 39,SAR 25,0%,,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""]]",1
+syn_018,synthetic,ar,بطاقة المتجر: السعر النقدي 9900 ريال، يُقسّم على 4 دفعات بقسط 2475.0 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 60 ريال. ,9900 ريال,4 دفعات,2475.0 ريال,,60 ريال,٪0,,"[[27, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [113, 120, ""late_fee""]]",0
+syn_019,synthetic,en,StoreCard Plan: Total price SAR 12550. Split into 12 installments of SAR 1045.83 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 45. ,SAR 12550,12 installments,SAR 1045.83,SAR 29,SAR 45,0%,,"[[28, 37, ""cash_price""], [50, 65, ""n_installments""], [69, 80, ""installment_amount""], [105, 107, ""profit_rate""], [146, 152, ""admin_fee""], [180, 186, ""late_fee""]]",1
+syn_020,synthetic,ar,قسّطها: السعر النقدي 4400 ريال، يُقسّم على 24 دفعات بقسط 183.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. غرامة التأخير: 100 ريال. ,4400 ريال,24 دفعات,183.33 ريال,59 ريال,100 ريال,٪0,,"[[21, 30, ""cash_price""], [43, 51, ""n_installments""], [57, 68, ""installment_amount""], [89, 91, ""profit_rate""], [139, 146, ""admin_fee""], [163, 171, ""late_fee""]]",1
+syn_021,synthetic,en,SplitIt: Total price SAR 13800. Split into 6 installments of SAR 2507.0 per month. Profit rate: 1.5%. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 13800,6 installments,SAR 2507.0,,SAR 45,1.5%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 100, ""profit_rate""], [120, 126, ""late_fee""], [141, 158, ""shariah_claim""]]",0
+syn_022,synthetic,ar,ادفع لاحقاً: السعر النقدي 13900 ريال، يُقسّم على 24 دفعات بقسط 926.67 ريال شهرياً. نسبة الربح: 2.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 35 ريال. ,13900 ريال,24 دفعات,926.67 ريال,29 ريال,35 ريال,2.5٪,,"[[26, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 99, ""profit_rate""], [147, 154, ""admin_fee""], [171, 178, ""late_fee""]]",0
+syn_023,synthetic,en,HomeInstall: Total price SAR 5400. Split into 24 installments of SAR 360.0 per month. Profit rate: 2.5%. This plan is Shariah-compliant.,SAR 5400,24 installments,SAR 360.0,,,2.5%,Shariah-compliant,"[[25, 33, ""cash_price""], [46, 61, ""n_installments""], [65, 74, ""installment_amount""], [99, 103, ""profit_rate""], [118, 135, ""shariah_claim""]]",0
+syn_024,synthetic,ar,بطاقة المتجر: السعر النقدي 9100 ريال، يُقسّم على 12 دفعات بقسط 758.33 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,9100 ريال,12 دفعات,758.33 ريال,,45 ريال,٪0,متوافقة مع الشريعة,"[[27, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 97, ""profit_rate""], [114, 121, ""late_fee""], [129, 147, ""shariah_claim""]]",0
+syn_025,synthetic,en,PayLater: Total price SAR 5300. Split into 6 installments of SAR 883.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. ,SAR 5300,6 installments,SAR 883.33,SAR 59,,0%,,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""]]",1
+syn_026,synthetic,ar,ادفع لاحقاً: السعر النقدي 12550 ريال، يُقسّم على 6 دفعات بقسط 2279.92 ريال شهرياً. نسبة الربح: 1.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,12550 ريال,6 دفعات,2279.92 ريال,99 ريال,60 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 99, ""profit_rate""], [147, 154, ""admin_fee""], [171, 178, ""late_fee""], [186, 204, ""shariah_claim""]]",0
+syn_027,synthetic,en,PayLater: Total price SAR 11400. Split into 6 installments of SAR 1900.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 60. ,SAR 11400,6 installments,SAR 1900.0,SAR 99,SAR 60,0%,,"[[22, 31, ""cash_price""], [44, 58, ""n_installments""], [62, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""]]",1
+syn_028,synthetic,ar,خطة التقسيط: السعر النقدي 4350 ريال، يُقسّم على 4 دفعات بقسط 1152.75 ريال شهرياً. نسبة الربح: 1.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. ,4350 ريال,4 دفعات,1152.75 ريال,59 ريال,,1.5٪,,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 73, ""installment_amount""], [94, 98, ""profit_rate""], [146, 153, ""admin_fee""]]",0
+syn_029,synthetic,en,HomeInstall: Total price SAR 12400. Split into 6 installments of SAR 2066.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 25. ,SAR 12400,6 installments,SAR 2066.67,SAR 59,SAR 25,0%,,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 76, ""installment_amount""], [101, 103, ""profit_rate""], [142, 148, ""admin_fee""], [176, 182, ""late_fee""]]",1
+syn_030,synthetic,ar,تمويل سهل: السعر النقدي 2900 ريال، يُقسّم على 24 دفعات بقسط 120.83 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. الخطة متوافقة مع الشريعة.,2900 ريال,24 دفعات,120.83 ريال,29 ريال,,٪0,متوافقة مع الشريعة,"[[24, 33, ""cash_price""], [46, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [157, 175, ""shariah_claim""]]",1
+syn_031,synthetic,en,StoreCard Plan: Total price SAR 13100. Split into 4 installments of SAR 3275.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 35. ,SAR 13100,4 installments,SAR 3275.0,SAR 59,SAR 35,0%,,"[[28, 37, ""cash_price""], [50, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 105, ""profit_rate""], [144, 150, ""admin_fee""], [178, 184, ""late_fee""]]",1
+syn_032,synthetic,ar,ادفع لاحقاً: السعر النقدي 13500 ريال، يُقسّم على 12 دفعات بقسط 1260.0 ريال شهرياً. نسبة الربح: 1.0٪. غرامة التأخير: 35 ريال. ,13500 ريال,12 دفعات,1260.0 ريال,,35 ريال,1.0٪,,"[[26, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 99, ""profit_rate""], [116, 123, ""late_fee""]]",0
+syn_033,synthetic,en,EasyPay: Total price SAR 400. Split into 4 installments of SAR 100.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 25. ,SAR 400,4 installments,SAR 100.0,SAR 49,SAR 25,0%,,"[[21, 28, ""cash_price""], [41, 55, ""n_installments""], [59, 68, ""installment_amount""], [93, 95, ""profit_rate""], [134, 140, ""admin_fee""], [168, 174, ""late_fee""]]",1
+syn_034,synthetic,ar,قسّطها: السعر النقدي 13550 ريال، يُقسّم على 24 دفعات بقسط 564.58 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,13550 ريال,24 دفعات,564.58 ريال,,75 ريال,٪0,متوافقة مع الشريعة,"[[21, 31, ""cash_price""], [44, 52, ""n_installments""], [58, 69, ""installment_amount""], [90, 92, ""profit_rate""], [109, 116, ""late_fee""], [124, 142, ""shariah_claim""]]",0
+syn_035,synthetic,en,StoreCard Plan: Total price SAR 2800. Split into 24 installments of SAR 158.67 per month. Profit rate: 1.5%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 75. ,SAR 2800,24 installments,SAR 158.67,SAR 19,SAR 75,1.5%,,"[[28, 36, ""cash_price""], [49, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 107, ""profit_rate""], [146, 152, ""admin_fee""], [180, 186, ""late_fee""]]",0
+syn_036,synthetic,ar,ادفع لاحقاً: السعر النقدي 13300 ريال، يُقسّم على 24 دفعات بقسط 820.17 ريال شهرياً. نسبة الربح: 2.0٪. غرامة التأخير: 75 ريال. ,13300 ريال,24 دفعات,820.17 ريال,,75 ريال,2.0٪,,"[[26, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 99, ""profit_rate""], [116, 123, ""late_fee""]]",0
+syn_037,synthetic,en,StoreCard Plan: Total price SAR 11750. Split into 4 installments of SAR 2937.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 25. ,SAR 11750,4 installments,SAR 2937.5,SAR 49,SAR 25,0%,,"[[28, 37, ""cash_price""], [50, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 105, ""profit_rate""], [144, 150, ""admin_fee""], [178, 184, ""late_fee""]]",1
+syn_038,synthetic,ar,قسط الأسرة: السعر النقدي 2150 ريال، يُقسّم على 4 دفعات بقسط 537.5 ريال شهرياً. نسبة الربح: ٪0. ,2150 ريال,4 دفعات,537.5 ريال,,,٪0,,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 70, ""installment_amount""], [91, 93, ""profit_rate""]]",0
+syn_039,synthetic,en,PayLater: Total price SAR 9650. Split into 4 installments of SAR 2412.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. This plan is Shariah-compliant.,SAR 9650,4 installments,SAR 2412.5,SAR 29,,0%,Shariah-compliant,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [166, 183, ""shariah_claim""]]",1
+syn_040,synthetic,ar,بطاقة المتجر: السعر النقدي 10450 ريال، يُقسّم على 12 دفعات بقسط 870.83 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. الخطة متوافقة مع الشريعة.,10450 ريال,12 دفعات,870.83 ريال,99 ريال,,٪0,متوافقة مع الشريعة,"[[27, 37, ""cash_price""], [50, 58, ""n_installments""], [64, 75, ""installment_amount""], [96, 98, ""profit_rate""], [146, 153, ""admin_fee""], [161, 179, ""shariah_claim""]]",1
+syn_041,synthetic,en,PayLater: Total price SAR 13450. Split into 12 installments of SAR 1120.83 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 25. ,SAR 13450,12 installments,SAR 1120.83,SAR 29,SAR 25,0%,,"[[22, 31, ""cash_price""], [44, 59, ""n_installments""], [63, 74, ""installment_amount""], [99, 101, ""profit_rate""], [140, 146, ""admin_fee""], [174, 180, ""late_fee""]]",1
+syn_042,synthetic,ar,ادفع لاحقاً: السعر النقدي 8950 ريال، يُقسّم على 24 دفعات بقسط 462.42 ريال شهرياً. نسبة الربح: 1.0٪. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,8950 ريال,24 دفعات,462.42 ريال,,75 ريال,1.0٪,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 98, ""profit_rate""], [115, 122, ""late_fee""], [130, 148, ""shariah_claim""]]",0
+syn_043,synthetic,en,SplitIt: Total price SAR 2950. Split into 3 installments of SAR 983.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. This plan is Shariah-compliant.,SAR 2950,3 installments,SAR 983.33,SAR 19,,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [165, 182, ""shariah_claim""]]",1
+syn_044,synthetic,ar,قسط الأسرة: السعر النقدي 11100 ريال، يُقسّم على 6 دفعات بقسط 1850.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. ,11100 ريال,6 دفعات,1850.0 ريال,59 ريال,,٪0,,"[[25, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""]]",1
+syn_045,synthetic,en,PayLater: Total price SAR 8650. Split into 3 installments of SAR 2883.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 8650,3 installments,SAR 2883.33,SAR 99,SAR 25,0%,Shariah-compliant,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",1
+syn_046,synthetic,ar,تمويل سهل: السعر النقدي 2550 ريال، يُقسّم على 6 دفعات بقسط 425.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,2550 ريال,6 دفعات,425.0 ريال,29 ريال,25 ريال,٪0,متوافقة مع الشريعة,"[[24, 33, ""cash_price""], [46, 53, ""n_installments""], [59, 69, ""installment_amount""], [90, 92, ""profit_rate""], [140, 147, ""admin_fee""], [164, 171, ""late_fee""], [179, 197, ""shariah_claim""]]",1
+syn_047,synthetic,en,SplitIt: Total price SAR 14450. Split into 12 installments of SAR 1204.17 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 14450,12 installments,SAR 1204.17,SAR 29,SAR 100,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 73, ""installment_amount""], [98, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 180, ""late_fee""], [195, 212, ""shariah_claim""]]",1
+syn_048,synthetic,ar,تمويل سهل: السعر النقدي 7000 ريال، يُقسّم على 3 دفعات بقسط 2333.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 75 ريال. ,7000 ريال,3 دفعات,2333.33 ريال,39 ريال,75 ريال,٪0,,"[[24, 33, ""cash_price""], [46, 53, ""n_installments""], [59, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""]]",1
+syn_049,synthetic,en,CarFlex: Total price SAR 11700. Split into 24 installments of SAR 487.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. This plan is Shariah-compliant.,SAR 11700,24 installments,SAR 487.5,SAR 19,,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [166, 183, ""shariah_claim""]]",1
+syn_050,synthetic,ar,بطاقة المتجر: السعر النقدي 14400 ريال، يُقسّم على 4 دفعات بقسط 3960.0 ريال شهرياً. نسبة الربح: 2.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 100 ريال. ,14400 ريال,4 دفعات,3960.0 ريال,49 ريال,100 ريال,2.5٪,,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 99, ""profit_rate""], [147, 154, ""admin_fee""], [171, 179, ""late_fee""]]",0
+syn_051,synthetic,en,EasyPay: Total price SAR 13250. Split into 6 installments of SAR 2407.08 per month. Profit rate: 1.5%. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 13250,6 installments,SAR 2407.08,,SAR 100,1.5%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 101, ""profit_rate""], [121, 128, ""late_fee""], [143, 160, ""shariah_claim""]]",0
+syn_052,synthetic,ar,قسّطها: السعر النقدي 1650 ريال، يُقسّم على 4 دفعات بقسط 412.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,1650 ريال,4 دفعات,412.5 ريال,99 ريال,45 ريال,٪0,متوافقة مع الشريعة,"[[21, 30, ""cash_price""], [43, 50, ""n_installments""], [56, 66, ""installment_amount""], [87, 89, ""profit_rate""], [137, 144, ""admin_fee""], [161, 168, ""late_fee""], [176, 194, ""shariah_claim""]]",1
+syn_053,synthetic,en,SplitIt: Total price SAR 2450. Split into 12 installments of SAR 228.67 per month. Profit rate: 1.0%. Late payment fee: SAR 35. This plan is Shariah-compliant.,SAR 2450,12 installments,SAR 228.67,,SAR 35,1.0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 100, ""profit_rate""], [120, 126, ""late_fee""], [141, 158, ""shariah_claim""]]",0
+syn_054,synthetic,ar,خطة التقسيط: السعر النقدي 7150 ريال، يُقسّم على 12 دفعات بقسط 595.83 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. ,7150 ريال,12 دفعات,595.83 ريال,39 ريال,,٪0,,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""]]",1
+syn_055,synthetic,en,StoreCard Plan: Total price SAR 8550. Split into 4 installments of SAR 2137.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 35. This plan is Shariah-compliant.,SAR 8550,4 installments,SAR 2137.5,SAR 39,SAR 35,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""], [198, 215, ""shariah_claim""]]",1
+syn_056,synthetic,ar,قسّطها: السعر النقدي 2400 ريال، يُقسّم على 12 دفعات بقسط 200.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 75 ريال. ,2400 ريال,12 دفعات,200.0 ريال,99 ريال,75 ريال,٪0,,"[[21, 30, ""cash_price""], [43, 51, ""n_installments""], [57, 67, ""installment_amount""], [88, 90, ""profit_rate""], [138, 145, ""admin_fee""], [162, 169, ""late_fee""]]",1
+syn_057,synthetic,en,HomeInstall: Total price SAR 7050. Split into 3 installments of SAR 2350.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 7050,3 installments,SAR 2350.0,SAR 59,SAR 25,0%,Shariah-compliant,"[[25, 33, ""cash_price""], [46, 60, ""n_installments""], [64, 74, ""installment_amount""], [99, 101, ""profit_rate""], [140, 146, ""admin_fee""], [174, 180, ""late_fee""], [195, 212, ""shariah_claim""]]",1
+syn_058,synthetic,ar,قسط الأسرة: السعر النقدي 6250 ريال، يُقسّم على 3 دفعات بقسط 2239.58 ريال شهرياً. نسبة الربح: 2.5٪. غرامة التأخير: 100 ريال. ,6250 ريال,3 دفعات,2239.58 ريال,,100 ريال,2.5٪,,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 72, ""installment_amount""], [93, 97, ""profit_rate""], [114, 122, ""late_fee""]]",0
+syn_059,synthetic,en,HomeInstall: Total price SAR 12950. Split into 4 installments of SAR 3237.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 25. ,SAR 12950,4 installments,SAR 3237.5,SAR 59,SAR 25,0%,,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 75, ""installment_amount""], [100, 102, ""profit_rate""], [141, 147, ""admin_fee""], [175, 181, ""late_fee""]]",1
+syn_060,synthetic,ar,خطة التقسيط: السعر النقدي 13400 ريال، يُقسّم على 12 دفعات بقسط 1250.67 ريال شهرياً. نسبة الربح: 1.0٪. غرامة التأخير: 75 ريال. ,13400 ريال,12 دفعات,1250.67 ريال,,75 ريال,1.0٪,,"[[26, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 75, ""installment_amount""], [96, 100, ""profit_rate""], [117, 124, ""late_fee""]]",0
+syn_061,synthetic,en,StoreCard Plan: Total price SAR 6150. Split into 3 installments of SAR 2050.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 6150,3 installments,SAR 2050.0,SAR 29,SAR 25,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""], [198, 215, ""shariah_claim""]]",1
+syn_062,synthetic,ar,قسّطها: السعر النقدي 14550 ريال، يُقسّم على 3 دفعات بقسط 4850.0 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,14550 ريال,3 دفعات,4850.0 ريال,,60 ريال,٪0,متوافقة مع الشريعة,"[[21, 31, ""cash_price""], [44, 51, ""n_installments""], [57, 68, ""installment_amount""], [89, 91, ""profit_rate""], [108, 115, ""late_fee""], [123, 141, ""shariah_claim""]]",0
+syn_063,synthetic,en,PayLater: Total price SAR 13150. Split into 24 installments of SAR 547.92 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 13150,24 installments,SAR 547.92,SAR 59,SAR 100,0%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 59, ""n_installments""], [63, 73, ""installment_amount""], [98, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 180, ""late_fee""], [195, 212, ""shariah_claim""]]",1
+syn_064,synthetic,ar,قسط الأسرة: السعر النقدي 7050 ريال، يُقسّم على 4 دفعات بقسط 1938.75 ريال شهرياً. نسبة الربح: 2.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,7050 ريال,4 دفعات,1938.75 ريال,99 ريال,60 ريال,2.5٪,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 72, ""installment_amount""], [93, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""], [184, 202, ""shariah_claim""]]",0
+syn_065,synthetic,en,SplitIt: Total price SAR 7650. Split into 3 installments of SAR 2703.0 per month. Profit rate: 2.0%. Late payment fee: SAR 35. ,SAR 7650,3 installments,SAR 2703.0,,SAR 35,2.0%,,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 99, ""profit_rate""], [119, 125, ""late_fee""]]",0
+syn_066,synthetic,ar,ادفع لاحقاً: السعر النقدي 600 ريال، يُقسّم على 12 دفعات بقسط 50.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. الخطة متوافقة مع الشريعة.,600 ريال,12 دفعات,50.0 ريال,39 ريال,,٪0,متوافقة مع الشريعة,"[[26, 34, ""cash_price""], [47, 55, ""n_installments""], [61, 70, ""installment_amount""], [91, 93, ""profit_rate""], [141, 148, ""admin_fee""], [156, 174, ""shariah_claim""]]",1
+syn_067,synthetic,en,PayLater: Total price SAR 12800. Split into 6 installments of SAR 2325.33 per month. Profit rate: 1.5%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 12800,6 installments,SAR 2325.33,SAR 49,SAR 25,1.5%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 58, ""n_installments""], [62, 73, ""installment_amount""], [98, 102, ""profit_rate""], [141, 147, ""admin_fee""], [175, 181, ""late_fee""], [196, 213, ""shariah_claim""]]",0
+syn_068,synthetic,ar,بطاقة المتجر: السعر النقدي 12400 ريال، يُقسّم على 3 دفعات بقسط 4133.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. ,12400 ريال,3 دفعات,4133.33 ريال,19 ريال,,٪0,,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 75, ""installment_amount""], [96, 98, ""profit_rate""], [146, 153, ""admin_fee""]]",1
+syn_069,synthetic,en,CarFlex: Total price SAR 7150. Split into 12 installments of SAR 595.83 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 7150,12 installments,SAR 595.83,SAR 29,SAR 25,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""], [192, 209, ""shariah_claim""]]",1
+syn_070,synthetic,ar,ادفع لاحقاً: السعر النقدي 7000 ريال، يُقسّم على 6 دفعات بقسط 1166.67 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 25 ريال. ,7000 ريال,6 دفعات,1166.67 ريال,99 ريال,25 ريال,٪0,,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [168, 175, ""late_fee""]]",1
+syn_071,synthetic,en,StoreCard Plan: Total price SAR 13000. Split into 12 installments of SAR 1083.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 60. ,SAR 13000,12 installments,SAR 1083.33,SAR 29,SAR 60,0%,,"[[28, 37, ""cash_price""], [50, 65, ""n_installments""], [69, 80, ""installment_amount""], [105, 107, ""profit_rate""], [146, 152, ""admin_fee""], [180, 186, ""late_fee""]]",1
+syn_072,synthetic,ar,تمويل سهل: السعر النقدي 8000 ريال، يُقسّم على 4 دفعات بقسط 2000.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,8000 ريال,4 دفعات,2000.0 ريال,49 ريال,45 ريال,٪0,متوافقة مع الشريعة,"[[24, 33, ""cash_price""], [46, 53, ""n_installments""], [59, 70, ""installment_amount""], [91, 93, ""profit_rate""], [141, 148, ""admin_fee""], [165, 172, ""late_fee""], [180, 198, ""shariah_claim""]]",1
+syn_073,synthetic,en,StoreCard Plan: Total price SAR 10450. Split into 3 installments of SAR 3483.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. This plan is Shariah-compliant.,SAR 10450,3 installments,SAR 3483.33,SAR 19,,0%,Shariah-compliant,"[[28, 37, ""cash_price""], [50, 64, ""n_installments""], [68, 79, ""installment_amount""], [104, 106, ""profit_rate""], [145, 151, ""admin_fee""], [174, 191, ""shariah_claim""]]",1
+syn_074,synthetic,ar,قسّطها: السعر النقدي 10250 ريال، يُقسّم على 24 دفعات بقسط 427.08 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,10250 ريال,24 دفعات,427.08 ريال,49 ريال,25 ريال,٪0,متوافقة مع الشريعة,"[[21, 31, ""cash_price""], [44, 52, ""n_installments""], [58, 69, ""installment_amount""], [90, 92, ""profit_rate""], [140, 147, ""admin_fee""], [164, 171, ""late_fee""], [179, 197, ""shariah_claim""]]",1
+syn_075,synthetic,en,EasyPay: Total price SAR 7600. Split into 4 installments of SAR 1900.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 7600,4 installments,SAR 1900.0,SAR 39,SAR 45,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 176, ""late_fee""], [191, 208, ""shariah_claim""]]",1
+syn_076,synthetic,ar,قسّطها: السعر النقدي 11250 ريال، يُقسّم على 3 دفعات بقسط 3918.75 ريال شهرياً. نسبة الربح: 1.5٪. ,11250 ريال,3 دفعات,3918.75 ريال,,,1.5٪,,"[[21, 31, ""cash_price""], [44, 51, ""n_installments""], [57, 69, ""installment_amount""], [90, 94, ""profit_rate""]]",0
+syn_077,synthetic,en,EasyPay: Total price SAR 10800. Split into 12 installments of SAR 900.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 10800,12 installments,SAR 900.0,SAR 39,SAR 75,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""], [192, 209, ""shariah_claim""]]",1
+syn_078,synthetic,ar,قسط الأسرة: السعر النقدي 7500 ريال، يُقسّم على 6 دفعات بقسط 1250.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. الخطة متوافقة مع الشريعة.,7500 ريال,6 دفعات,1250.0 ريال,99 ريال,,٪0,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [157, 175, ""shariah_claim""]]",1
+syn_079,synthetic,en,StoreCard Plan: Total price SAR 6400. Split into 6 installments of SAR 1066.67 per month. Profit rate: 0%. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 6400,6 installments,SAR 1066.67,,SAR 100,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 78, ""installment_amount""], [103, 105, ""profit_rate""], [125, 132, ""late_fee""], [147, 164, ""shariah_claim""]]",0
+syn_080,synthetic,ar,تمويل سهل: السعر النقدي 14350 ريال، يُقسّم على 4 دفعات بقسط 3587.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,14350 ريال,4 دفعات,3587.5 ريال,49 ريال,75 ريال,٪0,متوافقة مع الشريعة,"[[24, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""], [181, 199, ""shariah_claim""]]",1
+syn_081,synthetic,en,PayLater: Total price SAR 14500. Split into 3 installments of SAR 4833.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 14500,3 installments,SAR 4833.33,SAR 39,SAR 75,0%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 58, ""n_installments""], [62, 73, ""installment_amount""], [98, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 179, ""late_fee""], [194, 211, ""shariah_claim""]]",1
+syn_082,synthetic,ar,قسّطها: السعر النقدي 10850 ريال، يُقسّم على 12 دفعات بقسط 904.17 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,10850 ريال,12 دفعات,904.17 ريال,59 ريال,45 ريال,٪0,متوافقة مع الشريعة,"[[21, 31, ""cash_price""], [44, 52, ""n_installments""], [58, 69, ""installment_amount""], [90, 92, ""profit_rate""], [140, 147, ""admin_fee""], [164, 171, ""late_fee""], [179, 197, ""shariah_claim""]]",1
+syn_083,synthetic,en,SplitIt: Total price SAR 13050. Split into 6 installments of SAR 2370.75 per month. Profit rate: 1.5%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 13050,6 installments,SAR 2370.75,SAR 99,SAR 100,1.5%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 101, ""profit_rate""], [140, 146, ""admin_fee""], [174, 181, ""late_fee""], [196, 213, ""shariah_claim""]]",0
+syn_084,synthetic,ar,بطاقة المتجر: السعر النقدي 10100 ريال، يُقسّم على 12 دفعات بقسط 841.67 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,10100 ريال,12 دفعات,841.67 ريال,,25 ريال,٪0,متوافقة مع الشريعة,"[[27, 37, ""cash_price""], [50, 58, ""n_installments""], [64, 75, ""installment_amount""], [96, 98, ""profit_rate""], [115, 122, ""late_fee""], [130, 148, ""shariah_claim""]]",0
+syn_085,synthetic,en,SplitIt: Total price SAR 12800. Split into 3 installments of SAR 4266.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. ,SAR 12800,3 installments,SAR 4266.67,SAR 59,,0%,,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""]]",1
+syn_086,synthetic,ar,قسط الأسرة: السعر النقدي 3050 ريال، يُقسّم على 4 دفعات بقسط 762.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. الخطة متوافقة مع الشريعة.,3050 ريال,4 دفعات,762.5 ريال,59 ريال,,٪0,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 70, ""installment_amount""], [91, 93, ""profit_rate""], [141, 148, ""admin_fee""], [156, 174, ""shariah_claim""]]",1
+syn_087,synthetic,en,HomeInstall: Total price SAR 12000. Split into 3 installments of SAR 4240.0 per month. Profit rate: 2.0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 25. ,SAR 12000,3 installments,SAR 4240.0,SAR 29,SAR 25,2.0%,,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 75, ""installment_amount""], [100, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""]]",0
+syn_088,synthetic,ar,ادفع لاحقاً: السعر النقدي 6700 ريال، يُقسّم على 24 دفعات بقسط 379.67 ريال شهرياً. نسبة الربح: 1.5٪. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,6700 ريال,24 دفعات,379.67 ريال,,25 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 98, ""profit_rate""], [115, 122, ""late_fee""], [130, 148, ""shariah_claim""]]",0
+syn_089,synthetic,en,SplitIt: Total price SAR 300. Split into 3 installments of SAR 104.5 per month. Profit rate: 1.5%. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 300,3 installments,SAR 104.5,,SAR 45,1.5%,Shariah-compliant,"[[21, 28, ""cash_price""], [41, 55, ""n_installments""], [59, 68, ""installment_amount""], [93, 97, ""profit_rate""], [117, 123, ""late_fee""], [138, 155, ""shariah_claim""]]",0
+syn_090,synthetic,ar,ادفع لاحقاً: السعر النقدي 14300 ريال، يُقسّم على 4 دفعات بقسط 3575.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,14300 ريال,4 دفعات,3575.0 ريال,49 ريال,45 ريال,٪0,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [168, 175, ""late_fee""], [183, 201, ""shariah_claim""]]",1
+syn_091,synthetic,en,PayLater: Total price SAR 13050. Split into 12 installments of SAR 1087.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 13050,12 installments,SAR 1087.5,SAR 29,SAR 45,0%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 59, ""n_installments""], [63, 73, ""installment_amount""], [98, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 179, ""late_fee""], [194, 211, ""shariah_claim""]]",1
+syn_092,synthetic,ar,خطة التقسيط: السعر النقدي 8950 ريال، يُقسّم على 12 دفعات بقسط 745.83 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 45 ريال. ,8950 ريال,12 دفعات,745.83 ريال,49 ريال,45 ريال,٪0,,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [168, 175, ""late_fee""]]",1
+syn_093,synthetic,en,PayLater: Total price SAR 2000. Split into 4 installments of SAR 500.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 35. ,SAR 2000,4 installments,SAR 500.0,SAR 29,SAR 35,0%,,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 176, ""late_fee""]]",1
+syn_094,synthetic,ar,خطة التقسيط: السعر النقدي 12950 ريال، يُقسّم على 24 دفعات بقسط 539.58 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 100 ريال. الخطة متوافقة مع الشريعة.,12950 ريال,24 دفعات,539.58 ريال,29 ريال,100 ريال,٪0,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 177, ""late_fee""], [185, 203, ""shariah_claim""]]",1
+syn_095,synthetic,en,PayLater: Total price SAR 4000. Split into 12 installments of SAR 333.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. This plan is Shariah-compliant.,SAR 4000,12 installments,SAR 333.33,SAR 19,,0%,Shariah-compliant,"[[22, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [167, 184, ""shariah_claim""]]",1
+syn_096,synthetic,ar,قسّطها: السعر النقدي 1800 ريال، يُقسّم على 4 دفعات بقسط 450.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. ,1800 ريال,4 دفعات,450.0 ريال,99 ريال,,٪0,,"[[21, 30, ""cash_price""], [43, 50, ""n_installments""], [56, 66, ""installment_amount""], [87, 89, ""profit_rate""], [137, 144, ""admin_fee""]]",1
+syn_097,synthetic,en,PayLater: Total price SAR 4500. Split into 6 installments of SAR 750.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. ,SAR 4500,6 installments,SAR 750.0,SAR 99,,0%,,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""]]",1
+syn_098,synthetic,ar,تمويل سهل: السعر النقدي 8250 ريال، يُقسّم على 12 دفعات بقسط 687.5 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,8250 ريال,12 دفعات,687.5 ريال,,25 ريال,٪0,متوافقة مع الشريعة,"[[24, 33, ""cash_price""], [46, 54, ""n_installments""], [60, 70, ""installment_amount""], [91, 93, ""profit_rate""], [110, 117, ""late_fee""], [125, 143, ""shariah_claim""]]",0
+syn_099,synthetic,en,HomeInstall: Total price SAR 11050. Split into 3 installments of SAR 3959.58 per month. Profit rate: 2.5%. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 11050,3 installments,SAR 3959.58,,SAR 45,2.5%,Shariah-compliant,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 76, ""installment_amount""], [101, 105, ""profit_rate""], [125, 131, ""late_fee""], [146, 163, ""shariah_claim""]]",0
+syn_100,synthetic,ar,بطاقة المتجر: السعر النقدي 12400 ريال، يُقسّم على 4 دفعات بقسط 3100.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 45 ريال. ,12400 ريال,4 دفعات,3100.0 ريال,49 ريال,45 ريال,٪0,,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""]]",1
+syn_101,synthetic,en,StoreCard Plan: Total price SAR 1050. Split into 12 installments of SAR 87.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 1050,12 installments,SAR 87.5,SAR 99,SAR 25,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 64, ""n_installments""], [68, 76, ""installment_amount""], [101, 103, ""profit_rate""], [142, 148, ""admin_fee""], [176, 182, ""late_fee""], [197, 214, ""shariah_claim""]]",1
+syn_102,synthetic,ar,تمويل سهل: السعر النقدي 1900 ريال، يُقسّم على 3 دفعات بقسط 633.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,1900 ريال,3 دفعات,633.33 ريال,99 ريال,75 ريال,٪0,متوافقة مع الشريعة,"[[24, 33, ""cash_price""], [46, 53, ""n_installments""], [59, 70, ""installment_amount""], [91, 93, ""profit_rate""], [141, 148, ""admin_fee""], [165, 172, ""late_fee""], [180, 198, ""shariah_claim""]]",1
+syn_103,synthetic,en,EasyPay: Total price SAR 8850. Split into 24 installments of SAR 368.75 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 45. ,SAR 8850,24 installments,SAR 368.75,SAR 99,SAR 45,0%,,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""]]",1
+syn_104,synthetic,ar,بطاقة المتجر: السعر النقدي 350 ريال، يُقسّم على 24 دفعات بقسط 14.58 ريال شهرياً. نسبة الربح: ٪0. الخطة متوافقة مع الشريعة.,350 ريال,24 دفعات,14.58 ريال,,,٪0,متوافقة مع الشريعة,"[[27, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 72, ""installment_amount""], [93, 95, ""profit_rate""], [103, 121, ""shariah_claim""]]",0
+syn_105,synthetic,en,PayLater: Total price SAR 12200. Split into 12 installments of SAR 1016.67 per month. Profit rate: 0%. This plan is Shariah-compliant.,SAR 12200,12 installments,SAR 1016.67,,,0%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 59, ""n_installments""], [63, 74, ""installment_amount""], [99, 101, ""profit_rate""], [116, 133, ""shariah_claim""]]",0
+syn_106,synthetic,ar,ادفع لاحقاً: السعر النقدي 8050 ريال، يُقسّم على 4 دفعات بقسط 2012.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,8050 ريال,4 دفعات,2012.5 ريال,39 ريال,75 ريال,٪0,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""], [182, 200, ""shariah_claim""]]",1
+syn_107,synthetic,en,StoreCard Plan: Total price SAR 6600. Split into 12 installments of SAR 550.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 6600,12 installments,SAR 550.0,SAR 19,SAR 75,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 64, ""n_installments""], [68, 77, ""installment_amount""], [102, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""], [198, 215, ""shariah_claim""]]",1
+syn_108,synthetic,ar,قسط الأسرة: السعر النقدي 2950 ريال، يُقسّم على 3 دفعات بقسط 983.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,2950 ريال,3 دفعات,983.33 ريال,19 ريال,60 ريال,٪0,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""], [181, 199, ""shariah_claim""]]",1
+syn_109,synthetic,en,CarFlex: Total price SAR 11700. Split into 4 installments of SAR 2925.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 11700,4 installments,SAR 2925.0,SAR 49,SAR 100,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",1
+syn_110,synthetic,ar,ادفع لاحقاً: السعر النقدي 3400 ريال، يُقسّم على 6 دفعات بقسط 566.67 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. غرامة التأخير: 45 ريال. ,3400 ريال,6 دفعات,566.67 ريال,59 ريال,45 ريال,٪0,,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""]]",1
+syn_111,synthetic,en,PayLater: Total price SAR 11500. Split into 4 installments of SAR 2875.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 11500,4 installments,SAR 2875.0,SAR 29,SAR 75,0%,Shariah-compliant,"[[22, 31, ""cash_price""], [44, 58, ""n_installments""], [62, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",1
+syn_112,synthetic,ar,بطاقة المتجر: السعر النقدي 10400 ريال، يُقسّم على 6 دفعات بقسط 1837.33 ريال شهرياً. نسبة الربح: 1.0٪. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,10400 ريال,6 دفعات,1837.33 ريال,,25 ريال,1.0٪,متوافقة مع الشريعة,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 75, ""installment_amount""], [96, 100, ""profit_rate""], [117, 124, ""late_fee""], [132, 150, ""shariah_claim""]]",0
+syn_113,synthetic,en,CarFlex: Total price SAR 6200. Split into 12 installments of SAR 516.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 25. ,SAR 6200,12 installments,SAR 516.67,SAR 39,SAR 25,0%,,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""]]",1
+syn_114,synthetic,ar,قسط الأسرة: السعر النقدي 5250 ريال، يُقسّم على 3 دفعات بقسط 1750.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 45 ريال. ,5250 ريال,3 دفعات,1750.0 ريال,29 ريال,45 ريال,٪0,,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""]]",1
+syn_115,synthetic,en,EasyPay: Total price SAR 450. Split into 3 installments of SAR 156.75 per month. Profit rate: 1.5%. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 450,3 installments,SAR 156.75,,SAR 25,1.5%,Shariah-compliant,"[[21, 28, ""cash_price""], [41, 55, ""n_installments""], [59, 69, ""installment_amount""], [94, 98, ""profit_rate""], [118, 124, ""late_fee""], [139, 156, ""shariah_claim""]]",0
+syn_116,synthetic,ar,ادفع لاحقاً: السعر النقدي 1250 ريال، يُقسّم على 24 دفعات بقسط 83.33 ريال شهرياً. نسبة الربح: 2.5٪. ,1250 ريال,24 دفعات,83.33 ريال,,,2.5٪,,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 72, ""installment_amount""], [93, 97, ""profit_rate""]]",0
+syn_117,synthetic,en,StoreCard Plan: Total price SAR 8250. Split into 3 installments of SAR 2750.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 25. This plan is Shariah-compliant.,SAR 8250,3 installments,SAR 2750.0,SAR 49,SAR 25,0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""], [198, 215, ""shariah_claim""]]",1
+syn_118,synthetic,ar,بطاقة المتجر: السعر النقدي 14350 ريال، يُقسّم على 4 دفعات بقسط 3874.5 ريال شهرياً. نسبة الربح: 2.0٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 45 ريال. ,14350 ريال,4 دفعات,3874.5 ريال,29 ريال,45 ريال,2.0٪,,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 99, ""profit_rate""], [147, 154, ""admin_fee""], [171, 178, ""late_fee""]]",0
+syn_119,synthetic,en,StoreCard Plan: Total price SAR 1600. Split into 6 installments of SAR 298.67 per month. Profit rate: 2.0%. Late payment fee: SAR 25. ,SAR 1600,6 installments,SAR 298.67,,SAR 25,2.0%,,"[[28, 36, ""cash_price""], [49, 63, ""n_installments""], [67, 77, ""installment_amount""], [102, 106, ""profit_rate""], [126, 132, ""late_fee""]]",0
+syn_120,synthetic,ar,تمويل سهل: السعر النقدي 10650 ريال، يُقسّم على 4 دفعات بقسط 2928.75 ريال شهرياً. نسبة الربح: 2.5٪. غرامة التأخير: 25 ريال. ,10650 ريال,4 دفعات,2928.75 ريال,,25 ريال,2.5٪,,"[[24, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 72, ""installment_amount""], [93, 97, ""profit_rate""], [114, 121, ""late_fee""]]",0
+syn_121,synthetic,en,StoreCard Plan: Total price SAR 12050. Split into 4 installments of SAR 3012.5 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 100. ,SAR 12050,4 installments,SAR 3012.5,SAR 19,SAR 100,0%,,"[[28, 37, ""cash_price""], [50, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 105, ""profit_rate""], [144, 150, ""admin_fee""], [178, 185, ""late_fee""]]",1
+syn_122,synthetic,ar,قسّطها: السعر النقدي 2550 ريال، يُقسّم على 24 دفعات بقسط 106.25 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. غرامة التأخير: 45 ريال. ,2550 ريال,24 دفعات,106.25 ريال,59 ريال,45 ريال,٪0,,"[[21, 30, ""cash_price""], [43, 51, ""n_installments""], [57, 68, ""installment_amount""], [89, 91, ""profit_rate""], [139, 146, ""admin_fee""], [163, 170, ""late_fee""]]",1
+syn_123,synthetic,en,PayLater: Total price SAR 3050. Split into 12 installments of SAR 254.17 per month. Profit rate: 0%. This plan is Shariah-compliant.,SAR 3050,12 installments,SAR 254.17,,,0%,Shariah-compliant,"[[22, 30, ""cash_price""], [43, 58, ""n_installments""], [62, 72, ""installment_amount""], [97, 99, ""profit_rate""], [114, 131, ""shariah_claim""]]",0
+syn_124,synthetic,ar,ادفع لاحقاً: السعر النقدي 12650 ريال، يُقسّم على 6 دفعات بقسط 2108.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 100 ريال. ,12650 ريال,6 دفعات,2108.33 ريال,99 ريال,100 ريال,٪0,,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 177, ""late_fee""]]",1
+syn_125,synthetic,en,SplitIt: Total price SAR 5950. Split into 24 installments of SAR 247.92 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. This plan is Shariah-compliant.,SAR 5950,24 installments,SAR 247.92,SAR 29,,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [166, 183, ""shariah_claim""]]",1
+syn_126,synthetic,ar,خطة التقسيط: السعر النقدي 1350 ريال، يُقسّم على 12 دفعات بقسط 132.75 ريال شهرياً. نسبة الربح: 1.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 35 ريال. الخطة متوافقة مع الشريعة.,1350 ريال,12 دفعات,132.75 ريال,39 ريال,35 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 98, ""profit_rate""], [146, 153, ""admin_fee""], [170, 177, ""late_fee""], [185, 203, ""shariah_claim""]]",0
+syn_127,synthetic,en,HomeInstall: Total price SAR 1250. Split into 6 installments of SAR 208.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 100. ,SAR 1250,6 installments,SAR 208.33,SAR 59,SAR 100,0%,,"[[25, 33, ""cash_price""], [46, 60, ""n_installments""], [64, 74, ""installment_amount""], [99, 101, ""profit_rate""], [140, 146, ""admin_fee""], [174, 181, ""late_fee""]]",1
+syn_128,synthetic,ar,خطة التقسيط: السعر النقدي 11050 ريال، يُقسّم على 6 دفعات بقسط 2007.42 ريال شهرياً. نسبة الربح: 1.5٪. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,11050 ريال,6 دفعات,2007.42 ريال,,60 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 99, ""profit_rate""], [116, 123, ""late_fee""], [131, 149, ""shariah_claim""]]",0
+syn_129,synthetic,en,StoreCard Plan: Total price SAR 12800. Split into 12 installments of SAR 1066.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 60. ,SAR 12800,12 installments,SAR 1066.67,SAR 59,SAR 60,0%,,"[[28, 37, ""cash_price""], [50, 65, ""n_installments""], [69, 80, ""installment_amount""], [105, 107, ""profit_rate""], [146, 152, ""admin_fee""], [180, 186, ""late_fee""]]",1
+syn_130,synthetic,ar,خطة التقسيط: السعر النقدي 10500 ريال، يُقسّم على 3 دفعات بقسط 3500.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 25 ريال. ,10500 ريال,3 دفعات,3500.0 ريال,39 ريال,25 ريال,٪0,,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [168, 175, ""late_fee""]]",1
+syn_131,synthetic,en,HomeInstall: Total price SAR 13350. Split into 3 installments of SAR 4450.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 29 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 13350,3 installments,SAR 4450.0,SAR 29,SAR 100,0%,Shariah-compliant,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 75, ""installment_amount""], [100, 102, ""profit_rate""], [141, 147, ""admin_fee""], [175, 182, ""late_fee""], [197, 214, ""shariah_claim""]]",1
+syn_132,synthetic,ar,ادفع لاحقاً: السعر النقدي 13350 ريال، يُقسّم على 3 دفعات بقسط 4450.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. ,13350 ريال,3 دفعات,4450.0 ريال,59 ريال,,٪0,,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""]]",1
+syn_133,synthetic,en,StoreCard Plan: Total price SAR 950. Split into 3 installments of SAR 316.67 per month. Profit rate: 0%. ,SAR 950,3 installments,SAR 316.67,,,0%,,"[[28, 35, ""cash_price""], [48, 62, ""n_installments""], [66, 76, ""installment_amount""], [101, 103, ""profit_rate""]]",0
+syn_134,synthetic,ar,خطة التقسيط: السعر النقدي 7650 ريال، يُقسّم على 4 دفعات بقسط 2065.5 ريال شهرياً. نسبة الربح: 2.0٪. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,7650 ريال,4 دفعات,2065.5 ريال,,45 ريال,2.0٪,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 97, ""profit_rate""], [114, 121, ""late_fee""], [129, 147, ""shariah_claim""]]",0
+syn_135,synthetic,en,CarFlex: Total price SAR 7300. Split into 12 installments of SAR 608.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. This plan is Shariah-compliant.,SAR 7300,12 installments,SAR 608.33,SAR 59,,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [166, 183, ""shariah_claim""]]",1
+syn_136,synthetic,ar,قسط الأسرة: السعر النقدي 7000 ريال، يُقسّم على 24 دفعات بقسط 291.67 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 60 ريال. ,7000 ريال,24 دفعات,291.67 ريال,19 ريال,60 ريال,٪0,,"[[25, 34, ""cash_price""], [47, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""]]",1
+syn_137,synthetic,en,EasyPay: Total price SAR 8650. Split into 12 installments of SAR 720.83 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 75. This plan is Shariah-compliant.,SAR 8650,12 installments,SAR 720.83,SAR 39,SAR 75,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""], [192, 209, ""shariah_claim""]]",1
+syn_138,synthetic,ar,بطاقة المتجر: السعر النقدي 11850 ريال، يُقسّم على 24 دفعات بقسط 493.75 ريال شهرياً. نسبة الربح: ٪0. ,11850 ريال,24 دفعات,493.75 ريال,,,٪0,,"[[27, 37, ""cash_price""], [50, 58, ""n_installments""], [64, 75, ""installment_amount""], [96, 98, ""profit_rate""]]",0
+syn_139,synthetic,en,PayLater: Total price SAR 9800. Split into 6 installments of SAR 1633.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 39 applies. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 9800,6 installments,SAR 1633.33,SAR 39,SAR 45,0%,Shariah-compliant,"[[22, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",1
+syn_140,synthetic,ar,خطة التقسيط: السعر النقدي 11600 ريال، يُقسّم على 4 دفعات بقسط 2900.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. الخطة متوافقة مع الشريعة.,11600 ريال,4 دفعات,2900.0 ريال,99 ريال,,٪0,متوافقة مع الشريعة,"[[26, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [159, 177, ""shariah_claim""]]",1
+syn_141,synthetic,en,SplitIt: Total price SAR 6750. Split into 6 installments of SAR 1192.5 per month. Profit rate: 1.0%. Late payment fee: SAR 100. ,SAR 6750,6 installments,SAR 1192.5,,SAR 100,1.0%,,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 99, ""profit_rate""], [119, 126, ""late_fee""]]",0
+syn_142,synthetic,ar,قسط الأسرة: السعر النقدي 4100 ريال، يُقسّم على 6 دفعات بقسط 683.33 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,4100 ريال,6 دفعات,683.33 ريال,,25 ريال,٪0,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [111, 118, ""late_fee""], [126, 144, ""shariah_claim""]]",0
+syn_143,synthetic,en,CarFlex: Total price SAR 1450. Split into 3 installments of SAR 483.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 25. ,SAR 1450,3 installments,SAR 483.33,SAR 59,SAR 25,0%,,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 176, ""late_fee""]]",1
+syn_144,synthetic,ar,ادفع لاحقاً: السعر النقدي 6000 ريال، يُقسّم على 12 دفعات بقسط 590.0 ريال شهرياً. نسبة الربح: 1.5٪. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,6000 ريال,12 دفعات,590.0 ريال,,75 ريال,1.5٪,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 72, ""installment_amount""], [93, 97, ""profit_rate""], [114, 121, ""late_fee""], [129, 147, ""shariah_claim""]]",0
+syn_145,synthetic,en,StoreCard Plan: Total price SAR 4100. Split into 12 installments of SAR 341.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 100. ,SAR 4100,12 installments,SAR 341.67,SAR 99,SAR 100,0%,,"[[28, 36, ""cash_price""], [49, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 105, ""profit_rate""], [144, 150, ""admin_fee""], [178, 185, ""late_fee""]]",1
+syn_146,synthetic,ar,خطة التقسيط: السعر النقدي 7050 ريال، يُقسّم على 3 دفعات بقسط 2350.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. ,7050 ريال,3 دفعات,2350.0 ريال,59 ريال,,٪0,,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""]]",1
+syn_147,synthetic,en,StoreCard Plan: Total price SAR 11650. Split into 24 installments of SAR 485.42 per month. Profit rate: 0%. Late payment fee: SAR 25. ,SAR 11650,24 installments,SAR 485.42,,SAR 25,0%,,"[[28, 37, ""cash_price""], [50, 65, ""n_installments""], [69, 79, ""installment_amount""], [104, 106, ""profit_rate""], [126, 132, ""late_fee""]]",0
+syn_148,synthetic,ar,ادفع لاحقاً: السعر النقدي 5050 ريال، يُقسّم على 4 دفعات بقسط 1262.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 75 ريال. ,5050 ريال,4 دفعات,1262.5 ريال,19 ريال,75 ريال,٪0,,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""]]",1
+syn_149,synthetic,en,CarFlex: Total price SAR 3900. Split into 12 installments of SAR 325.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 100. ,SAR 3900,12 installments,SAR 325.0,SAR 59,SAR 100,0%,,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 177, ""late_fee""]]",1
+syn_150,synthetic,ar,قسط الأسرة: السعر النقدي 4750 ريال، يُقسّم على 24 دفعات بقسط 197.92 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 100 ريال. ,4750 ريال,24 دفعات,197.92 ريال,39 ريال,100 ريال,٪0,,"[[25, 34, ""cash_price""], [47, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 175, ""late_fee""]]",1
+syn_151,synthetic,en,HomeInstall: Total price SAR 14050. Split into 3 installments of SAR 4683.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 60. This plan is Shariah-compliant.,SAR 14050,3 installments,SAR 4683.33,SAR 49,SAR 60,0%,Shariah-compliant,"[[25, 34, ""cash_price""], [47, 61, ""n_installments""], [65, 76, ""installment_amount""], [101, 103, ""profit_rate""], [142, 148, ""admin_fee""], [176, 182, ""late_fee""], [197, 214, ""shariah_claim""]]",1
+syn_152,synthetic,ar,تمويل سهل: السعر النقدي 11850 ريال، يُقسّم على 4 دفعات بقسط 2962.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 19 ريال. غرامة التأخير: 100 ريال. الخطة متوافقة مع الشريعة.,11850 ريال,4 دفعات,2962.5 ريال,19 ريال,100 ريال,٪0,متوافقة مع الشريعة,"[[24, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 174, ""late_fee""], [182, 200, ""shariah_claim""]]",1
+syn_153,synthetic,en,CarFlex: Total price SAR 7000. Split into 3 installments of SAR 2333.33 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 100. ,SAR 7000,3 installments,SAR 2333.33,SAR 59,SAR 100,0%,,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 178, ""late_fee""]]",1
+syn_154,synthetic,ar,ادفع لاحقاً: السعر النقدي 7050 ريال، يُقسّم على 6 دفعات بقسط 1175.0 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 75 ريال. الخطة متوافقة مع الشريعة.,7050 ريال,6 دفعات,1175.0 ريال,,75 ريال,٪0,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [112, 119, ""late_fee""], [127, 145, ""shariah_claim""]]",0
+syn_155,synthetic,en,CarFlex: Total price SAR 5450. Split into 4 installments of SAR 1498.75 per month. Profit rate: 2.5%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 35. This plan is Shariah-compliant.,SAR 5450,4 installments,SAR 1498.75,SAR 49,SAR 35,2.5%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 71, ""installment_amount""], [96, 100, ""profit_rate""], [139, 145, ""admin_fee""], [173, 179, ""late_fee""], [194, 211, ""shariah_claim""]]",0
+syn_156,synthetic,ar,بطاقة المتجر: السعر النقدي 450 ريال، يُقسّم على 3 دفعات بقسط 150.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 45 ريال. ,450 ريال,3 دفعات,150.0 ريال,99 ريال,45 ريال,٪0,,"[[27, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""]]",1
+syn_157,synthetic,en,HomeInstall: Total price SAR 2250. Split into 24 installments of SAR 138.75 per month. Profit rate: 2.0%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 75. ,SAR 2250,24 installments,SAR 138.75,SAR 19,SAR 75,2.0%,,"[[25, 33, ""cash_price""], [46, 61, ""n_installments""], [65, 75, ""installment_amount""], [100, 104, ""profit_rate""], [143, 149, ""admin_fee""], [177, 183, ""late_fee""]]",0
+syn_158,synthetic,ar,قسط الأسرة: السعر النقدي 1000 ريال، يُقسّم على 3 دفعات بقسط 333.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 99 ريال. غرامة التأخير: 25 ريال. ,1000 ريال,3 دفعات,333.33 ريال,99 ريال,25 ريال,٪0,,"[[25, 34, ""cash_price""], [47, 54, ""n_installments""], [60, 71, ""installment_amount""], [92, 94, ""profit_rate""], [142, 149, ""admin_fee""], [166, 173, ""late_fee""]]",1
+syn_159,synthetic,en,HomeInstall: Total price SAR 1450. Split into 3 installments of SAR 497.83 per month. Profit rate: 1.0%. Late payment fee: SAR 75. ,SAR 1450,3 installments,SAR 497.83,,SAR 75,1.0%,,"[[25, 33, ""cash_price""], [46, 60, ""n_installments""], [64, 74, ""installment_amount""], [99, 103, ""profit_rate""], [123, 129, ""late_fee""]]",0
+syn_160,synthetic,ar,قسط الأسرة: السعر النقدي 10100 ريال، يُقسّم على 3 دفعات بقسط 3366.67 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 25 ريال. ,10100 ريال,3 دفعات,3366.67 ريال,29 ريال,25 ريال,٪0,,"[[25, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 73, ""installment_amount""], [94, 96, ""profit_rate""], [144, 151, ""admin_fee""], [168, 175, ""late_fee""]]",1
+syn_161,synthetic,en,EasyPay: Total price SAR 2500. Split into 6 installments of SAR 466.67 per month. Profit rate: 2.0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 45. This plan is Shariah-compliant.,SAR 2500,6 installments,SAR 466.67,SAR 99,SAR 45,2.0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 178, ""late_fee""], [193, 210, ""shariah_claim""]]",0
+syn_162,synthetic,ar,قسّطها: السعر النقدي 7500 ريال، يُقسّم على 3 دفعات بقسط 2650.0 ريال شهرياً. نسبة الربح: 2.0٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 75 ريال. ,7500 ريال,3 دفعات,2650.0 ريال,39 ريال,75 ريال,2.0٪,,"[[21, 30, ""cash_price""], [43, 50, ""n_installments""], [56, 67, ""installment_amount""], [88, 92, ""profit_rate""], [140, 147, ""admin_fee""], [164, 171, ""late_fee""]]",0
+syn_163,synthetic,en,CarFlex: Total price SAR 10850. Split into 3 installments of SAR 3616.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 19 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 10850,3 installments,SAR 3616.67,SAR 19,SAR 100,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 179, ""late_fee""], [194, 211, ""shariah_claim""]]",1
+syn_164,synthetic,ar,قسّطها: السعر النقدي 5800 ريال، يُقسّم على 3 دفعات بقسط 1933.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 35 ريال. ,5800 ريال,3 دفعات,1933.33 ريال,49 ريال,35 ريال,٪0,,"[[21, 30, ""cash_price""], [43, 50, ""n_installments""], [56, 68, ""installment_amount""], [89, 91, ""profit_rate""], [139, 146, ""admin_fee""], [163, 170, ""late_fee""]]",1
+syn_165,synthetic,en,CarFlex: Total price SAR 400. Split into 6 installments of SAR 74.67 per month. Profit rate: 2.0%. Late payment fee: SAR 35. ,SAR 400,6 installments,SAR 74.67,,SAR 35,2.0%,,"[[21, 28, ""cash_price""], [41, 55, ""n_installments""], [59, 68, ""installment_amount""], [93, 97, ""profit_rate""], [117, 123, ""late_fee""]]",0
+syn_166,synthetic,ar,قسط الأسرة: السعر النقدي 6950 ريال، يُقسّم على 24 دفعات بقسط 289.58 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. الخطة متوافقة مع الشريعة.,6950 ريال,24 دفعات,289.58 ريال,29 ريال,,٪0,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [158, 176, ""shariah_claim""]]",1
+syn_167,synthetic,en,StoreCard Plan: Total price SAR 2350. Split into 12 installments of SAR 219.33 per month. Profit rate: 1.0%. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 2350,12 installments,SAR 219.33,,SAR 100,1.0%,Shariah-compliant,"[[28, 36, ""cash_price""], [49, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 107, ""profit_rate""], [127, 134, ""late_fee""], [149, 166, ""shariah_claim""]]",0
+syn_168,synthetic,ar,قسط الأسرة: السعر النقدي 2500 ريال، يُقسّم على 12 دفعات بقسط 245.83 ريال شهرياً. نسبة الربح: 1.5٪. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 60 ريال. الخطة متوافقة مع الشريعة.,2500 ريال,12 دفعات,245.83 ريال,29 ريال,60 ريال,1.5٪,متوافقة مع الشريعة,"[[25, 34, ""cash_price""], [47, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""], [184, 202, ""shariah_claim""]]",0
+syn_169,synthetic,en,EasyPay: Total price SAR 6250. Split into 12 installments of SAR 520.83 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 59 applies. Late payment fee: SAR 75. ,SAR 6250,12 installments,SAR 520.83,SAR 59,SAR 75,0%,,"[[21, 29, ""cash_price""], [42, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""]]",1
+syn_170,synthetic,ar,بطاقة المتجر: السعر النقدي 8650 ريال، يُقسّم على 24 دفعات بقسط 360.42 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 49 ريال. غرامة التأخير: 100 ريال. الخطة متوافقة مع الشريعة.,8650 ريال,24 دفعات,360.42 ريال,49 ريال,100 ريال,٪0,متوافقة مع الشريعة,"[[27, 36, ""cash_price""], [49, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 177, ""late_fee""], [185, 203, ""shariah_claim""]]",1
+syn_171,synthetic,en,EasyPay: Total price SAR 11500. Split into 6 installments of SAR 1916.67 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 100. This plan is Shariah-compliant.,SAR 11500,6 installments,SAR 1916.67,SAR 49,SAR 100,0%,Shariah-compliant,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 72, ""installment_amount""], [97, 99, ""profit_rate""], [138, 144, ""admin_fee""], [172, 179, ""late_fee""], [194, 211, ""shariah_claim""]]",1
+syn_172,synthetic,ar,ادفع لاحقاً: السعر النقدي 4250 ريال، يُقسّم على 4 دفعات بقسط 1062.5 ريال شهرياً. نسبة الربح: ٪0. غرامة التأخير: 45 ريال. الخطة متوافقة مع الشريعة.,4250 ريال,4 دفعات,1062.5 ريال,,45 ريال,٪0,متوافقة مع الشريعة,"[[26, 35, ""cash_price""], [48, 55, ""n_installments""], [61, 72, ""installment_amount""], [93, 95, ""profit_rate""], [112, 119, ""late_fee""], [127, 145, ""shariah_claim""]]",0
+syn_173,synthetic,en,SplitIt: Total price SAR 6900. Split into 3 installments of SAR 2300.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 99 applies. Late payment fee: SAR 60. This plan is Shariah-compliant.,SAR 6900,3 installments,SAR 2300.0,SAR 99,SAR 60,0%,Shariah-compliant,"[[21, 29, ""cash_price""], [42, 56, ""n_installments""], [60, 70, ""installment_amount""], [95, 97, ""profit_rate""], [136, 142, ""admin_fee""], [170, 176, ""late_fee""], [191, 208, ""shariah_claim""]]",1
+syn_174,synthetic,ar,بطاقة المتجر: السعر النقدي 8000 ريال، يُقسّم على 6 دفعات بقسط 1333.33 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 29 ريال. غرامة التأخير: 25 ريال. الخطة متوافقة مع الشريعة.,8000 ريال,6 دفعات,1333.33 ريال,29 ريال,25 ريال,٪0,متوافقة مع الشريعة,"[[27, 36, ""cash_price""], [49, 56, ""n_installments""], [62, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""], [184, 202, ""shariah_claim""]]",1
+syn_175,synthetic,en,EasyPay: Total price SAR 12150. Split into 3 installments of SAR 4050.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 75. ,SAR 12150,3 installments,SAR 4050.0,SAR 49,SAR 75,0%,,"[[21, 30, ""cash_price""], [43, 57, ""n_installments""], [61, 71, ""installment_amount""], [96, 98, ""profit_rate""], [137, 143, ""admin_fee""], [171, 177, ""late_fee""]]",1
+syn_176,synthetic,ar,بطاقة المتجر: السعر النقدي 12150 ريال، يُقسّم على 3 دفعات بقسط 4050.0 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 59 ريال. غرامة التأخير: 25 ريال. ,12150 ريال,3 دفعات,4050.0 ريال,59 ريال,25 ريال,٪0,,"[[27, 37, ""cash_price""], [50, 57, ""n_installments""], [63, 74, ""installment_amount""], [95, 97, ""profit_rate""], [145, 152, ""admin_fee""], [169, 176, ""late_fee""]]",1
+syn_177,synthetic,en,HomeInstall: Total price SAR 14950. Split into 24 installments of SAR 847.17 per month. Profit rate: 1.5%. Late payment fee: SAR 100. ,SAR 14950,24 installments,SAR 847.17,,SAR 100,1.5%,,"[[25, 34, ""cash_price""], [47, 62, ""n_installments""], [66, 76, ""installment_amount""], [101, 105, ""profit_rate""], [125, 132, ""late_fee""]]",0
+syn_178,synthetic,ar,ادفع لاحقاً: السعر النقدي 3450 ريال، يُقسّم على 12 دفعات بقسط 287.5 ريال شهرياً. نسبة الربح: ٪0. بخط صغير: تُطبّق رسوم إدارية لمرة واحدة بقيمة 39 ريال. غرامة التأخير: 25 ريال. ,3450 ريال,12 دفعات,287.5 ريال,39 ريال,25 ريال,٪0,,"[[26, 35, ""cash_price""], [48, 56, ""n_installments""], [62, 72, ""installment_amount""], [93, 95, ""profit_rate""], [143, 150, ""admin_fee""], [167, 174, ""late_fee""]]",1
+syn_179,synthetic,en,StoreCard Plan: Total price SAR 10500. Split into 4 installments of SAR 2625.0 per month. Profit rate: 0%. Small print: a one-time admin fee of SAR 49 applies. Late payment fee: SAR 25. ,SAR 10500,4 installments,SAR 2625.0,SAR 49,SAR 25,0%,,"[[28, 37, ""cash_price""], [50, 64, ""n_installments""], [68, 78, ""installment_amount""], [103, 105, ""profit_rate""], [144, 150, ""admin_fee""], [178, 184, ""late_fee""]]",1
+real_001,real,en,"Split your payments
+With Tamara, get everything you want...when you want it! Shop and split your payments into 3 payments, interest-free and hassle-free.
+Tamara is permitted by the Saudi Central Bank to test its innovative products under the Regulatory Sandbox.Tamara has also been certified as Shari’ah-compliant by the Shari’ah Review Bureau.
+Buy what you want without breaking the bank: pay 30 days later or split into 3 easy payments.
+No interest, No hidden fees, No forms to fill
+Split into 3 installments: 100-1500 SAR
+Split into 6 installments: 1500-3000 SAR",,3 payments,,,,No interest,certified as Shari’ah-compliant,"[[111, 121, ""n_installments""], [439, 450, ""profit_rate""], [282, 313, ""shariah_claim""]]",1
+real_002,real,en,"How do I use Tamara. It’s simple - you’ll be there in 3 quick steps!
+Check out via Tamara: Shop and split your payments in 3 with Tamara. It’s completely interest- and hassle-free!
+Make your first payment: Log in with your mobile number, pay for a third of your order, and split the remaining amount in two payments over 60 days.
+And you’re done! Enjoy your order! Download the Tamara app to keep track of your payment plans and explore our stores and offers.",,3,,,,interest- and hassle-free,,"[[123, 124, ""n_installments""], [154, 179, ""profit_rate""]]",0
+real_003,real,en,"Age | Category | Minimum Legal Limit | Maximum Legal Limit
+Less than 18 years | Not Eligible | SAR 0 | SAR 0
+18 to 21 years | Eligible | SAR 200 | SAR 1,500
+Over 21 years | Eligible | SAR 200 | SAR 2,000
+The product reserves the right to suspend any or both interactions at any time without prior notice.",,,,,,,,[],0
+real_004,real,en,"Terms and Conditions
+Members can make purchases without paying the full amount through 2, 3, 4, 6, 9, 12 or 24 payments, provided they do not exceed their financial spending limit at the time.
+Tamara carries interest for all products except gift cards.
+The minimum legal limit for using Tamara is 200, while the maximum limit reaches 50,000.
+An administrative fee will be added through Tamara. Amounts per payment may be applied when paying through our service functions. You can contact our administration regarding Tamara fees.",,"2, 3, 4, 6, 9, 12 or 24 payments",,An administrative fee,,carries interest,,"[[87, 119, ""n_installments""], [342, 363, ""admin_fee""], [200, 216, ""profit_rate""]]",0
+real_005,real,en,"Terms and Conditions
+Pay with Tamara option is valid in all eXtra stores and on extra.com & mobile app in The Kingdom of Saudi Arabia.
+Customers can split the total invoice payment in 2, 3, 4, 6, 9,12, or 24 payments when they pay using Tamara.
+Minimum invoice value is SAR 200, and maximum invoice value is SAR 50,000 to be eligible to pay with Tamara.
+Processing Fees will be added by Tamara when you choose to split in 4 payments or more, and no Processing Fees will be added when you choose to split in 2 or 3 payments. For more info about processing fees please contact Tamara team directly.
+Processing fees are non-refundable, as they cover the costs associated with handling and processing orders.
+Payment split might be on non-equal splits based on customer’s credit history and credit score.
+Customer must settle all overdue payments with Tamara.",,"2, 3, 4, 6, 9,12, or 24 payments",,Processing Fees,,,,"[[184, 216, ""n_installments""], [354, 369, ""admin_fee""]]",0
+real_006,real,en,"General Terms:
+The 3-payment option is offered completely free of any fees.
+Tenures from 4 to 24 months are subject to a processing fee of 1% of the financed amount.
+Tenures from 4 to 24 months are subject to a monthly profit margin ranging from 0.00% to 2.00%, depending on the customer’s credit profile.
+Processing fees are non-refundable, as they cover the costs associated with handling and processing the orders.
+Minimum loan value is SR 2,000 and maximum loan value is SR 25,000.
+Customer can pay the remaining amount using any payment method at the cashier.",,4 to 24 months,,1% of the financed amount,,0.00% to 2.00%,,"[[89, 103, ""n_installments""], [139, 164, ""admin_fee""], [246, 260, ""profit_rate""]]",0
+real_007,real,en,"Installment Options:
+Installments: 3 | 4 | 6 | 9 | 12 | 24
+Processing Fees: FREE for 3 installments | 1% for 4, 6, 9, 12, 24
+Monthly Margin (after credit assessment): 1.5% - 2% for 4, 6, 9, 12, 24
+Eligibility & limits:
+Below 18 Years: Not eligible
+18 – 21 Years: Eligible, Minimum Loan 200 SAR, Maximum Loan 1500 SAR
+Above 21 Years: Eligible, Minimum Loan 2000 SAR, Maximum Loan 25000 SAR",,3 | 4 | 6 | 9 | 12 | 24,,1%,,1.5% - 2%,,"[[35, 58, ""n_installments""], [102, 104, ""admin_fee""], [167, 176, ""profit_rate""]]",0
+real_008,real,en,"Tamara Payment Terms & Conditions for purchases from National Marketing Company:
+3. The Minimum net invoice amount (including VAT) is SAR 1,150 and the Maximum net invoice amount (including VAT) is SAR 50,000 to be eligible for Tamara payment.
+5. Processing/administrative fees for purchases via Tamara are applied according to Tamara’s policy and the customer’s selected installment plan.
+20. Service Benefits through Tamara:
+• No fees when splitting payments into 2 or 3 installments.
+• Administrative fees apply when selecting 4 or more installments.
+• No late payment fees in compliance with Sharia principles.
+• Improving credit history when payments are made on time.",,,,Administrative fees,No late payment fees,,in compliance with Sharia principles,"[[489, 508, ""admin_fee""], [556, 576, ""late_fee""], [577, 613, ""shariah_claim""]]",0
+real_009,real,ar,"الشروط والأحكام
+الدفع باستخدام تمارا متاح بجميع معارض اكسترا وعلى موقع اكسترا الإلكتروني وتطبيق اكسترا بالمملكة العربية السعودية.
+الدفع باستخدام تمارا متاح على جميع المنتجات ماعدا بطاقات الهدايا.
+يمكن للعميل تقسيم قيمة الفاتورة بالكامل على 2، 3، 4، 6، 9، 12 أو 24 دفعة عند الدفع باستخدام تمارا.
+لاستخدام تمارا للدفع يجب أن يكون الحد الأدنى لقيمة الفاتورة 200 ﷼ والحد الأقصى 50,000 ﷼.
+سيتم إضافة رسوم إدارية من قبل تمارا عند اختيار تقسيمها على 4 دفعات أو أكثر ولا يتم إضافة رسوم إدارية عند تقسيم الفاتورة على 2 أو 3 دفعات. لمعرفة معلومات أكثر عن تطبيق الرسوم الإدارية يرجى التواصل مع فريق تمارا مباشرة.
+تضاف الرسوم الإدارية عند الدفع على صفحة/تطبيق تمارا.
+الرسوم الإدارية غير قابلة للاسترداد، حيث إنها تغطي التكاليف المرتبطة بمعالجة الطلبات وتنفيذها.
+يجب على العميل تسوية جميع الدفعات مستحقة السداد مع تمارا.",,2، 3، 4، 6، 9، 12 أو 24 دفعة,,رسوم إدارية,,,,"[[240, 268, ""n_installments""], [395, 406, ""admin_fee""]]",0
+real_010,real,ar,"شروط وأحكام نظام مدفوعات تمارا عند الشراء من الشركة الأهلية للتسويق:
+3. الحد الأدنى لصافي الفاتورة شاملة ضريبة القيمة المضافة هو 1,150 ريال، والحد الأقصى لصافي القيمة المضافة هو 50,000 ريال ليكون مؤهلاً للدفع باستخدام تمارا.
+5. رسوم المعالجة/الرسوم الإدارية لعمليات الشراء عبر تمارا يتم إضافتها حسب سياسة تمارا واختيار العميل لنظام تقسيم المبلغ إلى دفعات.
+20. مميزات الخدمة عبر تمارا:
+• خطط تقسيط مرنة تناسب احتياجات العملاء.
+• لا يتم فرض رسوم عند التقسيط على دفعتين أو ثلاث دفعات.
+• يتم فرض رسوم إدارية عند اختيار 4 دفعات أو أكثر.
+• بدون رسوم تأخير بما يتوافق مع الشريعة.",,4 دفعات أو أكثر,,رسوم إدارية,بدون رسوم تأخير,,بما يتوافق مع الشريعة,"[[515, 530, ""n_installments""], [492, 503, ""admin_fee""], [534, 549, ""late_fee""], [550, 571, ""shariah_claim""]]",0
+real_011,real,en,"Flexibility in payments with Tasaheal program
+Convert your credit card purchases into easy installments through the Tasaheal program. All that and more is possible with the Al Rajhi Bank Tasaheal program, offering monthly installments for up to 24 months.
+Tasaheal Program Benefits and available Installment plans
+3 months with no profit rate for any transactions.
+3 and Up to 24 months! With no profit rate via one of our registered merchants in Tasaheal program.
+6 and Up to 24 months, with competitive profit rate.
+No minimum or maximum limit on transactions.
+No down payment needed.
+First due installment after up to 55 days from the date of transactions.
+Available Instalment plans & Fee schedule:
+Transaction Type | 3 months | 6 months | 9 months | 12 months | 24 months
+10 or above | No Fees | Monthly Fees % 0.90 | Monthly Fees % 0.90 | Monthly Fees % 0.90 | Monthly Fees % 0.90
+Education | No Fees | ** 50 | Not Available | ** 100 | Not Available
+*The monthly fees is applied on a monthly basis, based on the Tasaheal installment plan chosen by the customer.
+**Fees are charged only once, upon the date of converting the transaction into a Tasaheal program.
+**alrajhi bank reserves the right to apply one-time fee, maximum 2% of the transaction, upon the date of converting the transaction into a Tasaheal program, all fees will be displayed, before the installment plan conversion is carried out by the customer, For applicable transactions.
+An example of a transaction of 5,000 converted to Tasaheal with One-time Processing Fee:
+The Transaction Value | 5000
+The installment plan chosen by the customer | 12 months
+The Monthly Tasaheal Fees 5000 x 0.90% | 45
+One-time Processing Fee, For applicable transactions | 100
+Monthly installment Amount | 461.66",5000,12 months,461.66,100,,% 0.90,,"[[1565, 1569, ""cash_price""], [1616, 1625, ""n_installments""], [1758, 1764, ""installment_amount""], [1725, 1728, ""admin_fee""], [814, 820, ""profit_rate""]]",1
+real_012,real,en,"Terms and Conditions of Tasaheal Program (excerpt)
+22. Available installment plans and applicable fees for eligible transactions on alrajhi (Murabaha) credit cards:
+Plan | 3 months | 6 months | 9 months | 12 months
+SAR 500 or above | No Monthly Fees | 0.9% Monthly Fees*
+One-time processing fee* | SAR 49 | 2% of the transaction value with minimum of SAR 100 and maximum SAR 1,500
+* All fees stated above are exclusive of (VAT).
+* A one-time processing fee applies when a purchase transaction is converted to Tasaheal. The amount of the fee will be displayed and disclosed to the Customer before the conversion is confirmed.
+Illustrative Example – SAR 5,000 Installment:
+Transaction amount | SAR 5000
+Installment plan chosen by the customer | 12 months
+Tasaheal monthly fees | SAR 45
+One-time processing fee | SAR 100
+Monthly installment Amount | SAR 461.66
+14. Any processing fees or monthly fees disclosed and applied when the plan was created shall be non-refundable.
+20. If the Customer fails to pay any installment when due on three occasions, the Bank shall have the right to cancel the installment plan and declare the entire remaining balance under the Tasaheal plan, together with any related fees or amounts due, immediately due and payable.",SAR 5000,12 months,SAR 461.66,SAR 100,,0.9% Monthly Fees,,"[[692, 700, ""cash_price""], [743, 752, ""n_installments""], [847, 857, ""installment_amount""], [810, 817, ""admin_fee""], [252, 269, ""profit_rate""]]",0
+real_013,real,en,"EPP Terms and Conditions:
+The bank’s (BSF) Easy Payment Plan Program (the ""EPP"") is available to banks’ credit card holders for purchase transactions done at merchants specified by the bank.
+Only single purchases of SAR 1,000 (One thousand Saudi Riyals) or more are eligible to be converted under the EPP and the maximum limit will be 90% of the Credit Card Limit.
+The tenure for the Program can be a minimum of 3 months up to a maximum of 12 months and customer cannot change the tenure after the Transaction is transferred to the Program.
+The Cardholder must submit the EPP Request by no later than 21 days from the date of the transaction, otherwise the EPP request will be rejected.
+The bank may set a cap to the number of EPPs per Cardholder account. A service charge fee of SAR 50 (Fifty Saudi Riyals) will be applicable per each EPP request.
+In case of delay in payment of monthly installments, the Bank has the right to cancel the EPP Program and all applicable fees and charges will be payable according to schedule of charges and credit card terms and conditions.
+If a Cardholder is on a full payment plan (100% repayment) under his/her existing credit card, and elects to convert a purchase under the EPP, the Cardholder’s existing balance, if any will be automatically changed to a minimum payment method plan (5% repayment).
+The Cardholder is entitled to cancel the EPP at any time during the EPP period, however a cancellation fee will apply.",,3 months up to a maximum of 12 months,,service charge fee of SAR 50,,,,"[[412, 449, ""n_installments""], [758, 786, ""admin_fee""]]",0
+real_014,real,en,"Emkan Finance
+Applicable for all IKEA stores
+Fill your home with love and IKEA products! Get all your home furniture from IKEA and pay easily in installments with the Emkan installment finance solution
+Why Emkan?
+Debt Burden Ratio (DBR) 45%
+Interest rate starts from 0.67% up to 1.25% monthly
+Installment on 12 , 24 & 36 months
+Finance amount SR 1,500 - SR 80,000
+Ability to apply online or through the EMKAN office in IKEA stores.
+No need to upload any documents
+Approval within 3-5 minutes",,"12 , 24 & 36 months",,,,0.67% up to 1.25% monthly,,"[[308, 327, ""n_installments""], [267, 292, ""profit_rate""]]",0
+real_015,real,en,"An installment plan with stc in 0% Installment program (La Tajil program) from Bank AlJazira:
+Applies on all of Bank AlJazira credit cards except the low limit cards (Prepaid Card).
+Call AlJazira Phone after 48 hours of completing the purchase process at stc to convert the transaction amount to 0% installment program (La Tajil program) – (AlJazira phone: 920006666).
+Applies to any credit card purchase transactions with amount over SAR 1000 and less the existing limit.
+Allowed installment periods up to 12 months (3 months, 6 months, 9 months and 12 months).
+This offer valid at stc branches.
+This offer valid till 24/01/2023.",,"3 months, 6 months, 9 months and 12 months",,,,0%,,"[[518, 560, ""n_installments""], [32, 34, ""profit_rate""]]",0
+real_016,real,ar,"الأول أقساط – خطط التقسيط
+حول مشترياتك إلى أقساط شهرية تصل مدة سدادها إلى 24 شهر!
+مزايا البرنامج:
+إمكانية تحويل أي عملية تزيد قيمتها عن 500 ريال سعودي الى خطة اقساط سهلة السداد
+سداد شهريا من 3 شهور الى 24 شهر
+معدلات ربح منخفض
+يمكن تحويل العمليات التي تتم من خلال التجار المشاركين الى برنامج الاول اقساط دون اي رسوم
+يمكن تحويل كامل رصيد كشف حساب بطاقتك الائتمانية الى برنامج الاول اقساط لمدة تصل الى 24 شهر",,3 شهور الى 24 شهر,,,,,,"[[191, 208, ""n_installments""]]",0
+real_017,real,ar,"بطاقة اقساط الائتمانية
+خطط لمشترياتك مع بطاقة أقساط الائتمانية اشتر الآن وادفع لاحقاً
+تتيح لك بطاقة أقساط الفرصة لتقسيم مشترياتك إلى ثلاث دفعات بكل سهولة تلقائياً، أطلب بطاقتك الآن عبر قنواتنا الرقمية دون أي هامش ربح أو رسوم أو مستندات إضافية
+بدون رسوم: استمتع بتقسيط مشترياتك بدون رسوم سنوية أو رسوم عمليات أو رسوم سداد مبكر
+تحويل سهل إلى أقساط: يتم تحويل المشتريات تلقائيًا إلى 3 أقساط وبدون هامش ربح
+الحد الأقصى للعملية يصل حتى 20,000 ريال بحيث لا يتجاوز 20% من الحد الائتماني الخاص بالبطاقة الحالية",,ثلاث دفعات,,,,بدون هامش ربح,,"[[133, 143, ""n_installments""], [389, 402, ""profit_rate""]]",0
+real_018,real,ar,"تقسيط بسعر الكاش - الشروط والأحكام:
+1. للاستفادة من التقسيط بنسبة 0٪ (بدون هامش ربح) لمدة 12 شهرًا، يجب على العميل الشراء بقيمة 1200 ريال بفاتورة واحدة من مكتبة جرير.
+2. يجب على العميل الدفع باستخدام أي من بطاقات الائتمان من البنوك المشاركة، لمصرف الراجحي يتم قبول (بطاقة مرابحة الإتمانية فقط).
+3. لعملاء بنك الأول والبنك الأهلي ومصرف الراجحي، يمكنهم تحويل معاملاتهم إلى أقساط مباشرة عن طريق الخدمات المصرفية عبر الإنترنت أو تطبيق الجوال. بالنسبة للبنوك الأخرى، يجب على العميل الاتصال بالبنك بعد يومين من استلام فاتورة الشراء وطلب تحويل معاملتهم إلى قسط 0٪ لمدة 12 شهرًا.
+4. يتم تحويل المعاملة إلى تقسيط 0٪ وفقًا لتقدير البنك الكامل، ويجب على العملاء الاتصال بالمصرف مباشرة للحصول على الشروط والأحكام الكاملة أو لأي استفسارات.
+7. لا يشمل العرض بطاقات الخصم الفوري أو المدفوعة مسبقًا (Debit – Prepaid)
+8. يسري العرض من ١٩ فبراير حتى 3 مارس 2024",,12 شهرًا,,,,0٪,,"[[90, 98, ""n_installments""], [66, 68, ""profit_rate""]]",0
+real_019,real,ar,"تقسيط بسعر الكاش لمنتجات Apple - الشروط والأحكام:
+1. للاستفادة من التقسيط بنسبة 0٪ (بدون هامش ربح) لمدة 12 شهر، يجب على العميل الشراء بقيمة 1000 ريال بفاتورة واحدة من منتجات Apple مثل iPhone - iPad- Apple watchمن مكتبة جرير.
+2. يجب على العميل الدفع باستخدام أي من بطاقات الائتمان من البنوك المشاركة، لمصرف الراجحي يتم قبول (بطاقة مرابحة الإتمانية فقط).
+4. يتم تحويل المعاملة إلى تقسيط 0٪ وفقًا لتقدير البنك الكامل، ويجب على العملاء الاتصال بالمصرف مباشرة للحصول على الشروط والأحكام الكاملة أو لأي استفسارات.
+7. لا يشمل العرض بطاقات الخصم الفوري أو المدفوعة مسبقًا (Debit – Prepaid)
+8. يسري العرض من 11 أغسطس حتى 25 أغسطس 2024.",,12 شهر,,,,0٪,,"[[104, 110, ""n_installments""], [80, 82, ""profit_rate""]]",0
+real_020,real,ar,"العودة للمدارس أسهل مع تساهيل!
+مع تساهيل لا تشيل هم رسوم دراسة أبنائك، وقسّطها حتى 6 أشهر بدون رسوم شهريه
+عند استخدام بطاقات مصرف الراجحي الائتمانية
+يسري العرض من 20 اغسطس وحتى 10 سبتمبر 2026
+يسري العرض على بطاقات مصرف الراجحي الائتمانية (مرابحة).
+الحد الأدنى لقيمة العملية المؤهلة للاستفادة من العرض هو 500 ريال.
+يسري العرض على خطة التقسيط لمدة 3 و 6 أشهر.
+تطبق شروط وأحكام برنامج تساهيل.",,3 و 6 أشهر,,,,بدون رسوم شهريه,,"[[346, 356, ""n_installments""], [90, 105, ""profit_rate""]]",0
+real_021,real,ar,"بعض العروض لا تتحمّل الانتظار
+تعرف على برامج التقسيط المتوفرة لك بفائدة تبدأ من %0.
+متوفرة عند الطلب بقيمة 1,000 ⃁ أو أكثر.
+البنك | نسبة الفائدة ابتداءً من | مدة التقسيط (بالأشهر) | مصاريف المعاملة
+- | 0% | 3, 6, 12, 24 | -
+- | 0% | 3، 6، 9، 12 | 50 ⃁
+- | 1.50% | 3، 6، 9، 12 | -
+- | 0.5% | 3، 6، 12 | 20 ⃁
+- | 0% | 6، 12، 24 | تبدأ من 52.5 ⃁
+- | 0% | 3، 6، 12 | 50 ⃁
+تنويه هام
+تخضع برامج التقسيط بدون فائدة لشروط وأحكام البنك الذي قام بإصدار بطاقتك المصرفية. للاستعلام عن الرسوم الإضافية التي قد يتم فرضها، مثل رسوم إجراء الطلب، ورسوم عدم السداد الخ، الرجاء الاتصال بالبنك قبل التقدم بطلبك عبر متجر سامسونج الإلكتروني.",,,,,,%0,,"[[80, 82, ""profit_rate""]]",0
+real_022,real,en,"Get Ready for Summer with Toyota and Bank Al-Jazira starting from 688 SAR with leasing financing
+Toyota Raize 2026
+The monthly installment starts from 688 SAR
+Down payment 0%
+Final payment 50%
+Administrative fees 0.5%
+Financing period 5 years
+Annual interest rate 2.79%",,5 years,688 SAR,0.5%,,2.79%,,"[[235, 242, ""n_installments""], [66, 73, ""installment_amount""], [213, 217, ""admin_fee""], [264, 269, ""profit_rate""]]",0
+real_023,real,en,"Bank Installments (Amazon.sa)
+SAB with minimum amount of:
+3 months: 500 SAR
+6 months: 1000 SAR
+12 months: 1000 SAR
+24 months: 5000 SAR
+Installment Plan | Interest Rate | Processing Fees
+3, 6, 12 months | 0% | 0 SAR
+24 months | 1% | 57.5 SAR",,24 months,,57.5 SAR,,1%,,"[[215, 224, ""n_installments""], [232, 240, ""admin_fee""], [227, 229, ""profit_rate""]]",0
+real_024,real,ar,"%0
+مع اكسترا بحد أدنى  3499ريال
+عند استخدام بطاقات بنك الرياض
+*تسري الحملة حتى 2024/12/31
+تطبق الشروط والأحكام | بنك الرياض خاضع لرقابة وإشراف البنك المركزي السعودي
+الشروط والأحكام:
+■ يسري العرض حتى 2024\12\31
+■ الدفع عن طريق بطاقات بنك الرياض الائتمانية
+■ يوجد عمولة برنامج قسط لمرة واحدة بقيمة  50ريال سعودي.
+قسط
+■ على العميل الاتصال على البنك بعد  48ساعة من عملية الشراء وطلب تحويل عملية الشراء لبرنامج ّ 0%
+■ يجب ألا تقل قيمة المشتريات  3499ريال حتى يمكن للعميل أن يستفيد من العرض
+■ فترة التقسيط تكون  12 ,3,6شهراً.
+■ مدة التقسيط لا تزيد عن  12شهر
+■ لا يسري العرض على البطاقات الائتمانية مسبقة الدفع
+■ ألا يقل عمر العميل عن  18سنة.
+■ للإفصاح عن معدل النسبة المئوية السنوية للبطاقات الائتمانية ،انقر هنا",,"12 ,3,6شهراً",,50ريال سعودي,,%0,,"[[506, 518, ""n_installments""], [297, 309, ""admin_fee""], [0, 2, ""profit_rate""]]",1
+real_025,real,ar,"قســــــــــط
+ّ
+مع قصــر السرايــا
+1000ريال كحد أدنى
+يسري العرض حتى 24/04/2025
+تطبق الشروط والأحكام | بنك الرياض خاضع لرقابة وإشراف البنك المركزي السعودي
+الشروط والأحكام:
+يسري العرض من  2024/04/24حتى 2025/04/24                                          ■
+الدفع عن طريق بطاقات بنك الرياض الائتمانية.                                  ■
+يوجد عمولة برنامج قسط لمرة واحدة بقيمة  50ريال سعودي.                                     ■
+على العميل الاتصال على البنك بعد  48ساعة من عملية الشراء وطلب تحويل عملية الشراء لبرنامج  0%قسط.                                     ■
+يجب ألا تقل قيمة المشتريات  1000ريال حتى يمكن للعميل أن يستفيد من العرض.                                     ■
+شهرا.
+ً     فترة التقسيط تكون 3,6,12                               ■
+مدة التقسيط لا تزيد عن  12شهر.                                   ■
+لا يسري العرض على البطاقات الائتمانية مسبقة الدفع.                                    ■
+ألا يقل عمر العميل عن  18سنة.                               ■
+للإفصاح عن معدل النسبة المئوية السنوية للبطاقات الائتمانية ،اضغط هنا                                   ■",,"3,6,12",,50ريال سعودي,,0%,,"[[701, 707, ""n_installments""], [373, 385, ""admin_fee""], [515, 517, ""profit_rate""]]",1
+real_026,real,en,"Terms and conditions:
+■   Offer is valid from 01/10/2022 till 31/12/2023
+■   Payments must be made by a valid Riyad Bank Credit Card
+■   One-time fee of SAR 50 will be charged to the purchase amount
+■   Customer must call the Bank 2 days after the purchase in showroom and request
+to convert their transaction into 0% Qasset
+■   Purchases must not be less than SAR 3499 so that the customer can benefit from
+the offer
+■   Installment period must not be more than 12 months
+■   Must be 18 years old and above",,12 months,,SAR 50,,0%,,"[[463, 472, ""n_installments""], [153, 159, ""admin_fee""], [315, 317, ""profit_rate""]]",1
+real_027,real,en,"Installment Payment Plan Terms & Conditions
+Emirates NBD – KSA Installment Payment Plan (“IPP”) is applicable on one transaction or on balance where the Customer can pay back in easy installments at a lower interest rate.
+1. All active Primary Credit Card issued by Branch of Emirates NBD Bank- Kingdom of Saudi Arabia can apply for Installment Payment Plan.
+2. The minimum amount to be eligible for IPP is SAR 1,000.
+3. No processing fees to subscribe in installment plans unless it’s stipulated in the terms and conditions of the offers.
+4. The Customer can choose between various installment payment plans from 3, 6, 12, 24, 36 easy monthly installments.
+5. To benefit from the installment plan, the customer should call and request to convert transaction or outstanding balance after 2 days from the transaction day.
+6. The Customer will be notified of the monthly charges / profit rate during the call in case the Customer chooses the Instalment Payment Plan.
+8. Cardholders can settle or cancel their installment plan in a single upfront payment. A cancellation fee of SAR 100 + VAT will apply.",,"3, 6, 12, 24, 36 easy monthly installments",,,,,,"[[614, 656, ""n_installments""]]",0
+real_028,real,en,"Installment program Terms and conditions for revolving and charge cards transactions
+1. Installment Service: A service that allows bank customers to convert eligible transaction amounts (or part of them) into decreasing installments over specified periods without any fees for the installment service. The customer may be fully or partially exempted from the financing profit associated with the credit card for the installment amount, according to the bank’s policies and procedures.
+Example: A purchase transaction of SAR 6,000 with a 3-month installment plan (with full exemption from the financing profit associated with the card)
+Purchase amount: 6,000
+Financing profit rate associated with the card, for example: 0.99%
+Financing profit rate associated with the card for the installment transaction: 0%
+Monthly installment for the transaction: 2,000
+Selected installment period: 3 month","6,000",3 month,"2,000",,,0%,,"[[652, 657, ""cash_price""], [884, 891, ""n_installments""], [849, 854, ""installment_amount""], [805, 807, ""profit_rate""]]",0
+real_029,real,en,"Arab National Bank – Credit Card Terms and Conditions (excerpt)
+Fees and Financial dues:
+Tawarouq Profit: Varies based in customer risk assessment
+Late payment fee: SAR 100
+Minimum Payment: 5% of total due amount or SR 200, whichever is higher.
+APR 32.77% (Platinum). The example on APR based on limit of SAR 30,000 and a monthly Tawarouq rate of 2.20%.
+Specific Warnings:
+Paying only the minimum payment will extend the period the Cardholder is indebted to the Bank. For example: for a SAR 7,000 purchase, at 5% minimum payment plus 2.2% monthly markup, it will take the Cardholder 45 months for complete repayment and the card holder has to pay SAR 3,329.55 in term cost.","SAR 7,000",45 months,,,SAR 100,2.2% monthly markup,,"[[487, 496, ""cash_price""], [583, 592, ""n_installments""], [165, 172, ""late_fee""], [534, 553, ""profit_rate""]]",0
+real_030,real,ar,"الشروط والأحكام: (بطاقات الأفراد)
+يحصل الأعضاء الجدد على تقسيط مجاني بدون رسوم تأسيس وبدون هامش مرابحة على أي عملية شراء تتجاوز 1000 ريال سعودي ، ويتطلب ذلك أن يقوم عضو البطاقة بتفعيل خدمة Plan It® عبر تطبيق AMEX KSA .
+الحد الأقصى للمبلغ الذي يتم تقسيطه بدون هامش مرابحة هو 7,500 ريال سعودي.
+أقصى مدة للتقسيط بدون هامش مرابحة هي 6 أشهر.
+يسري هذا العرض على البطاقات الجديدة التي يتم إصدارها في الفترة من 15 أبريل حتى 30 يونيو 2025.
+معدل النسبة السنوية تبدأ من 40.64% للبطاقة أمريكان إكسبريس الزرقاء وتبدأ من 47.66% لبطاقة أمريكان إكسبريس الخضراء وتبدأ من 41.59% لبطاقة أمريكان إكسبريس الفرسان الائتمانية. وقد يختلف معدل النسبة السنوية النهائية بناءً على المتغيرات المعمول بها والخاصة بمقدم الطلب عند التقديم على البطاقة.
+سداد الحد الأدنى فقط للمبلغ المستحق على بطاقتك الائتمانية قد يؤدي إلى تحمل أجور ورسوم بالإضافة إلى أخذ فترة أطول لسداد المبالغ المستحقة عليك لنا بالكامل. مثال: إذا كان رصيدك المستحق على البطاقة الائتمانية 7,000 ريال سعودي واخترت أن تدفع الحد الأدنى فقط فسوف يستغرق الأمر 81 شهراً لتسوية الرصيد بالكامل. وسيكون في هذه الحالة إجمالي هامش المرابحة تكلفة المدة 6,296 ريال سعودي.",,6 أشهر,,,,بدون هامش مرابحة,,"[[329, 335, ""n_installments""], [86, 102, ""profit_rate""]]",0
+real_031,real,en,"Jarir Qasset (Riyad Bank)
+0% Qasset
+Offer valid until 31/07/2026
+• This offer is valid from 04/06/2026 until 31/07/2026
+• Payments must be made using a valid Riyad Bank Credit Card.
+• There is a one-time Qasset program fee of SAR 50.
+• Customer must call their bank 48 hours after the purchase and request to convert their transaction into 0% Qasset program.
+• Purchases must not be less than SAR 500 so that the customer can benefit from the offer.
+• Installment period is 6 months.
+• Prepaid Cards are not included.
+• Customer must be 18 years old and above.",,6 months,,SAR 50,,0%,,"[[474, 482, ""n_installments""], [226, 232, ""admin_fee""], [26, 28, ""profit_rate""]]",1
+real_032,real,en,"Travel Now and Pay Later
+Enjoy 0% instalments on all your Flights & Hotels
+Valid until 31-05-2026
+Pack your bag and pay in easy instalments! Enjoy 0% instalments on all your flights & hotel bookings using your Riyad Bank Credit Card for 12 months.
+• Cardholder is eligible to convert Hotel and Airline transactions into 0% Qasset (Instalment plan) for a period of 12 months only with ZERO FEES.",,12 months,,,,0%,,"[[364, 373, ""n_installments""], [31, 33, ""profit_rate""]]",0
+real_033,real,en,"Digital Wallet Spends
+0% Qasset
+Offer valid until 31/05/2026
+Top up your Digital Wallets at 0% installments
+• Top up your Digital Wallets using your Riyad Bank Credit Card and convert it to Qasset 0% instalments (Qasset) for 3 months.
+• A fee of SAR 50 will be charged for each transaction converted to Qasset 0%.",,3 months,,SAR 50,,0%,,"[[225, 233, ""n_installments""], [246, 252, ""admin_fee""], [197, 199, ""profit_rate""]]",1
+real_034,real,en,"CityW
+0% installment
+The Offer is valid: 1 January, 2025 - 31 December 2025
+• There is a one-time Qasset program fee of SAR 50.
+• Customer must call the bank 48 hours after the purchase and request to convert their transaction into 0% Qasset program.
+• Purchases must not be less than SAR 1000 so that the customer can benefit from the offer.
+• Installment periods are 3, 6, 12 months.
+• Installment period must not be more than 12 months.
+• Prepaid Cards are not included in the promotion.",,"3, 6, 12 months",,SAR 50,,0%,,"[[369, 384, ""n_installments""], [120, 126, ""admin_fee""], [6, 8, ""profit_rate""]]",1
+real_035,real,en,"Back To School season
+Shop and convert your purchases into installments with 0% profit rate up to 12 months with Banque Saudi Fransi Credit Cards
+Terms and conditions:
+• Offer is valid from 24 August 2022 until 30 September 2022
+• Minimum transaction value is SAR 1000
+• To benefit from the easy payment plan (EPP) offer, call 8001242121 after 48 hours for making a purchase and request your purchases to be converted into easy payment plan
+• Flexible repayment for 3, 6, 12 months
+• All payment plans have 0% profit rate
+• To convert to EPP there will be a processing fee of SAR 50",,"3, 6, 12 months",,SAR 50,,0% profit rate,,"[[466, 481, ""n_installments""], [576, 582, ""admin_fee""], [77, 91, ""profit_rate""]]",1
+real_036,real,en,"Jarir
+Convert your purchases from Jarir into 0% interest rate installment plan up to 12 months by using your BSF credit cards!
+Offer valid untill 31 March 2025
+• This offer is valid on Apple devices purchases via BSF credit card in Jarir Bookstore.
+• Minimum transaction value is SAR 1,200.
+• The term of the easy payment plan is 12 months.
+• All payment plans under this offer have 0% interest rate.
+• The conversion to easy payment plan fee is SAR 50.",,12 months,,SAR 50,,0% interest rate,,"[[330, 339, ""n_installments""], [446, 452, ""admin_fee""], [45, 61, ""profit_rate""]]",1
+real_037,real,en,"EPP Back to School
+• Customers are allowed to convert their local and international purchases EPP of up to 12 months, whether made through POS or online websites of schools and educational institutions.
+• Minimum transaction amount to convert to EPP is SAR 1,000 per transaction.
+• Maximum amount to convert to EPP is SAR 100,000 per transaction.
+• Profit margin is calculated on installment plan (monthly) as shown in the table below:
+Duration | Profit margin
+3 Months | 0%
+6 Months | 1%
+9 Months | 1%
+12 Months | 0%
+• If the installment plan is cancelled, the remaining amounts must be paid along with the Profit margin, if applicable.",,up to 12 months,,,,1%,,"[[101, 116, ""n_installments""], [486, 488, ""profit_rate""]]",0
+real_038,real,en,"Easy Payment Plan – 0% Profit Rate
+You can now divide your purchases ( 1,000 and more) into easy and equal monthly installments (up to 12 months) with 0% profit rate at selected partners.
+Flexible payment periods (3, 6, 9 and 12 months).
+Payment should be made with a SAIB Credit Card (Visa)
+Minimum transaction amount is 1,000
+Total with 15% VAT
+23,000
+Installment Amount (if Abdullah choose 12 installments)
+1,916","23,000",12 installments,"1,916",,,0% profit rate,,"[[347, 353, ""cash_price""], [393, 408, ""n_installments""], [410, 415, ""installment_amount""], [151, 165, ""profit_rate""]]",0
+real_039,real,en,"Installments for furniture and home accessories (IKEA)
+Pay via Tabby upon checkout
+• Starting from 0% installment plan.
+• Minimum value: SR 99.
+• Maximum value: SR 10,000.
+• 6 interest-free installments.
+Pay via Emkan finance
+• Debt Burden Ratio (DBR) 45%
+• Interest rate starts from 0.67% up to 1.25% monthly
+• Installment on 12 , 24 & 36 months
+• Finance amount SR 1,500 - SR 80,000
+Pay via Tamara upon checkout
+• Starting from 0% installment plan.
+• Minimum value: SR 99.
+• Maximum value: SR 50,000.
+• Up to 24 installments",,6 interest-free installments,,,,0.67% up to 1.25% monthly,,"[[174, 202, ""n_installments""], [284, 309, ""profit_rate""]]",0
+real_040,real,en,"Al-Rugaib Furniture
+0% Qasset
+Offer valid from 24/11/2025 until 26/11/2026
+• There is a one-time Qasset program fee of SAR 50.
+• Customer must call their bank 48 hours after the purchase and request to convert their transaction into 0% Qasset program.
+• Purchases must not be less than SAR 1000 so that the customer can benefit from the offer.
+• Installment period is 6 months.
+• Installment period must not be more than 6 months.",,6 months,,SAR 50,,0%,,"[[368, 376, ""n_installments""], [119, 125, ""admin_fee""], [20, 22, ""profit_rate""]]",1
+real_041,real,en,"Clinic EPP
+Convert your transactions from Image Dental Clini into instalment up to 12 months upon using BSF credit cards
+Offer valid untill 20 May 2027
+• Offer is valid on all eligible transactions preformed and completed from 25 July 2026 to 20 May 2027.
+• Eligible transactions for conversion into EPP are of minimum value of SAR 1000 per single transaction or purchase.
+• To convert to EPP there will be SAR 50 processing fee.
+• Request will be processed within 3 working days through our customer service",,12 months,,SAR 50,,,,"[[83, 92, ""n_installments""], [407, 413, ""admin_fee""]]",0
+real_042,real,ar,"قسطها مع سداد
+وحّد ديونك الأخرى في فاتورة واحدة لبطاقة واحدة من خلال خدمة سداد وحولها لأقساط بـ 0%هامش ربح حتى 6 أشهر!
+العرض ساري حتى 31 يناير 2026
+• الحد الأدنى لقيمة العملية هو 500 ريال سعودي لكل عملية شرائية
+• إمكانية تقسيط العملية الشرائية على خطط دفع ميسرة لمدة 6 أشهر
+• هامش ربح %0 عند تحويل العملية الى أقساط
+• لا يوجد أي رسوم لتحويل العملية إلى أقساط",,6 أشهر,,,,%0,,"[[267, 273, ""n_installments""], [285, 287, ""profit_rate""]]",0
+real_043,real,ar,"التعاونية
+قسط مشترياتك لدى التعاونية للتأمين بـ 0% هامش ربح حتى 12 شهر باستخدام بطاقات البنك السعودي الفرنسي الائتمانية!
+العرض ساري حتى 25 أكتوبر 2026
+• الحد الأدنى لقيمة العملية هو 4000 ريال سعودي.
+• امكانية تقسيط العملية الشرائية على خطط دفع ميسرة لمدة 12 شهراً.
+• جميع خطط الدفع بهامش ربح 0% عند تحويل العملية الى اقساط.
+• رسوم تحويل العملية الى أقساط 50 ريال.",,12 شهراً,,50 ريال,,0%,,"[[255, 263, ""n_installments""], [355, 362, ""admin_fee""], [292, 294, ""profit_rate""]]",1
+real_044,real,ar,"لهم للرعاية الطبية
+العرض ساري حتى 25 يونيو 2026
+• الحد الأدنى لقيمة العملية المؤهلة للاستفادة من العرض هو 1000 ريال سعودي.
+• إمكانية تقسيط العملية الشرائية على خطط دفع ميسرة لمدة 6 أشهر.
+• هامش ربح %0 عند تحويل العملية الى أقساط.
+• رسوم تحويل العملية الى أقساط 50 ريال سعودي",,6 أشهر,,50 ريال سعودي,,%0,,"[[179, 185, ""n_installments""], [261, 274, ""admin_fee""], [198, 200, ""profit_rate""]]",1
+real_045,real,ar,"حول حجوزات الطيران والفنادق الى أقساط بـــ0% هامش ربح لمدة 6 أشهر مع البطاقات الائتمانية من البنك السعودي الفرنسي (""BSF"")
+العرض ساري حتى 04 أبريل 2026
+• الحد الأدنى لقيمة العملية هو 1,000 ريال سعودي
+• إمكانية تقسيط العملية الشرائية على خطط دفع ميسرة لمدة 6 أشهر
+• هامش ربح 0% عند تحويل العملية الى أقساط
+• رسوم تحويل العملية الى أقساط 50 ريال",,6 أشهر,,50 ريال,,0%,,"[[255, 261, ""n_installments""], [335, 342, ""admin_fee""], [273, 275, ""profit_rate""]]",1
+real_046,real,ar,"قصر السرايا
+قسّط 0%
+يسري العرض حتى 07-08-2026
+قسّط 0% لدى قصر السرايا عند استخدام بطاقات بنك الرياض الائتمانية.
+• يوجد عمولة برنامج قسط لمرة واحدة بقيمة 50 S..R .
+• يجب ألا تقل قيمة المشتريات 1000 S..R حتى يمكن للعميل أن يستفيد من العرض.
+• فترة التقسيط تكون 3,6,12 شهرا
+• مدة التقسيط لا تزيد عن 12 شهر.",,"3,6,12 شهرا",,50 S..R,,0%,,"[[258, 269, ""n_installments""], [153, 160, ""admin_fee""], [51, 53, ""profit_rate""]]",1
+real_047,real,ar,"مجوهرات الأرباش
+قسط ب0%
+• يسري العرض من 10/04/2025 الى 31/12/2025.
+• يوجد عمولة برنامج قسط لمرة واحدة بقيمة 50 ريال سعودي.
+• على العميل الاتصال على البنك بعد 48 ساعة من عملية الشراء وطلب تحويل عملية الشراء لبرنامج %0 قسط.
+• يجب ألا تقل قيمة المشتريات 1000 ريال حتى يمكن للعميل أن يستفيد من العرض.
+• فترة التقسيط تكون 6,3, 12 شهرا.",,"6,3, 12 شهرا",,50 ريال سعودي,,0%,,"[[317, 329, ""n_installments""], [108, 121, ""admin_fee""], [21, 23, ""profit_rate""]]",1
+real_048,real,ar,"وكالات الجزيرة
+قسط 0%
+يسري العرض حتى 02 يناير 2026
+• على العميل الاتصال على البنك بعد 48 ساعة من عملية الشراء وطلب تحويل عملية الشراء لبرنامج %0 قسّط.
+• يجب ألا تقل قيمة المشتريات 1000 ر..س حتى يمكن للعميل أن يستفيد من العرض.
+• فترة التقسيط تكون 3,6, او 12 شهر.
+• مدة التقسيط لا تزيد عن 12 شهر.",,"3,6, او 12 شهر",,,,0%,,"[[246, 260, ""n_installments""], [19, 21, ""profit_rate""]]",0
+real_049,real,ar,"عرض مصرف الراجحي على التمويل التأجيري لسيارات
+صالح حتى: ٣١ يوليو ٢٠٢٦
+تأجير السيارات بتحويل الراتب
+-دفعة أولى 0%
+-رسوم إدارية 0%
+-الدفعة الأخيرة تصل الى 45%
+-المدة 60 شهر
+-معدل النسبة السنوي غير شاملة التأمين يبدأ من 5.71%
+• 1.91% هامش ربح لعملاء محولين الراتب على مصرف الراجحي",,60 شهر,,0%,,1.91%,,"[[164, 170, ""n_installments""], [126, 128, ""admin_fee""], [225, 230, ""profit_rate""]]",0
+real_050,real,ar,"عرض مصرف الراجحي على التمويل التأجيري للسيارات
+صالح حتى: ٣٠ سبتمبر ٢٠٢٦
+تأجير السيارات بتحويل الراتب
+-دفعة أولى 0%
+-رسوم إدارية 0.50%
+-الدفعة الأخيرة تصل الى 45%
+- المدة 60شهر
+- معدل النسبة السنوي شاملة التأمين يبدأ من 7.06%
+• 3.82% هامش ربح لعملاء محولين الراتب على مصرف الراجحي",,60شهر,,0.50%,,3.82%,,"[[170, 175, ""n_installments""], [128, 133, ""admin_fee""], [227, 232, ""profit_rate""]]",0
+real_051,real,ar,"• العرض يشمل تحويل العمليات التي تتم عن طريق أي من المتاجر أدناه إلى أقساط شهرية متساوية لمدة تصل حتى إلى 24 شهر بدون رسوم أو أرباح تورق
+• يسري العرض من 13 أغسطس 2026 حتى 30 سبتمبر 2026
+• على العميل شراء الجهاز من التجار أدناه ليتم تطبيق العرض: (الحد الأدنى للمبلغ بالريال السعودي)
+• SAMSUNG.COM (الحد الأدنى 1000 ريال )
+• بمجرد اختيار العميل تقسيط عملية معينة، يصبح سداد العملية على أقساط شهرية بمعدل 0% ولا يصبح إجمالي مبلغ العملية مستحقاً مرة واحدة في تاريخ سداد ذلك الشهر",,24 شهر,,,,بدون رسوم أو أرباح تورق,,"[[106, 112, ""n_installments""], [113, 136, ""profit_rate""]]",0
+real_052,real,ar,"برنامج سهِّلها
+يمكنك من خلاله تقسيط مبالغ الخدمات لدى الجهات المعتمدة لدى المصرف بأقساط شهرية ميسرة ومن دون هامش ربح ورسوم إدارية.
+مبلغ التمويل | الاستحقاق بالسنوات | معدل النسبة السنوي | مبلغ القسط الشهري
+30,000 ريال | 2 | % 0 | 1,250
+بدون هامش ربح
+تمويل من دون رسوم إدارية
+استحقاق إلى 60 شهر
+يمكنك الحصول على تمويل بفترة استحقاق تصل الى 60 شهراً للمواطنين و المقيمين
+لا يشترط كفيل للحصول على التمويل.","30,000",60 شهراً,"1,250",من دون رسوم إدارية,,بدون هامش ربح,,"[[206, 212, ""cash_price""], [339, 347, ""n_installments""], [230, 235, ""installment_amount""], [256, 274, ""admin_fee""], [236, 249, ""profit_rate""]]",0
+real_053,real,ar,"الأول أقساط – خطط التقسيط
+حول مشترياتك إلى أقساط شهرية تصل مدة سدادها إلى 24 شهر!
+إمكانية تحويل أي عملية تزيد قيمتها عن 500 ريال سعودي الى خطة اقساط سهلة السداد
+سداد شهريا من 3 شهور الى 24 شهر
+معدلات ربح منخفض
+يمكن تحويل العمليات التي تتم من خلال التجار المشاركين الى برنامج الاول اقساط دون اي رسوم
+يوضح الجدول التالي كيفية عمل برنامج أقساط الأول باستخدام عملية شرائية قيمتها 5,000 ريالسعودي كمثال، تم تحويلها إلى برنامج أقساط الأول ليتم السداد على 3، 6، 12، 24 شهر
+يتم دفع رسوم الاجراءات بحسب نوع برنامج الاقساط المطلوب.","5,000",3، 6، 12، 24 شهر,,,,,,"[[376, 381, ""cash_price""], [449, 465, ""n_installments""]]",0
+real_054,real,ar,"تأجير الدراجات النارية بتحويل الراتب
+• *دفعة أولى 10%
+• *رسوم إدارية 1% أو 5,000 SAR أيهما أقل
+• الدفعة الأخيرة غير متاحة
+• المدة 60 شهر.
+• معدل النسبة السنوي يبدأ من %17.40
+نوع التمويل | مبلغ التمويل | مدة التأجير | معدل النسبة السنوي | القسط الشهري | دفعة التملك
+دراجات نارية | 50,000 SAR | 5 سنوات | 17.40% | 1,087 | غير متاحه","50,000",60 شهر,"1,087","1% أو 5,000 SAR أيهما أقل",,17.40%,,"[[280, 286, ""cash_price""], [130, 136, ""n_installments""], [312, 317, ""installment_amount""], [69, 94, ""admin_fee""], [303, 309, ""profit_rate""]]",0
+real_055,real,ar,"الأول يوفر لك تمويلاً شخصياً متوافقاً مع أحكام الشريعة الإسلامية لتحقيق رغباتك وأحلامك بمزايا جذابة.
+مبلغ التمويل | معدل النسبة السنوي | فترة التمويل | القسط الشهري | رسوم السداد المبكر
+100K | %3.21 | 60M | 1,782.55 | ارباح ثلاثة اشهر التالية
+ما المقصود بمعدل النسبة السنوي (APR)؟ يشير مصطلح APR إلى معدل الربح الفعلي المحتسب على فترة السداد والذي يتم احتسابه على أساس سنوي.",100K,60M,"1,782.55",,,%3.21,متوافقاً مع أحكام الشريعة الإسلامية,"[[186, 190, ""cash_price""], [201, 204, ""n_installments""], [207, 215, ""installment_amount""], [193, 198, ""profit_rate""], [29, 64, ""shariah_claim""]]",0
+real_056,real,ar,"• يمكن للعميل اختيار مدة التقسيط لمدة 3 أشهر أو 6 أشهر أو 12 شهر . تختلف فترات التقسيط باختلاف التاجر المشارك.
+• بمجرد اختيار العميل تقسيط عملية معينة، يصبح سداد العملية على أقساط شهرية بمعدل 0% ولا يصبح إجمالي مبلغ العملية مستحقاً مره واحدة في تاريخ سداد ذلك الشهر
+• في حال التأخر في السداد أو عدم دفع الأقساط سيتم إلغاء برنامج ""أقساط"" وتحويل العمليات الشرائية الخاصة بـ ""أقساط"" إلى عمليات شراء عادية وسيتم التعامل معها بموجب الأحكام والشروط الخاصة باتفاقية حامل البطاقة.",,3 أشهر أو 6 أشهر أو 12 شهر,,,,0%,,"[[38, 64, ""n_installments""], [192, 194, ""profit_rate""]]",0
+real_057,real,ar,"تمتع بأقصى مرونة من خلال تقسيط مشتريات البطاقة الائتمانية وإعفاء يصل إلى 100% من هامش الربح وفترات مختلفة تناسب احتياجاتك بمدة 3 أو 6 أو 9 أو 12 شهرًا
+• قسّط مشترياتك من ساكو بدون هامش ربح
+3 أشهر
+6 أشهر
+9 أشهر
+12 شهر
+معدل ربح التمويل المصاحب للبطاقة بعد الإعفاء الجزئي للعملية المقسطة
+%0 هامش ربح
+%0.90 شهري
+%0.95 شهري
+%0.99 شهري
+مثال: عملية شرائية بمبلغ 6 آلاف Ʀ بخطة التقسيط 3 أشهر",,3 أو 6 أو 9 أو 12 شهرًا,,,,%0 هامش ربح,,"[[127, 150, ""n_installments""], [285, 296, ""profit_rate""]]",1
+real_058,real,en,"Driven by social responsibility program of Bank Albilad “Albilad Mubadara”, we are glad to offer our customers with the education fees financing to allow our customers to get a financing to pay the education fees to educational institutions and then pay back the fees to the bank in an easy installments with 0% profit margin and zero management fees.
+• 0% profits and with no management fees on the financing.
+• Sharia-compliant financing services",,,,zero management fees,,0% profit margin,Sharia-compliant,"[[330, 350, ""admin_fee""], [309, 325, ""profit_rate""], [413, 429, ""shariah_claim""]]",0
+real_059,real,en,"Big Discounts on Profit Rates for New Personal Finance
+Discount on Profit Rates for new personal finance for both Saudis and Expats.
+Valid from 03 May until 30 June 2026
+• Competitive flat rates.
+• Finance period up to 60 months.
+• APR starts from 4.75%
+• *Admin fees is applicable 0.5% from finance amount or 2500 SAR whichever is less",,up to 60 months,,0.5% from finance amount or 2500 SAR whichever is less,,4.75%,,"[[213, 228, ""n_installments""], [282, 336, ""admin_fee""], [248, 253, ""profit_rate""]]",0
+real_060,real,en,"Personal Finance
+Enjoy attractive profit rates and up to 5 years tenure
+• Shariah-compliant
+• Competitive profit rates
+Administrative Fees | 0.50% of finance amount or SAR 2,500 (Whichever is less)
+Early Settlement Fee | The term cost for the next three months
+Finance amount (SAR) | Finance period (in years) | Annual profit rate* | Monthly payment amount (SAR)
+320,000 | 5 | 9.71% | 6,654.78","320,000",5 years,"6,654.78","0.50% of finance amount or SAR 2,500 (Whichever is less)",,9.71%,Shariah-compliant,"[[363, 370, ""cash_price""], [57, 64, ""n_installments""], [385, 393, ""installment_amount""], [141, 197, ""admin_fee""], [377, 382, ""profit_rate""], [74, 91, ""shariah_claim""]]",0
+real_061,real,en,"Annual Percentage Rate (APR)
+Micro-finance amount | Financing Period | Annual Percentage Rate | Monthly Installment
+SAR 30,000 | 12 Months | 56.77 % | SAR 3,100.00
+Example of administrative fees: 0,5% of the financing amount or 2,500 SAR, whichever is lower","SAR 30,000",12 Months,"SAR 3,100.00","0,5% of the financing amount or 2,500 SAR, whichever is lower",,56.77 %,,"[[116, 126, ""cash_price""], [129, 138, ""n_installments""], [151, 163, ""installment_amount""], [196, 257, ""admin_fee""], [141, 148, ""profit_rate""]]",0
+real_062,real,en,"0% Fees with Tasaheal
+Split your travel expenses into 3-month installments without any cost!
+Split your travel expenses into 3 month installments with Tasaheal, with ZERO fees, when using alrajhi bank credit cards.
+• The minimum purchase transaction amount eligible for the offer is SAR 1,000.
+• alrajhi bank Credit Cards Terms and Conditions and Tasaheal Program Terms and Conditions apply.",,3 month installments,,ZERO fees,,,,"[[125, 145, ""n_installments""], [166, 175, ""admin_fee""]]",0
+real_063,real,ar,"بدون فوائد ورسوم خفية
+بالضبط، تعطيك تمارا اللي تبي وبكل شفافية وبدون فوائد ورسوم خفية.
+تسوق وقسّم مدفوعاتك على دفعات بدون فوائد ورسوم خفية!
+أقل من 18 | غير مؤهل | - | -
+18-21 | مؤهل | 1 ريال | 1,500 ريال
+أكبر من 21 | مؤهل | 1 ريال | 7,000 ريال
+تكرار التأخير في السداد، قد يؤدي إلى حظر حسابك في تمارا",,,,,,بدون فوائد ورسوم خفية,,"[[0, 21, ""profit_rate""]]",1
+real_064,real,ar,"3. الحد الأدنى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 1,150 ريال، والحد الأقصى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 50,000 ريال لتكون مؤهلاً للدفع باستخدام تمارا.
+5. رسوم المعالجة/الرسوم الإدارية لعمليات الشراء عبر تمارا يتم إضافتها حسب سياسة تمارا واختيار العميل لنظام تقسيم المبلغ إلى دفعات، وفي حال وجود أي استفسارات بخصوص ذلك يتم التواصل مع فريق تمارا مباشرةً.",,,,الرسوم الإدارية,,,,"[[202, 217, ""admin_fee""]]",0
+real_065,real,en,"2025 Hyundai Elantra Offer Includes
+Monthly installment starting from 899 SAR
+Free maintenance for one year or 20,000 km
+0% down payment
+0% administrative fees
+Manufacturer warranty for 5 years or 100,000 km
+Roadside assistance for 5 years",,,899 SAR,0% administrative fees,,,,"[[70, 77, ""installment_amount""], [137, 159, ""admin_fee""]]",0
+real_066,real,en,"The offer on the KIA Sonet 1.5L GL
+Monthly installment 1370 SAR
+The first 3 installments are on us
+0% down payment
+No guarantor required
+• For individual financing leasing
+• Financing period is 60 months
+• Annual percentage rate (Pegas 20.23% – K3 20.21% – Sonet 20.21%) approximately
+• 1% administrative fee",,60 months,1370 SAR,1% administrative fee,,20.21%,,"[[194, 203, ""n_installments""], [55, 63, ""installment_amount""], [287, 308, ""admin_fee""], [263, 269, ""profit_rate""]]",1
+real_067,real,en,"Split your purchases into 4 interest-free payments or up to 12 monthly payments at more than 65,000 stores.
+No interest or fine print
+All fees are shown upfront, so what you see is what you pay.
+Pay in 4
+No interest or fees.
+Tabby partners with sellers, who pay a small fee each time Tabby is used at checkout. This helps sellers grow sales, while shoppers get flexible payments with no interest and no fees.
+A service fee may apply if you choose plans with more than 4 payments.",,4 interest-free payments or up to 12 monthly payments,,,,No interest,,"[[26, 79, ""n_installments""], [108, 119, ""profit_rate""]]",1
+real_068,real,en,"Tamara is a Saudi financial technology (FinTech) platform that provides smart payment solutions and flexible installment options, enabling students to pay their tuition fees with ease. The platform offers interest-free and fee-free installment plans in compliance with Islamic Sharia principles.
+• Interest-Free Installments: Pay educational fees over 12 months with no interest.",,12 months,,,,interest-free and fee-free,in compliance with Islamic Sharia principles,"[[352, 361, ""n_installments""], [205, 231, ""profit_rate""], [250, 294, ""shariah_claim""]]",1
+real_069,real,en,"Easy monthly payments for all your Electronics at Redsea and Abdul Latif Jameel Finance.
+Your dream electronics & appliances at 0% interest
+Easy 12 month installments at Redsea showrooms
+The monthly payments should not exceed 33% of your gross monthly income.
+Anyone with monthly income not less than SR 4,000 is eligible to apply for financing.",,12 month installments,,,,0% interest,,"[[145, 166, ""n_installments""], [128, 139, ""profit_rate""]]",0
+real_070,real,en,"Unlike other credit cards, where making purchases often leads to payment of accumulated interest amount, Tamkeen credit card allows the purchase of any product, anywhere, from any store and then pay back the due amount in an easy installments with no interest or profit margin!
+Monthly payment of only 5% of the due amount or 200 SAR, whichever is higher.
+Issuance fee-Renewal | 805
+Annual Fees | 770.5",,,,,,no interest or profit margin,,"[[248, 276, ""profit_rate""]]",0
