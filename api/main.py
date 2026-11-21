@@ -25,6 +25,12 @@ class CostIn(BaseModel):
     fee_pct: float = 0
     fee_cap: float = 0
 
+@app.on_event("startup")
+def warm_up():
+    """Train the wording model before the first visitor, so the first request does not pay for it."""
+    import threading, ml
+    threading.Thread(target=ml.model, daemon=True).start()
+
 @app.get("/health")
 def health():
     return {"ok": True}
