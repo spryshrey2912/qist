@@ -1,0 +1,75 @@
+{
+ "lang": "en",
+ "product": "card",
+ "product_name": "Bank credit-card instalment programme",
+ "terms": {
+  "cash_price": 1000.0,
+  "price_is_example": true,
+  "n_installments": 12,
+  "installment_amount": 0.0,
+  "admin_fee": 50.0,
+  "admin_fee_pct": 0.0,
+  "admin_fee_cap": 0.0,
+  "late_fee": 0.0,
+  "profit_rate": 1.0,
+  "rate_kind": "monthly",
+  "rate_assumed": true,
+  "shariah_claim": false,
+  "plans": {
+   "3": 0.0,
+   "6": 1.5,
+   "9": 1.2,
+   "12": 1.0
+  }
+ },
+ "also_seen": {
+  "n_installments": [
+   3.0,
+   6.0,
+   9.0,
+   12.0
+  ],
+  "admin_fee": [
+   1.0,
+   1.2,
+   50.0
+  ]
+ },
+ "cost": {
+  "total_paid": 1170.0,
+  "extra_cost": 170.0,
+  "effective_annual_rate": 36.52,
+  "instalment": 93.33,
+  "how": "flat monthly rate on the original price",
+  "warnings": [],
+  "fee_total": 50.04
+ },
+ "hidden_fee": {
+  "amount": 50.0,
+  "promise": {
+   "line": "Interest Rate : 0% for 3 months, 1.5% for 6 months, 1.2% for 9 months, 1% for 12 months",
+   "start": 16,
+   "end": 18
+  },
+  "fee": {
+   "line": "Processing Fees : SR 50",
+   "start": 18,
+   "end": 23
+  },
+  "same_line": false
+ },
+ "flags": [
+  {
+   "code": "zero_but_fee",
+   "message": "The offer says **“0%”**, **“no profit”** or **“free”**, but it also charges **a fee of SAR 50**. Add that fee to what you pay: it is part of the real cost."
+  },
+  {
+   "code": "zero_for_some_plans",
+   "message": "**“0%”** appears together with a rate of **1.5%**. The 0% usually applies only to some plans or partners. Check which plan you are choosing."
+  }
+ ],
+ "message_if_no_flag": null,
+ "sama": "SAMA reference: this looks like a bank card instalment programme, so it falls under the bank's card terms and SAMA's consumer-finance rules (for example the APR calculation and price-disclosure rules), not the Buy-Now-Pay-Later rules. The BNPL rule banning consumer fees (Art. 20(1)) applies to BNPL companies. Qist does not decide whether an offer is lawful; it shows what to check.",
+ "disclaimer": "Not financial advice. Nothing you paste is stored. Check every figure against the provider's official terms.",
+ "ml_p_misleading": 0.9209716990745658
+}

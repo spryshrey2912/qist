@@ -1,0 +1,31 @@
+{
+ "n_real": 100,
+ "n_misleading": 24,
+ "baseline_accuracy": 0.76,
+ "models": {
+  "text only (TF-IDF + LR)": {
+   "accuracy": 0.834,
+   "precision": 0.6923976608187135,
+   "recall": 0.5583333333333333,
+   "f1": 0.6174381690660761,
+   "auc": 0.8948464912280703,
+   "brier": 0.11869125466178503
+  },
+  "rule flags only (3 numbers)": {
+   "accuracy": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "auc": 1.0,
+   "brier": 0.05132634259666019
+  },
+  "hybrid = text + rule flags (the app)": {
+   "accuracy": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "auc": 1.0,
+   "brier": 0.0012551357884476792
+  }
+ }
+}

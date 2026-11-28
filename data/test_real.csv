@@ -1,0 +1,162 @@
+﻿id,source,lang,text,cash_price,n_installments,installment_amount,admin_fee,late_fee,profit_rate,shariah_claim,spans,misleading
+real_001,real,en,"Split your payments
+With Tamara, get everything you want...when you want it! Shop and split your payments into 3 payments, interest-free and hassle-free.
+Tamara is permitted by the Saudi Central Bank to test its innovative products under the Regulatory Sandbox.Tamara has also been certified as Shari’ah-compliant by the Shari’ah Review Bureau.
+Buy what you want without breaking the bank: pay 30 days later or split into 3 easy payments.
+No interest, No hidden fees, No forms to fill
+Split into 3 installments: 100-1500 SAR
+Split into 6 installments: 1500-3000 SAR",,3 payments,,,,No interest,certified as Shari’ah-compliant,"[[111, 121, ""n_installments""], [439, 450, ""profit_rate""], [282, 313, ""shariah_claim""]]",0
+real_002,real,en,"How do I use Tamara. It’s simple - you’ll be there in 3 quick steps!
+Check out via Tamara: Shop and split your payments in 3 with Tamara. It’s completely interest- and hassle-free!
+Make your first payment: Log in with your mobile number, pay for a third of your order, and split the remaining amount in two payments over 60 days.
+And you’re done! Enjoy your order! Download the Tamara app to keep track of your payment plans and explore our stores and offers.",,3,,,,interest- and hassle-free,,"[[123, 124, ""n_installments""], [154, 179, ""profit_rate""]]",0
+real_003,real,en,"Age | Category | Minimum Legal Limit | Maximum Legal Limit
+Less than 18 years | Not Eligible | SAR 0 | SAR 0
+18 to 21 years | Eligible | SAR 200 | SAR 1,500
+Over 21 years | Eligible | SAR 200 | SAR 2,000
+The product reserves the right to suspend any or both interactions at any time without prior notice.",,,,,,,,[],0
+real_004,real,en,"Terms and Conditions
+Members can make purchases without paying the full amount through 2, 3, 4, 6, 9, 12 or 24 payments, provided they do not exceed their financial spending limit at the time.
+Tamara carries interest for all products except gift cards.
+The minimum legal limit for using Tamara is 200, while the maximum limit reaches 50,000.
+An administrative fee will be added through Tamara. Amounts per payment may be applied when paying through our service functions. You can contact our administration regarding Tamara fees.",,"2, 3, 4, 6, 9, 12 or 24 payments",,An administrative fee,,carries interest,,"[[87, 119, ""n_installments""], [342, 363, ""admin_fee""], [200, 216, ""profit_rate""]]",0
+real_011,real,en,"Flexibility in payments with Tasaheal program
+Convert your credit card purchases into easy installments through the Tasaheal program. All that and more is possible with the Al Rajhi Bank Tasaheal program, offering monthly installments for up to 24 months.
+Tasaheal Program Benefits and available Installment plans
+3 months with no profit rate for any transactions.
+3 and Up to 24 months! With no profit rate via one of our registered merchants in Tasaheal program.
+6 and Up to 24 months, with competitive profit rate.
+No minimum or maximum limit on transactions.
+No down payment needed.
+First due installment after up to 55 days from the date of transactions.
+Available Instalment plans & Fee schedule:
+Transaction Type | 3 months | 6 months | 9 months | 12 months | 24 months
+10 or above | No Fees | Monthly Fees % 0.90 | Monthly Fees % 0.90 | Monthly Fees % 0.90 | Monthly Fees % 0.90
+Education | No Fees | ** 50 | Not Available | ** 100 | Not Available
+*The monthly fees is applied on a monthly basis, based on the Tasaheal installment plan chosen by the customer.
+**Fees are charged only once, upon the date of converting the transaction into a Tasaheal program.
+**alrajhi bank reserves the right to apply one-time fee, maximum 2% of the transaction, upon the date of converting the transaction into a Tasaheal program, all fees will be displayed, before the installment plan conversion is carried out by the customer, For applicable transactions.
+An example of a transaction of 5,000 converted to Tasaheal with One-time Processing Fee:
+The Transaction Value | 5000
+The installment plan chosen by the customer | 12 months
+The Monthly Tasaheal Fees 5000 x 0.90% | 45
+One-time Processing Fee, For applicable transactions | 100
+Monthly installment Amount | 461.66",5000,12 months,461.66,100,,% 0.90,,"[[1565, 1569, ""cash_price""], [1616, 1625, ""n_installments""], [1758, 1764, ""installment_amount""], [1725, 1728, ""admin_fee""], [814, 820, ""profit_rate""]]",1
+real_012,real,en,"Terms and Conditions of Tasaheal Program (excerpt)
+22. Available installment plans and applicable fees for eligible transactions on alrajhi (Murabaha) credit cards:
+Plan | 3 months | 6 months | 9 months | 12 months
+SAR 500 or above | No Monthly Fees | 0.9% Monthly Fees*
+One-time processing fee* | SAR 49 | 2% of the transaction value with minimum of SAR 100 and maximum SAR 1,500
+* All fees stated above are exclusive of (VAT).
+* A one-time processing fee applies when a purchase transaction is converted to Tasaheal. The amount of the fee will be displayed and disclosed to the Customer before the conversion is confirmed.
+Illustrative Example – SAR 5,000 Installment:
+Transaction amount | SAR 5000
+Installment plan chosen by the customer | 12 months
+Tasaheal monthly fees | SAR 45
+One-time processing fee | SAR 100
+Monthly installment Amount | SAR 461.66
+14. Any processing fees or monthly fees disclosed and applied when the plan was created shall be non-refundable.
+20. If the Customer fails to pay any installment when due on three occasions, the Bank shall have the right to cancel the installment plan and declare the entire remaining balance under the Tasaheal plan, together with any related fees or amounts due, immediately due and payable.",SAR 5000,12 months,SAR 461.66,SAR 100,,0.9% Monthly Fees,,"[[692, 700, ""cash_price""], [743, 752, ""n_installments""], [847, 857, ""installment_amount""], [810, 817, ""admin_fee""], [252, 269, ""profit_rate""]]",1
+real_020,real,ar,"العودة للمدارس أسهل مع تساهيل!
+مع تساهيل لا تشيل هم رسوم دراسة أبنائك، وقسّطها حتى 6 أشهر بدون رسوم شهريه
+عند استخدام بطاقات مصرف الراجحي الائتمانية
+يسري العرض من 20 اغسطس وحتى 10 سبتمبر 2026
+يسري العرض على بطاقات مصرف الراجحي الائتمانية (مرابحة).
+الحد الأدنى لقيمة العملية المؤهلة للاستفادة من العرض هو 500 ريال.
+يسري العرض على خطة التقسيط لمدة 3 و 6 أشهر.
+تطبق شروط وأحكام برنامج تساهيل.",,3 و 6 أشهر,,,,بدون رسوم شهريه,,"[[346, 356, ""n_installments""], [90, 105, ""profit_rate""]]",0
+real_029,real,en,"Arab National Bank – Credit Card Terms and Conditions (excerpt)
+Fees and Financial dues:
+Tawarouq Profit: Varies based in customer risk assessment
+Late payment fee: SAR 100
+Minimum Payment: 5% of total due amount or SR 200, whichever is higher.
+APR 32.77% (Platinum). The example on APR based on limit of SAR 30,000 and a monthly Tawarouq rate of 2.20%.
+Specific Warnings:
+Paying only the minimum payment will extend the period the Cardholder is indebted to the Bank. For example: for a SAR 7,000 purchase, at 5% minimum payment plus 2.2% monthly markup, it will take the Cardholder 45 months for complete repayment and the card holder has to pay SAR 3,329.55 in term cost.","SAR 7,000",45 months,,,SAR 100,2.2% monthly markup,,"[[487, 496, ""cash_price""], [583, 592, ""n_installments""], [165, 172, ""late_fee""], [534, 553, ""profit_rate""]]",0
+real_037,real,en,"EPP Back to School
+• Customers are allowed to convert their local and international purchases EPP of up to 12 months, whether made through POS or online websites of schools and educational institutions.
+• Minimum transaction amount to convert to EPP is SAR 1,000 per transaction.
+• Maximum amount to convert to EPP is SAR 100,000 per transaction.
+• Profit margin is calculated on installment plan (monthly) as shown in the table below:
+Duration | Profit margin
+3 Months | 0%
+6 Months | 1%
+9 Months | 1%
+12 Months | 0%
+• If the installment plan is cancelled, the remaining amounts must be paid along with the Profit margin, if applicable.",,up to 12 months,,,,1%,,"[[101, 116, ""n_installments""], [486, 488, ""profit_rate""]]",0
+real_038,real,en,"Easy Payment Plan – 0% Profit Rate
+You can now divide your purchases ( 1,000 and more) into easy and equal monthly installments (up to 12 months) with 0% profit rate at selected partners.
+Flexible payment periods (3, 6, 9 and 12 months).
+Payment should be made with a SAIB Credit Card (Visa)
+Minimum transaction amount is 1,000
+Total with 15% VAT
+23,000
+Installment Amount (if Abdullah choose 12 installments)
+1,916","23,000",12 installments,"1,916",,,0% profit rate,,"[[347, 353, ""cash_price""], [393, 408, ""n_installments""], [410, 415, ""installment_amount""], [151, 165, ""profit_rate""]]",0
+real_049,real,ar,"عرض مصرف الراجحي على التمويل التأجيري لسيارات
+صالح حتى: ٣١ يوليو ٢٠٢٦
+تأجير السيارات بتحويل الراتب
+-دفعة أولى 0%
+-رسوم إدارية 0%
+-الدفعة الأخيرة تصل الى 45%
+-المدة 60 شهر
+-معدل النسبة السنوي غير شاملة التأمين يبدأ من 5.71%
+• 1.91% هامش ربح لعملاء محولين الراتب على مصرف الراجحي",,60 شهر,,0%,,1.91%,,"[[164, 170, ""n_installments""], [126, 128, ""admin_fee""], [225, 230, ""profit_rate""]]",0
+real_050,real,ar,"عرض مصرف الراجحي على التمويل التأجيري للسيارات
+صالح حتى: ٣٠ سبتمبر ٢٠٢٦
+تأجير السيارات بتحويل الراتب
+-دفعة أولى 0%
+-رسوم إدارية 0.50%
+-الدفعة الأخيرة تصل الى 45%
+- المدة 60شهر
+- معدل النسبة السنوي شاملة التأمين يبدأ من 7.06%
+• 3.82% هامش ربح لعملاء محولين الراتب على مصرف الراجحي",,60شهر,,0.50%,,3.82%,,"[[170, 175, ""n_installments""], [128, 133, ""admin_fee""], [227, 232, ""profit_rate""]]",0
+real_052,real,ar,"برنامج سهِّلها
+يمكنك من خلاله تقسيط مبالغ الخدمات لدى الجهات المعتمدة لدى المصرف بأقساط شهرية ميسرة ومن دون هامش ربح ورسوم إدارية.
+مبلغ التمويل | الاستحقاق بالسنوات | معدل النسبة السنوي | مبلغ القسط الشهري
+30,000 ريال | 2 | % 0 | 1,250
+بدون هامش ربح
+تمويل من دون رسوم إدارية
+استحقاق إلى 60 شهر
+يمكنك الحصول على تمويل بفترة استحقاق تصل الى 60 شهراً للمواطنين و المقيمين
+لا يشترط كفيل للحصول على التمويل.","30,000",60 شهراً,"1,250",من دون رسوم إدارية,,بدون هامش ربح,,"[[206, 212, ""cash_price""], [339, 347, ""n_installments""], [230, 235, ""installment_amount""], [256, 274, ""admin_fee""], [236, 249, ""profit_rate""]]",0
+real_054,real,ar,"تأجير الدراجات النارية بتحويل الراتب
+• *دفعة أولى 10%
+• *رسوم إدارية 1% أو 5,000 SAR أيهما أقل
+• الدفعة الأخيرة غير متاحة
+• المدة 60 شهر.
+• معدل النسبة السنوي يبدأ من %17.40
+نوع التمويل | مبلغ التمويل | مدة التأجير | معدل النسبة السنوي | القسط الشهري | دفعة التملك
+دراجات نارية | 50,000 SAR | 5 سنوات | 17.40% | 1,087 | غير متاحه","50,000",60 شهر,"1,087","1% أو 5,000 SAR أيهما أقل",,17.40%,,"[[280, 286, ""cash_price""], [130, 136, ""n_installments""], [312, 317, ""installment_amount""], [69, 94, ""admin_fee""], [303, 309, ""profit_rate""]]",0
+real_059,real,en,"Big Discounts on Profit Rates for New Personal Finance
+Discount on Profit Rates for new personal finance for both Saudis and Expats.
+Valid from 03 May until 30 June 2026
+• Competitive flat rates.
+• Finance period up to 60 months.
+• APR starts from 4.75%
+• *Admin fees is applicable 0.5% from finance amount or 2500 SAR whichever is less",,up to 60 months,,0.5% from finance amount or 2500 SAR whichever is less,,4.75%,,"[[213, 228, ""n_installments""], [282, 336, ""admin_fee""], [248, 253, ""profit_rate""]]",0
+real_061,real,en,"Annual Percentage Rate (APR)
+Micro-finance amount | Financing Period | Annual Percentage Rate | Monthly Installment
+SAR 30,000 | 12 Months | 56.77 % | SAR 3,100.00
+Example of administrative fees: 0,5% of the financing amount or 2,500 SAR, whichever is lower","SAR 30,000",12 Months,"SAR 3,100.00","0,5% of the financing amount or 2,500 SAR, whichever is lower",,56.77 %,,"[[116, 126, ""cash_price""], [129, 138, ""n_installments""], [151, 163, ""installment_amount""], [196, 257, ""admin_fee""], [141, 148, ""profit_rate""]]",0
+real_062,real,en,"0% Fees with Tasaheal
+Split your travel expenses into 3-month installments without any cost!
+Split your travel expenses into 3 month installments with Tasaheal, with ZERO fees, when using alrajhi bank credit cards.
+• The minimum purchase transaction amount eligible for the offer is SAR 1,000.
+• alrajhi bank Credit Cards Terms and Conditions and Tasaheal Program Terms and Conditions apply.",,3 month installments,,ZERO fees,,,,"[[125, 145, ""n_installments""], [166, 175, ""admin_fee""]]",0
+real_063,real,ar,"بدون فوائد ورسوم خفية
+بالضبط، تعطيك تمارا اللي تبي وبكل شفافية وبدون فوائد ورسوم خفية.
+تسوق وقسّم مدفوعاتك على دفعات بدون فوائد ورسوم خفية!
+أقل من 18 | غير مؤهل | - | -
+18-21 | مؤهل | 1 ريال | 1,500 ريال
+أكبر من 21 | مؤهل | 1 ريال | 7,000 ريال
+تكرار التأخير في السداد، قد يؤدي إلى حظر حسابك في تمارا",,,,,,بدون فوائد ورسوم خفية,,"[[0, 21, ""profit_rate""]]",0
+real_064,real,ar,"3. الحد الأدنى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 1,150 ريال، والحد الأقصى لصافي قيمة الفاتورة شامل ضريبة القيمة المضافة هو 50,000 ريال لتكون مؤهلاً للدفع باستخدام تمارا.
+5. رسوم المعالجة/الرسوم الإدارية لعمليات الشراء عبر تمارا يتم إضافتها حسب سياسة تمارا واختيار العميل لنظام تقسيم المبلغ إلى دفعات، وفي حال وجود أي استفسارات بخصوص ذلك يتم التواصل مع فريق تمارا مباشرةً.",,,,الرسوم الإدارية,,,,"[[202, 217, ""admin_fee""]]",0
+real_068,real,en,"Tamara is a Saudi financial technology (FinTech) platform that provides smart payment solutions and flexible installment options, enabling students to pay their tuition fees with ease. The platform offers interest-free and fee-free installment plans in compliance with Islamic Sharia principles.
+• Interest-Free Installments: Pay educational fees over 12 months with no interest.",,12 months,,,,interest-free and fee-free,in compliance with Islamic Sharia principles,"[[352, 361, ""n_installments""], [205, 231, ""profit_rate""], [250, 294, ""shariah_claim""]]",0
+real_069,real,en,"Easy monthly payments for all your Electronics at Redsea and Abdul Latif Jameel Finance.
+Your dream electronics & appliances at 0% interest
+Easy 12 month installments at Redsea showrooms
+The monthly payments should not exceed 33% of your gross monthly income.
+Anyone with monthly income not less than SR 4,000 is eligible to apply for financing.",,12 month installments,,,,0% interest,,"[[145, 166, ""n_installments""], [128, 139, ""profit_rate""]]",0

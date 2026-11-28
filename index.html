@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qist | قسط</title>
+<meta name="description" content="Find the hidden fee behind a 0% instalment offer. Runs entirely in your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5b4a'/%3E%3Ccircle cx='30' cy='30' r='15' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M41 41l11 11' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f3f5f2;--card:#fff;--ink:#10201a;--mut:#5d6b64;--line:#dbe2dd;--green:#0f5b4a;--green2:#e3f0ea;--red:#d92d43;--red2:#fdebee;--amber:#9a6a00;--amber2:#fff4d6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+a,button,label.btn,textarea{outline-offset:3px}
+:focus-visible{outline:3px solid var(--green)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:22px;letter-spacing:-.01em}
+.brand small{font-weight:500;color:var(--mut);font-size:19px}
+.brand svg{width:38px;height:38px}
+button,.btn{font:inherit;font-weight:600;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:9px 16px;cursor:pointer;transition:background .15s,border-color .15s}
+button:hover,.btn:hover{border-color:var(--green)}
+button.primary{background:var(--green);border-color:var(--green);color:#fff;padding:12px 26px;font-size:18px}
+button.primary:hover{background:#0a4a3b}
+button:disabled{opacity:.55;cursor:wait}
+.hero{padding:26px 0 8px}
+.hero h1{font-size:clamp(34px,6.4vw,58px);line-height:1.08;letter-spacing:-.025em;margin:0 0 14px;max-width:16em}
+.hero p{color:var(--mut);max-width:34em;margin:0 0 22px;font-size:18px}
+.demo{display:inline-flex;flex-wrap:wrap;gap:10px 18px;align-items:center;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 18px;font-weight:600;margin-bottom:8px}
+.demo .big{font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.demo .fee{background:var(--red2);color:var(--red);border-radius:8px;padding:3px 10px}
+.tool{background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:20px;margin:22px 0}
+textarea{width:100%;min-height:160px;resize:vertical;border:1.5px solid var(--line);border-radius:14px;padding:14px;font:inherit;font-size:17px;background:#fbfcfb;color:var(--ink)}
+textarea:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 3px var(--green2)}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;align-items:center}
+.row .lbl{color:var(--mut);font-size:15px;margin-inline-end:4px}
+.chip{padding:6px 13px;font-size:15px;font-weight:500;border-radius:99px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+#status{min-height:1.6em;margin:12px 2px 0;color:var(--mut);font-size:15px}
+.bar{height:4px;border-radius:4px;background:var(--line);overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;width:40%;background:var(--green);border-radius:4px;animation:slide 1.2s ease-in-out infinite}
+.bar.done{display:none}
+@keyframes slide{0%{margin-inline-start:-40%}100%{margin-inline-start:100%}}
+@media (prefers-reduced-motion:reduce){.bar i{animation:none;width:100%}html{scroll-behavior:auto}}
+.verdict{border-radius:20px;padding:20px 22px;border:2px solid}
+.verdict h2{margin:0;font-size:clamp(22px,4vw,30px);line-height:1.25;letter-spacing:-.01em}
+.verdict.warning{background:var(--red2);border-color:var(--red)} .verdict.warning h2{color:#a5192c}
+.verdict.watch{background:var(--amber2);border-color:#e0b43a} .verdict.watch h2{color:var(--amber)}
+.verdict.clear{background:var(--green2);border-color:var(--green)} .verdict.clear h2{color:var(--green)}
+.verdict .hf{margin-top:8px;font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}
+.stat{background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:14px 16px}
+.stat b{display:block;font-size:28px;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat span{color:var(--mut);font-size:15px}
+.stat.hot b{color:var(--red)}
+.panel{background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:16px 18px;margin:12px 0}
+.panel h3{margin:0 0 8px;font-size:18px}
+.panel p{margin:.5em 0}
+table{width:100%;border-collapse:collapse}
+td{padding:7px 0;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+td:last-child{text-align:end;font-weight:600;font-variant-numeric:tabular-nums}
+.mut{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:14px;padding:6px 0 48px;max-width:46em}
+strong{font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0f5b4a"/><circle cx="30" cy="29" r="15" fill="none" stroke="#fff" stroke-width="6"/><rect x="22" y="30" width="5" height="8" rx="1.5" fill="#ff9aa7"/><rect x="29" y="25" width="5" height="13" rx="1.5" fill="#ff9aa7"/><rect x="36" y="20" width="5" height="18" rx="1.5" fill="#ff9aa7"/><path d="M41 40l11 11" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg>Qist <small>قسط</small></div>
+  <button id="langBtn" type="button">العربية</button>
+</nav>
+
+<section class="hero">
+  <h1 id="h1"></h1>
+  <p id="sub"></p>
+  <div class="demo" aria-hidden="true"><span class="big">0%</span><span id="d1" class="mut"></span><span class="fee" id="d2"></span></div>
+</section>
+
+<section class="tool" aria-label="check">
+  <textarea id="txt" aria-label="offer"></textarea>
+  <div class="row" id="samples"></div>
+  <div class="actions">
+    <button class="primary" id="go" type="button" disabled></button>
+    <label class="btn" id="photoLbl"><input id="photo" type="file" accept="image/*" hidden><span id="photoTxt"></span></label>
+  </div>
+  <div id="status" role="status"></div>
+  <div class="bar" id="bar"><i></i></div>
+</section>
+
+<section id="out" aria-live="polite"></section>
+<footer id="foot"></footer>
+</div>
+
+<script>
+const S = {
+  en: {h1:"Is that 0% really 0%?", d1:"zero profit", d2:"+ SAR 50 fee", sub:"Paste or photograph an instalment, BNPL or card offer. Qist finds hidden fees behind “0%” wording and shows the real cost in SAR. Everything runs in your browser; nothing is uploaded.",
+       ph:"Paste the offer text here…", go:"Check the offer", photo:"Photo of an offer", sample:"Try a sample:",
+       samples:{tasaheal:"Al Rajhi Tasaheal",riyad:"Riyad 0% wallet",aljazira:"AlJazira card",kia:"Kia lease"},
+       l1:"Loading Python in your browser…", l2:"Loading rules and the trained model…", l3:"Starting the wording model…", ready:"Ready.",
+       empty:"Paste an offer or choose a photo first.", reading:"Reading the photo (Arabic + English)…", loadocr:"Loading the text reader (first photo only)…", analysing:"Analysing…",
+       fail:"Something went wrong: ",
+       v:{warning:"Warning: a fee is hidden behind a 0% or free promise.",watch:"Watch out: check which plan the 0% applies to.",clear:"No hidden fee found in this wording."},
+       hid:(a,c)=>`Hidden fee: ${c} ${a}`, model:"Wording model score", agree:["the model agrees with the rules","the model and the rules disagree: read the offer carefully"],
+       ctitle:"True cost (SAR)", total:"Total you pay", extra:"Extra you pay", ear:"Effective annual rate", inst:"Monthly payment", how:"How it was worked out",
+       nocost:"No cost could be worked out: the offer gives no price or number of instalments.", example:"No price in the offer: an example price was used.", feeup:a => `Assumption: the upfront fee counted in this calculation (SAR ${a}, for the plan used above) is paid on day 0, separately from the monthly payments, so it counts as money you do not receive. The offer does not say when it is collected.`,
+       found:"What was found", prod:"Looks like", price:"Cash price", n:"Instalments", fee:"Fee", rate:"Profit rate", late:"Late fee",
+       foot:"Qist shows what to check. It does not decide whether an offer is lawful and is not financial advice. Every offer is labelled with one written rule, and all 100 real labels were checked against it."},
+  ar: {h1:"هل الـ 0% هي فعلاً 0%؟", d1:"بدون ربح", d2:"+ رسم 50 ريال", sub:"الصق عرض تقسيط أو «اشتر الآن وادفع لاحقاً» أو بطاقة، أو صوّره. يكشف قسط الرسوم المخفية خلف عبارة «0%» ويعرض التكلفة الحقيقية بالريال. كل شيء يعمل داخل متصفحك ولا يُرفع شيء.",
+       ph:"الصق نص العرض هنا…", go:"افحص العرض", photo:"صورة عرض", sample:"جرّب مثالاً:",
+       samples:{tasaheal:"تسهيل الراجحي",riyad:"محفظة بنك الرياض 0%",aljazira:"بطاقة الجزيرة",kia:"تأجير كيا"},
+       l1:"جارٍ تحميل بايثون في متصفحك…", l2:"جارٍ تحميل القواعد والنموذج المدرَّب…", l3:"جارٍ تشغيل نموذج الصياغة…", ready:"جاهز.",
+       empty:"الصق عرضاً أو اختر صورة أولاً.", reading:"جارٍ قراءة الصورة (عربي + إنجليزي)…", loadocr:"جارٍ تحميل قارئ النص (عند أول صورة فقط)…", analysing:"جارٍ التحليل…",
+       fail:"حدث خطأ: ",
+       v:{warning:"تحذير: رسم مخفي خلف وعد «0%» أو «مجاني».",watch:"انتبه: تحقق من الخطة التي ينطبق عليها 0%.",clear:"لم يُعثر على رسم مخفي في هذه الصياغة."},
+       hid:(a,c)=>`رسم مخفي: ${a} ${c}`, model:"درجة نموذج الصياغة", agree:["النموذج يوافق القواعد","النموذج والقواعد مختلفان: اقرأ العرض بعناية"],
+       ctitle:"التكلفة الحقيقية (ريال)", total:"إجمالي ما تدفعه", extra:"الزيادة التي تدفعها", ear:"المعدل السنوي الفعلي", inst:"القسط الشهري", how:"طريقة الحساب",
+       nocost:"تعذّر حساب التكلفة: لا يذكر العرض سعراً أو عدد أقساط.", example:"لا يوجد سعر في العرض: استُخدم سعر مثال.", feeup:a => `افتراض: الرسوم المقدمة المحتسبة في هذا الحساب (${a} ريال، للخطة المستخدمة أعلاه) تُدفع في اليوم الأول وبشكل منفصل عن الأقساط الشهرية، فتُحسب كمبلغ لا تستلمه. لا يذكر العرض موعد تحصيلها.`,
+       found:"ما وُجد في العرض", prod:"يبدو أنه", price:"السعر النقدي", n:"الأقساط", fee:"الرسم", rate:"نسبة الربح", late:"غرامة التأخير",
+       foot:"قسط يوضح ما يجب التحقق منه. لا يحكم بقانونية العرض وليس نصيحة مالية. كل عرض مصنَّف وفق قاعدة مكتوبة واحدة، وتمت مراجعة تصنيفات العروض الحقيقية المئة وفقها."}
+};
+let lang = "en", py = null, samples = {}, busy = false, lastResult = null;
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+const fmt = x => (x == null ? "-" : Number(x).toLocaleString("en", {maximumFractionDigits: 2}));
+const status = (t, load) => { $("status").textContent = t || ""; $("bar").className = "bar" + (load ? "" : " done"); };
+
+function applyLang() {
+  const t = S[lang];
+  document.documentElement.lang = lang; document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  $("langBtn").textContent = lang === "ar" ? "English" : "العربية";
+  $("h1").textContent = t.h1; $("d1").textContent = t.d1; $("d2").textContent = t.d2; $("sub").textContent = t.sub; $("txt").placeholder = t.ph; $("go").textContent = t.go;
+  $("photoTxt").textContent = "📷 " + t.photo; $("foot").textContent = t.foot;
+  const box = $("samples"); box.innerHTML = "<span class='lbl'></span>"; box.firstChild.textContent = t.sample;
+  for (const k of Object.keys(samples)) {
+    const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = t.samples[k] || k;
+    b.onclick = () => { $("txt").value = samples[k]; }; box.appendChild(b);
+  }
+  if (lastResult) render(lastResult.r);
+}
+
+async function fetchText(p) { const r = await fetch(p); if (!r.ok) throw new Error(p + " " + r.status); return r.text(); }
+
+async function boot() {
+  try {
+    samples = JSON.parse(await fetchText("lovable/samples.json")); applyLang();
+    status(S[lang].l1, 1);
+    py = await loadPyodide();
+    status(S[lang].l2, 1);
+    const files = ["app/engine.py", "app/cost.py", "app/analyze.py", "app/ml.py", "model/rules.py", "model/wording_model.json"];
+    for (const d of ["/home/pyodide/app", "/home/pyodide/model"]) py.FS.mkdirTree(d);
+    for (const f of files) py.FS.writeFile("/home/pyodide/" + f, await fetchText(f));
+    status(S[lang].l3, 1); await new Promise(r => setTimeout(r, 30));
+    await py.runPythonAsync("import sys, json\nsys.path.insert(0,'/home/pyodide/app')\nimport analyze, ml\nassert ml.saved() is not None");
+    status(S[lang].ready); $("go").disabled = false;
+  } catch (e) { status(S[lang].fail + e.message); console.error(e); }
+}
+
+function analyse(text) {
+  py.globals.set("_t", text); py.globals.set("_l", lang);
+  return JSON.parse(py.runPython("json.dumps(analyze.analyze(_t,_l))"));
+}
+
+let ocrWorker = null;
+async function readPhoto(file) {
+  if (!window.Tesseract) throw new Error("text reader not loaded");
+  const bmp = await createImageBitmap(file), W = 1300, H = Math.round(bmp.height * W / bmp.width);
+  const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
+  const cx = cv.getContext("2d", {willReadFrequently: true}); cx.drawImage(bmp, 0, 0, W, H);
+  const im = cx.getImageData(0, 0, W, H), d = im.data; let lo = 255, hi = 0;
+  for (let i = 0; i < d.length; i += 4) { const v = .299 * d[i] + .587 * d[i+1] + .114 * d[i+2]; d[i] = v; if (v < lo) lo = v; if (v > hi) hi = v; }
+  const k = hi > lo ? 255 / (hi - lo) : 1;
+  for (let i = 0; i < d.length; i += 4) { const v = (d[i] - lo) * k; d[i] = d[i+1] = d[i+2] = v; }
+  cx.putImageData(im, 0, 0);
+  status(S[lang].loadocr, 1);
+  if (!ocrWorker) { ocrWorker = await Tesseract.createWorker("ara+eng"); await ocrWorker.setParameters({tessedit_pageseg_mode: "6"}); }
+  status(S[lang].reading, 1);
+  let best = await ocrWorker.recognize(cv);
+  if (best.data.confidence < 60) {                                   // weak read: one black-and-white retry, keep the better
+    for (let i = 0; i < d.length; i += 4) { const v = d[i] > 150 ? 255 : 0; d[i] = d[i+1] = d[i+2] = v; }
+    cx.putImageData(im, 0, 0);
+    const bw = await ocrWorker.recognize(cv); if (bw.data.confidence > best.data.confidence) best = bw;
+  }
+  return best.data.text.trim();
+}
+
+function render(r) {
+  const t = S[lang], v = r.verdict.level, o = [], c = r.cost, tm = r.terms;
+  o.push(`<div class="verdict ${v}"><h2>${esc(t.v[v])}</h2>${r.hidden_fee ? `<div class="hf">${esc(t.hid(fmt(r.hidden_fee.amount), r.hidden_fee.currency))}</div>` : ""}</div>`);
+  if (c) {
+    o.push(`<div class="grid">
+      <div class="stat"><b>${fmt(c.total_paid)}</b><span>${esc(t.total)}</span></div>
+      <div class="stat hot"><b>+${fmt(c.extra_cost)}</b><span>${esc(t.extra)}</span></div>
+      <div class="stat"><b>${fmt(c.effective_annual_rate)}%</b><span>${esc(t.ear)}</span></div>
+      <div class="stat"><b>${fmt(c.instalment)}</b><span>${esc(t.inst)}</span></div></div>
+      <p class="mut">${esc(t.ctitle)} \u00b7 ${esc(t.how)}: ${esc(c.how)}${r.terms.price_is_example ? " \u00b7 " + esc(t.example) : ""}</p>
+      ${c.fee_total > 0 ? `<p class="mut">${esc(t.feeup(fmt(c.fee_total)))}</p>` : ""}
+      ${(c.warnings || []).map(w => `<p class="mut">${esc(w)}</p>`).join("")}`);
+  } else o.push(`<div class="panel mut">${esc(t.nocost)}</div>`);
+  if (r.flags.length) o.push(`<div class="panel">${r.flags.map(f => `<p>${md(f.message)}</p>`).join("")}</div>`);
+  else if (r.message_if_no_flag) o.push(`<div class="panel"><p>${md(r.message_if_no_flag)}</p></div>`);
+  o.push(`<div class="panel"><h3>${esc(t.found)}</h3><table>
+    <tr><td>${esc(t.prod)}</td><td>${esc(r.product_name)}</td></tr>
+    <tr><td>${esc(t.price)}</td><td>${fmt(tm.cash_price)}</td></tr>
+    <tr><td>${esc(t.n)}</td><td>${fmt(tm.n_installments)}</td></tr>
+    <tr><td>${esc(t.rate)}</td><td>${fmt(tm.profit_rate)}%</td></tr>
+    <tr><td>${esc(t.fee)}</td><td>${fmt(tm.admin_fee)}</td></tr>
+    <tr><td>${esc(t.late)}</td><td>${fmt(tm.late_fee)}</td></tr></table></div>`);
+  if (r.ml_p_misleading != null) o.push(`<div class="panel mut">${esc(t.model)}: ${Math.round(r.ml_p_misleading * 100)}% \u00b7 ${esc(t.agree[r.verdict.model_agrees ? 0 : 1])}</div>`);
+  o.push(`<div class="panel mut"><p>${esc(r.sama)}</p><p>${esc(r.disclaimer)}</p></div>`);
+  $("out").innerHTML = o.join("");
+}
+
+async function run(text) {
+  if (!py || busy) return; busy = true; $("go").disabled = true;
+  try {
+    if (!text.trim()) { status(S[lang].empty); return; }
+    status(S[lang].analysing, 1); await new Promise(r => setTimeout(r, 20));
+    const r = analyse(text); lastResult = {r}; render(r); status(""); $("out").scrollIntoView({behavior: "smooth", block: "start"});
+  } catch (e) { status(S[lang].fail + e.message); console.error(e); }
+  finally { busy = false; $("go").disabled = false; }
+}
+
+$("go").onclick = () => run($("txt").value);
+$("langBtn").onclick = () => { lang = lang === "en" ? "ar" : "en"; applyLang(); if ($("txt").value.trim() && lastResult) run($("txt").value); };
+$("photo").onchange = async e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f || !py || busy) return;
+  busy = true; $("go").disabled = true;
+  try { const txt = await readPhoto(f); $("txt").value = txt; busy = false; await run(txt); }
+  catch (err) { status(S[lang].fail + err.message); console.error(err); busy = false; $("go").disabled = false; }
+};
+applyLang();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js" onload="boot()"></script>
+</body>
+</html>
