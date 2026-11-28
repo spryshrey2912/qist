@@ -1,31 +1,31 @@
 {
  "n_real": 100,
- "n_misleading": 24,
- "baseline_accuracy": 0.76,
+ "n_misleading": 25,
+ "baseline_accuracy": 0.75,
  "models": {
   "text only (TF-IDF + LR)": {
-   "accuracy": 0.834,
-   "precision": 0.6923976608187135,
-   "recall": 0.5583333333333333,
-   "f1": 0.6174381690660761,
-   "auc": 0.8948464912280703,
-   "brier": 0.11869125466178503
+   "accuracy": 0.8299999999999998,
+   "precision": 0.7130994152046783,
+   "recall": 0.536,
+   "f1": 0.611759455015269,
+   "auc": 0.8891733333333333,
+   "brier": 0.12336431776846275
   },
   "rule flags only (3 numbers)": {
-   "accuracy": 1.0,
+   "accuracy": 0.99,
    "precision": 1.0,
-   "recall": 1.0,
-   "f1": 1.0,
-   "auc": 1.0,
-   "brier": 0.05132634259666019
+   "recall": 0.96,
+   "f1": 0.9795918367346939,
+   "auc": 0.9674666666666667,
+   "brier": 0.062470127296136414
   },
   "hybrid = text + rule flags (the app)": {
-   "accuracy": 1.0,
+   "accuracy": 0.99,
    "precision": 1.0,
-   "recall": 1.0,
-   "f1": 1.0,
-   "auc": 1.0,
-   "brier": 0.0012551357884476792
+   "recall": 0.96,
+   "f1": 0.9795918367346939,
+   "auc": 0.99328,
+   "brier": 0.011703557163417732
   }
  }
 }
