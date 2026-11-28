@@ -221,6 +221,7 @@ function applyLang() {
   $("photoTxt").textContent = "📷 " + t.photo; $("foot").textContent = t.foot;
   const box = $("samples"); box.innerHTML = "<span class='lbl'></span>"; box.firstChild.textContent = t.sample;
   for (const k of Object.keys(samples)) {
+    if (!t.samples[k]) continue;
     const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.textContent = t.samples[k] || k;
     b.onclick = () => { $("txt").value = samples[k]; }; box.appendChild(b);
   }
