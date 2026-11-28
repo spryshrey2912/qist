@@ -7,7 +7,7 @@
 <meta name="description" content="Find the hidden fee behind a 0% instalment offer. Runs entirely in your browser.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5b4a'/%3E%3Ccircle cx='30' cy='30' r='15' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M41 41l11 11' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Readex+Pro:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#f4efe4;--card:#fffdf8;--ink:#14261e;--mut:#5b675f;--line:#e0d8c6;--deep:#1e3b2f;--sand:#c8b48a;--cream:#f5f0e6;--green:#0f5b4a;--green2:#e1efe8;--red:#d52b42;--red2:#fdecee;--amber:#8f6200;--amber2:#fff3d2;--shadow:0 1px 2px rgba(14,31,25,.06),0 10px 28px -14px rgba(14,31,25,.22);--head:"Readex Pro","IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;--body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif}
 *{box-sizing:border-box}
@@ -151,12 +151,16 @@ textarea{background:rgba(255,255,255,.5);border-color:rgba(255,255,255,.8)}
 .dict .def{margin:0;font:400 18px/1.5 var(--body)}
 :lang(ar) .en,:lang(en) .ar{display:none}
 @media (max-width:520px){.dict{padding:20px 20px 18px;border-radius:20px}}
+
+.brand .bw{display:flex;flex-direction:column;gap:3px}
+.brand .bw b{font:400 34px/.95 "UnifrakturCook","Old English Text MT","Palatino Linotype",Georgia,serif;letter-spacing:0;color:var(--ink)}
+.brand .bw i{font:italic 400 13px/1 Georgia,"Palatino Linotype","Times New Roman",serif;color:var(--mut);letter-spacing:.02em}
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav>
-  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0f5b4a"/><circle cx="30" cy="29" r="15" fill="none" stroke="#fff" stroke-width="6"/><rect x="22" y="30" width="5" height="8" rx="1.5" fill="#ff9aa7"/><rect x="29" y="25" width="5" height="13" rx="1.5" fill="#ff9aa7"/><rect x="36" y="20" width="5" height="18" rx="1.5" fill="#ff9aa7"/><path d="M41 40l11 11" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg>Qist <small>قسط</small></div>
+  <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0f5b4a"/><circle cx="30" cy="29" r="15" fill="none" stroke="#fff" stroke-width="6"/><rect x="22" y="30" width="5" height="8" rx="1.5" fill="#ff9aa7"/><rect x="29" y="25" width="5" height="13" rx="1.5" fill="#ff9aa7"/><rect x="36" y="20" width="5" height="18" rx="1.5" fill="#ff9aa7"/><path d="M41 40l11 11" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg><span class="bw"><b>qist.</b><i>/ kɪst / &middot; noun &middot; قسط</i></span></div>
   <button id="langBtn" type="button">العربية</button>
 </nav>
 
