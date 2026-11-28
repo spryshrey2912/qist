@@ -121,6 +121,20 @@ button.primary:hover::before{animation:sweep .8s ease-in-out}
 .verdict .hf[data-tip]::after{inset-inline:auto 0}
 .stat[data-tip]:hover span::after,.stat[data-tip]:focus-visible span::after{opacity:1}
 @media (max-width:520px){.hero{padding:30px 22px 26px;border-radius:26px}.hero::after{width:220px;height:220px;border-width:32px;inset-inline-end:-70px;top:-70px}.wrap{padding:0 16px}.tool{padding:16px;border-radius:22px}.verdict{padding:20px 18px 20px 66px}:lang(ar) .verdict{padding:20px 66px 20px 18px}.verdict::before{inset-inline-start:16px;top:20px}button.primary{width:100%}.actions .btn{flex:1;text-align:center}}
+
+/* glass + language fade */
+body{background:var(--paper);background-image:radial-gradient(520px 420px at 8% 12%,rgba(15,91,74,.16),transparent 70%),radial-gradient(560px 460px at 94% 38%,rgba(200,180,138,.32),transparent 70%),radial-gradient(480px 400px at 30% 96%,rgba(127,140,106,.22),transparent 70%);background-attachment:fixed}
+.tool,.stat,.panel{background:rgba(255,253,248,.62);border-color:rgba(255,255,255,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 18px 40px -22px rgba(20,38,30,.35)}
+@supports((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.tool,.stat,.panel,.chip,#langBtn,.demo{-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5)}}
+.stat{background:rgba(255,253,248,.55)}
+.chip,#langBtn,button:not(.primary){background:rgba(255,255,255,.55);border-color:rgba(255,255,255,.75);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.chip:hover,#langBtn:hover{background:rgba(255,255,255,.8)}
+.demo{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+textarea{background:rgba(255,255,255,.5);border-color:rgba(255,255,255,.8)}
+.hero{box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 28px 50px -28px rgba(20,38,30,.55)}
+.wrap>*:not(nav){transition:opacity .18s ease,transform .18s ease,filter .18s ease}
+.wrap.swap>*:not(nav){opacity:0;transform:translateY(6px);filter:blur(4px)}
+@media (prefers-reduced-motion:reduce){.wrap>*:not(nav){transition:none}.wrap.swap>*:not(nav){transform:none;filter:none}}
 </style>
 </head>
 <body>
@@ -327,5 +341,16 @@ applyLang();
 })();
 </script>
 
+<script>
+(function(){
+  var orig=window.applyLang,w=document.querySelector(".wrap");
+  window.applyLang=function(){
+    var rm=matchMedia("(prefers-reduced-motion:reduce)").matches;
+    if(rm||lang===document.documentElement.lang){orig();return}
+    w.classList.add("swap");
+    setTimeout(function(){orig();requestAnimationFrame(function(){w.classList.remove("swap")})},190);
+  };
+})();
+</script>
 </body>
 </html>
