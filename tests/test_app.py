@@ -23,6 +23,12 @@ def test_clean_zero_not_flagged():
     t = "Pay in 3 installments at 0% profit. No other charges."
     assert not engine.is_misleading(engine.flags(t))
 
+def test_no_fees_claim_does_not_turn_the_price_into_a_fee():
+    for t in ("Pay in 4 interest-free payments of SAR 250. No fees, no hidden charges. Total price SAR 1,000.",
+              "0% profit for 6 months with no fees. Product price SAR 2,400.",
+              "أقساط 0% لمدة 6 أشهر بدون أي رسوم. سعر المنتج 2,400 ريال."):
+        assert not engine.is_misleading(engine.flags(t)), t
+
 def test_warranty_years_are_not_the_loan_term():
     t = open(os.path.join(ROOT, "tests", "elantra.txt"), encoding="utf-8").read()
     d = engine.defaults(engine.candidates(t), t)

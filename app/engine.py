@@ -6,6 +6,8 @@ from cost import true_cost
 
 NOFEE = re.compile(r"no (?:hidden )?fees?|fee[- ]free|without (?:any )?fees?|zero fees?|0% fees?|"
                    r"بدون (?:أي |اي )?رسوم|بدون فوائد ورسوم|دون رسوم|مجان", re.I)
+# "no fees" / "without any fees" says there is no fee, so it must not anchor a fee amount (e.g. the price written after it).
+NEGFEE = re.compile(NOFEE.pattern + r"|no (?:hidden )?(?:charges?|costs?)|بدون (?:أي |اي )?(?:مصاريف|عمولة|تكاليف)|free of (?:any )?(?:fees?|charges?)", re.I)
 # Fees that are not the price of the instalment itself: card fees, cash advances, late penalties, cash on delivery.
 NOTINSTAL = re.compile(r"annual|issu|renewal|replacement|cash (?:advance|withdrawal)|withdrawal|international|late|overdue|penalt|delay|"
                        r"cash on delivery|\bCOD\b|statement|foreclos|early (?:settlement|repayment|termination)|السداد المبكر|سداد مبكر|الإنهاء المبكر|رسوم سنوي|السنوية|رسم سنوي|إصدار|اصدار|تجديد|بديل|سحب نقدي|رسوم السحب|دولية|تأخر|تأخير|متأخر|غرامة|"
@@ -196,7 +198,7 @@ def _label_fees(t):
 
 def fee_amounts(text, c):
     """Fee amounts in the text: what rules.py found, plus money written next to fee words (commission, one-time...)."""
-    t = text.translate(AR); out = [v for v in _percents(text)[1] if v > 0]      # fees quoted as a %, found by our own stricter check
+    t = NEGFEE.sub(" ", text.translate(AR)); out = [v for v in _percents(text)[1] if v > 0]      # fees quoted as a %, found by our own stricter check
     for m in _MONEYX.finditer(t):
         w = _line_window(t, m.start(), m.end(), 45, 20)
         if re.search(FEEWORD, w, re.I) and not re.search(LIMITWORD, w, re.I) and not NOTINSTAL.search(_line_window(t, m.start(), m.end(), 60, 70)) and not MONTHLY.search(_line_window(t, m.start(), m.end(), 25, 8)):
