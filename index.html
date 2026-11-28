@@ -122,7 +122,7 @@ const S = {
        ctitle:"True cost (SAR)", total:"Total you pay", extra:"Extra you pay", ear:"Effective annual rate", inst:"Monthly payment", how:"How it was worked out",
        nocost:"No cost could be worked out: the offer gives no price or number of instalments.", example:"No price in the offer: an example price was used.", feeup:a => `Assumption: the upfront fee counted in this calculation (SAR ${a}, for the plan used above) is paid on day 0, separately from the monthly payments, so it counts as money you do not receive. The offer does not say when it is collected.`,
        found:"What was found", prod:"Looks like", price:"Cash price", n:"Instalments", fee:"Fee", rate:"Profit rate", late:"Late fee",
-       foot:"Qist shows what to check. It does not decide whether an offer is lawful and is not financial advice. Every offer is labelled with one written rule, and all 100 real labels were checked against it."},
+       foot:"Qist shows what to check. It does not decide whether an offer is lawful and is not financial advice. Every offer is labelled with one written rule."},
   ar: {h1:"هل الـ 0% هي فعلاً 0%؟", d1:"بدون ربح", d2:"+ رسم 50 ريال", sub:"الصق عرض تقسيط أو «اشتر الآن وادفع لاحقاً» أو بطاقة، أو صوّره. يكشف قسط الرسوم المخفية خلف عبارة «0%» ويعرض التكلفة الحقيقية بالريال. كل شيء يعمل داخل متصفحك ولا يُرفع شيء.",
        ph:"الصق نص العرض هنا…", go:"افحص العرض", photo:"صورة عرض", sample:"جرّب مثالاً:",
        samples:{tasaheal:"تسهيل الراجحي",riyad:"محفظة بنك الرياض 0%",aljazira:"بطاقة الجزيرة",kia:"تأجير كيا"},
@@ -134,7 +134,7 @@ const S = {
        ctitle:"التكلفة الحقيقية (ريال)", total:"إجمالي ما تدفعه", extra:"الزيادة التي تدفعها", ear:"المعدل السنوي الفعلي", inst:"القسط الشهري", how:"طريقة الحساب",
        nocost:"تعذّر حساب التكلفة: لا يذكر العرض سعراً أو عدد أقساط.", example:"لا يوجد سعر في العرض: استُخدم سعر مثال.", feeup:a => `افتراض: الرسوم المقدمة المحتسبة في هذا الحساب (${a} ريال، للخطة المستخدمة أعلاه) تُدفع في اليوم الأول وبشكل منفصل عن الأقساط الشهرية، فتُحسب كمبلغ لا تستلمه. لا يذكر العرض موعد تحصيلها.`,
        found:"ما وُجد في العرض", prod:"يبدو أنه", price:"السعر النقدي", n:"الأقساط", fee:"الرسم", rate:"نسبة الربح", late:"غرامة التأخير",
-       foot:"قسط يوضح ما يجب التحقق منه. لا يحكم بقانونية العرض وليس نصيحة مالية. كل عرض مصنَّف وفق قاعدة مكتوبة واحدة، وتمت مراجعة تصنيفات العروض الحقيقية المئة وفقها."}
+       foot:"قسط يوضح ما يجب التحقق منه. لا يحكم بقانونية العرض وليس نصيحة مالية. كل عرض مصنَّف وفق قاعدة مكتوبة واحدة."}
 };
 let lang = "en", py = null, samples = {}, busy = false, lastResult = null;
 const $ = id => document.getElementById(id);
