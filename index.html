@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f2f5f1;--card:#fff;--ink:#0e1f19;--mut:#58675f;--line:#d9e1db;--green:#0f5b4a;--green2:#e1efe8;--red:#d52b42;--red2:#fdecee;--amber:#8f6200;--amber2:#fff3d2;--shadow:0 1px 2px rgba(14,31,25,.06),0 10px 28px -14px rgba(14,31,25,.22);--head:"Readex Pro","IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;--body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif}
+:root{--paper:#f4efe4;--card:#fffdf8;--ink:#14261e;--mut:#5b675f;--line:#e0d8c6;--deep:#1e3b2f;--sand:#c8b48a;--cream:#f5f0e6;--green:#0f5b4a;--green2:#e1efe8;--red:#d52b42;--red2:#fdecee;--amber:#8f6200;--amber2:#fff3d2;--shadow:0 1px 2px rgba(14,31,25,.06),0 10px 28px -14px rgba(14,31,25,.22);--head:"Readex Pro","IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif;--body:"IBM Plex Sans Arabic","Segoe UI",Tahoma,system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper) radial-gradient(900px 420px at 85% -80px,var(--green2),transparent 70%) no-repeat;color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 :lang(ar) body{line-height:1.85}
 .wrap{max-width:880px;margin:0 auto;padding:0 20px}
 a,button,label.btn,textarea{outline-offset:3px}
@@ -25,17 +25,29 @@ button,.btn{font:600 16px/1.3 var(--head);border-radius:999px;border:1.5px solid
 button:hover,.btn:hover{border-color:var(--green);background:#fbfdfc}
 button:active,.btn:active{transform:translateY(1px)}
 button.primary{background:var(--green);border-color:var(--green);color:#fff;padding:14px 30px;font-size:18px;box-shadow:0 8px 18px -8px rgba(15,91,74,.65)}
-button.primary:hover{background:#0a4a3b;border-color:#0a4a3b}
+button.primary:hover{background:#0a4a3b;border-color:#0a4a3b;transform:translateY(-1px)}
+button.primary:active{transform:translateY(1px)}
 button:disabled{opacity:.55;cursor:wait}
-.hero{padding:30px 0 10px}
-.hero h1{font:600 clamp(36px,7vw,62px)/1.06 var(--head);letter-spacing:-.035em;margin:0 0 16px;max-width:14em;text-wrap:balance}
-.hero p{color:var(--mut);max-width:33em;margin:0 0 26px;font-size:18px}
-.demo{display:inline-flex;flex-wrap:wrap;gap:10px 16px;align-items:center;background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:12px 14px 12px 20px;font-weight:600;margin-bottom:8px;box-shadow:var(--shadow)}
+.hero{position:relative;overflow:hidden;background:var(--deep);color:var(--cream);border-radius:32px;padding:46px 42px 40px;margin:6px 0 0}
+.hero::after{content:"";position:absolute;inset-inline-end:-96px;top:-96px;width:320px;height:320px;border-radius:50%;border:46px solid rgba(200,180,138,.14);pointer-events:none}
+.hero>*{position:relative;z-index:1;animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero>:nth-child(2){animation-delay:.08s}.hero>:nth-child(3){animation-delay:.16s}.hero>:nth-child(4){animation-delay:.24s}
+.hero h1{font:600 clamp(38px,7vw,68px)/1.04 var(--head);letter-spacing:-.035em;margin:0 0 16px;max-width:12em;text-wrap:balance;color:var(--cream)}
+.hero p{color:#d2d2c1;max-width:33em;margin:0 0 28px;font-size:18px}
+.demo{display:inline-flex;flex-wrap:wrap;gap:10px 16px;align-items:center;background:rgba(245,240,230,.07);border:1.5px solid rgba(245,240,230,.2);border-radius:20px;padding:12px 14px 12px 20px;font-weight:600;margin-bottom:22px}
 :lang(ar) .demo{padding:12px 20px 12px 14px}
-.demo .big{font:600 34px/1 var(--head);font-variant-numeric:tabular-nums;color:var(--green);letter-spacing:-.03em}
-.demo .fee{background:var(--red2);color:var(--red);border-radius:12px;padding:6px 13px;font-family:var(--head);font-size:16px}
-.tool{background:var(--card);border:1.5px solid var(--line);border-radius:26px;padding:22px;margin:26px 0;box-shadow:var(--shadow)}
-textarea{width:100%;min-height:170px;resize:vertical;border:1.5px solid var(--line);border-radius:16px;padding:16px;font:inherit;font-size:17px;line-height:1.55;background:#fafcfb;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+.demo .big{font:600 34px/1 var(--head);font-variant-numeric:tabular-nums;color:var(--sand);letter-spacing:-.03em}
+.demo .fee{background:var(--sand);color:var(--deep);border-radius:12px;padding:6px 13px;font-family:var(--head);font-size:16px}
+.demo .mut{color:#d2d2c1}
+.cmp{max-width:30em}
+.cmp .r{display:flex;align-items:center;height:32px;margin-top:10px;font:600 14px/1 var(--head);font-variant-numeric:tabular-nums;direction:ltr}
+.cmp .r span{display:flex;align-items:center;height:100%;padding:0 12px;border-radius:8px}
+.cmp .a span{width:74%;background:#7f8c6a;color:var(--cream)}
+.cmp .b span:first-child{width:74%;background:var(--cream);color:var(--deep);border-radius:8px 0 0 8px}
+.cmp .b span:last-child{width:12.6%;background:var(--sand);color:var(--deep);border-radius:0 8px 8px 0;justify-content:center;padding:0}
+:lang(ar) .cmp{margin-inline-start:0}
+.tool{background:var(--card);border:1.5px solid var(--line);border-radius:28px;padding:24px;margin:22px 0 26px;box-shadow:0 22px 44px -26px rgba(20,38,30,.4)}
+textarea{width:100%;min-height:170px;resize:vertical;border:1.5px solid var(--line);border-radius:16px;padding:16px;font:inherit;font-size:17px;line-height:1.55;background:#fbf8f1;color:var(--ink);transition:border-color .15s,box-shadow .15s}
 textarea::placeholder{color:#8a968f}
 textarea:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 4px var(--green2);background:#fff}
 .row{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;align-items:center}
@@ -51,7 +63,7 @@ textarea:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 4px var(-
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 #out>*{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
 #out>:nth-child(2){animation-delay:.06s}#out>:nth-child(3){animation-delay:.12s}#out>:nth-child(n+4){animation-delay:.18s}
-@media (prefers-reduced-motion:reduce){.bar i{animation:none;width:100%}html{scroll-behavior:auto}#out>*{animation:none}button{transition:none}}
+@media (prefers-reduced-motion:reduce){.hero>*{animation:none}.bar i{animation:none;width:100%}html{scroll-behavior:auto}#out>*{animation:none}button{transition:none}}
 .verdict{position:relative;border-radius:22px;padding:22px 24px 22px 74px;border:1.5px solid;box-shadow:var(--shadow)}
 :lang(ar) .verdict{padding:22px 74px 22px 24px}
 .verdict::before{content:"!";position:absolute;inset-inline-start:20px;top:22px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:700 22px/1 var(--head);color:#fff}
@@ -78,7 +90,7 @@ td:last-child{text-align:end;font-weight:600;font-variant-numeric:tabular-nums}
 footer{color:var(--mut);font-size:14px;padding:10px 0 56px;max-width:46em}
 strong{font-weight:700}
 :lang(ar) .hero h1,:lang(ar) .verdict h2,:lang(ar) .brand,:lang(ar) .stat b,:lang(ar) .demo .big{letter-spacing:0}
-@media (max-width:520px){.wrap{padding:0 16px}.tool{padding:16px;border-radius:22px}.verdict{padding:20px 18px 20px 66px}:lang(ar) .verdict{padding:20px 66px 20px 18px}.verdict::before{inset-inline-start:16px;top:20px}button.primary{width:100%}.actions .btn{flex:1;text-align:center}}
+@media (max-width:520px){.hero{padding:30px 22px 26px;border-radius:26px}.hero::after{width:220px;height:220px;border-width:32px;inset-inline-end:-70px;top:-70px}.wrap{padding:0 16px}.tool{padding:16px;border-radius:22px}.verdict{padding:20px 18px 20px 66px}:lang(ar) .verdict{padding:20px 66px 20px 18px}.verdict::before{inset-inline-start:16px;top:20px}button.primary{width:100%}.actions .btn{flex:1;text-align:center}}
 </style>
 </head>
 <body>
@@ -92,6 +104,7 @@ strong{font-weight:700}
   <h1 id="h1"></h1>
   <p id="sub"></p>
   <div class="demo" aria-hidden="true"><span class="big">0%</span><span id="d1" class="mut"></span><span class="fee" id="d2"></span></div>
+  <div class="cmp" aria-hidden="true"><div class="r a"><span>1,000</span></div><div class="r b"><span>1,170</span><span>+170</span></div></div>
 </section>
 
 <section class="tool" aria-label="check">
