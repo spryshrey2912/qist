@@ -70,8 +70,8 @@ All styling is in `app/ui.py` and `.streamlit/config.toml`.
 | model | accuracy | precision | recall | F1 | AUC | Brier (lower is better) |
 |---|---|---|---|---|---|---|
 | **text only** (learns from wording alone) | **83%** | **71%** | **54%** | **61%** | **0.89** | **0.12** |
-| rule flags only | 100% | 100% | 100% | 100% | 1.00 | 0.05 |
-| hybrid (the app) | 100% | 100% | 100% | 100% | 1.00 | 0.00 |
+| rule flags only (circular, labels come from these rules) | 99% | 100% | 96% | 98% | 0.97 | 0.06 |
+| hybrid (the app; also circular) | 99% | 100% | 96% | 98% | 0.99 | 0.01 |
 
   What this means: the labels follow a written rule and the rule flags check that same rule, so the 100% rows are true **by construction**, not a sign of a perfect model, and the hybrid mostly copies the rules. The honest machine-learning number is the **text-only** row: from examples alone, with no rules, the model separates misleading from fair wording with AUC 0.89 on offers from groups it never saw. The rules were also refined after looking at these offers; before refinement they scored 80% accuracy / 57% precision / 100% recall on 30 offers they had never seen (6 false alarms, now fixed and covered by `tests/`).
 - Final answer shown to the user: a fee next to a 0%/free promise is a **warning** (it is written in the text; the model score is shown as support). No fee but a model score of 50% or more is **watch**. Otherwise **clear**.
