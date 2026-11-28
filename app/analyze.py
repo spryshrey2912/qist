@@ -12,8 +12,8 @@ def compute_cost(price, n, inst=0.0, fee=0.0, rate=0.0, rate_kind="none", fee_pc
 
 def _verdict(hit, pm, some_plans=False):
     """One answer from both parts: a fee next to a 0%/free promise is 'warning' (it is written in the text);
-    no fee but the wording model says >= 50% is 'watch'; otherwise 'clear'. 'agree' says whether the model backs the rules."""
-    hi = pm is not None and pm >= .5
+    no fee but the wording model says >= 40% is 'watch'; otherwise 'clear'. 'agree' says whether the model backs the rules."""
+    hi = pm is not None and pm >= ml.THRESHOLD
     level = "warning" if hit else "watch" if (hi or some_plans) else "clear"      # a 0% claim next to a positive rate = check which plan
     return {"level": level, "model_agrees": (hi == hit) if pm is not None else None}
 

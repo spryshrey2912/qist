@@ -23,7 +23,7 @@ MODELS = {
 }
 
 def score(y, p):
-    pr = p >= .5; tp = (pr & (y == 1)).sum(); fp = (pr & (y == 0)).sum(); fn = (~pr & (y == 1)).sum()
+    pr = p >= ml.THRESHOLD; tp = (pr & (y == 1)).sum(); fp = (pr & (y == 0)).sum(); fn = (~pr & (y == 1)).sum()
     pre, rec = tp / max(1, tp + fp), tp / max(1, tp + fn)
     return [(pr == y).mean(), pre, rec, 2 * pre * rec / max(1e-9, pre + rec), roc_auc_score(y, p), brier_score_loss(y, p)]
 

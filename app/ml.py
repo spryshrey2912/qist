@@ -14,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data", "offers.csv")
 SAVED = os.path.join(HERE, "..", "model", "wording_model.json")
 _WS = re.compile(r"\s\s+")
+THRESHOLD = 0.40     # alert level, chosen with grouped cross-validation: precision and recall are both about 70% here (at 0.50: precision 73%, recall 63%)
 
 def rule_features(texts):
     """Three numbers per offer from the extractor: 0%-but-fee flag, 0%-for-some-plans flag, a fee was found."""
