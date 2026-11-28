@@ -2,4 +2,3 @@ __pycache__/
 model/out/
 model/*.safetensors
 model/*.bin
-.venv/

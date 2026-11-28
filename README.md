@@ -1,65 +1,36 @@
----
-title: Qist API
-emoji: 💳
-colorFrom: yellow
-colorTo: red
-sdk: docker
-app_port: 7860
----
-
 # Qist | قسط
 
-Paste or photograph an instalment / BNPL / card-financing offer (Arabic or English). Qist extracts the terms,
-works out the **true cost in SAR**, flags **misleading wording** (e.g. "0%" next to a fee) and shows the **SAMA reference**.
+Paste or photograph an instalment, BNPL or card-financing offer (Arabic or English). Qist extracts the terms, works out the **true cost in SAR**, flags **misleading wording** (for example "0%" next to a fee) and shows what the SAMA rules say. It informs; it never gives financial advice.
 
-How it works (all explainable, no black box in the app):
-1. `model/rules.py`: rule-based extractor (instalments, amounts, fees, rates, Shariah claim), Arabic + English.
-2. `app/engine.py`: picks defaults, works out the instalment from the rate if needed, wording flags, SAMA text.
+**Live app:** https://spryshrey2912.github.io/qist/ (runs entirely in your browser; nothing is uploaded or stored).
+
+## How it works
+1. `model/rules.py`: rule-based term extractor (instalments, amounts, fees, rates), Arabic and English.
+2. `app/engine.py`: picks defaults, wording flags, evidence lines and the SAMA reference text.
 3. `app/cost.py`: exact maths (total paid, extra cost, effective annual rate).
-4. `app/ui.py`: the look (glass cards, animated background, inline SVG art, gauge and timeline; no external images). `.streamlit/config.toml` sets the dark theme.
-5. `app/app.py`: Streamlit screen. Every extracted field can be corrected by the user.
+4. `app/ml.py`: the wording model. TF-IDF character n-grams plus fee-wording features into a logistic regression, scored in plain Python from the saved file `model/wording_model.json`.
+5. `app/analyze.py`: ties the steps together and returns one result.
+6. `index.html`: the public page. It loads Python in the browser (Pyodide), copies in the files above, and reads photos with Tesseract.js (Arabic + English). Sample offers are in `content/samples.json`.
 
-## Run on your computer
+## Run the tests
 ```
 pip install -r requirements.txt
-streamlit run app/app.py
+python -m pytest tests
+python model/eval_wording.py       # honest wording-model score (grouped cross-validation)
+python model/eval_rules.py         # rule-engine score on the labelled real offers
 ```
-Photo upload needs Tesseract with Arabic + English:
-- Windows: install from https://github.com/UB-Mannheim/tesseract/wiki (tick Arabic), then set
-  `setx TESSERACT_CMD "C:\Program Files\Tesseract-OCR\tesseract.exe"` and reopen the terminal.
-- Without Tesseract the app still works by pasting text.
+To open the site locally, serve the folder (for example `python -m http.server`) and visit http://localhost:8000.
 
-## Tests
-```
-python tests/test_cost.py
-python tests/test_app.py
-python model/eval_rules.py            # rules score on the labelled real offers
-python model/eval_rules.py data/new_real_051_070.csv -v   # rows the rules never saw (68%)
-```
-
-## Deploy (Streamlit Community Cloud)
-1. Push this folder to a GitHub repo (the model weights are git-ignored; the app does not need them).
-2. share.streamlit.io -> New app -> main file `app/app.py`.
-3. `packages.txt` installs Tesseract + Arabic for photo upload; `requirements.txt` is the minimal app set.
-
-## Live site (GitHub Pages, no server)
-`index.html` is the public app. It loads Python in the browser (Pyodide), copies in `app/engine.py`, `app/cost.py`,
-`app/analyze.py`, `app/ml.py`, `model/rules.py` and the saved wording model `model/wording_model.json`, and reads
-photos with Tesseract.js (Arabic + English). Nothing is uploaded or stored. Only plain Python is needed (no numpy, pandas or scikit-learn in the browser).
+## Deploy
+GitHub Pages serves `index.html` from the `main` branch root. There is no server.
 
 ## Honest limits
-- Rules found 68% of terms on 20 real offers they had never seen (`data/new_real_051_070.csv`), and 82% on all labelled real offers; weakest on amounts inside tables.
-- The true-cost panel needs a price and a number of instalments; many real T&C pages give neither, so the panel stays empty for them.
-- It cannot read balloon / final-payment car leases correctly yet.
-- The term extractor is rule-based. `model/train_extractor.py` (xlm-roberta-base) is written but has not been trained, so no score is claimed for it.
+- Small dataset: 128 real Gulf offers (35 misleading). Scores are estimates and will move as data grows.
+- The true-cost panel needs a price and a number of instalments; many real pages give neither, so the panel stays empty and the app says so.
+- Car leases with a final balloon payment are not read correctly yet.
+- OCR can misread a photo; the text box can be edited and re-checked.
+- Terms are extracted by rules, not by a trained model.
 - Not financial advice. Nothing is stored.
-
-## Look
-'Kinetic Orange': flat orange page (no gradients), black panels, white text, sharp corners, 2px borders.
-Fonts: Archivo Black (headline, marquee, big titles), Space Mono (small labels), Inter (text), Tajawal (Arabic), and **Ronzino** (functional parts: step titles,
-the real-cost numbers, gauge, payment tiles, verdict labels, number boxes). Ronzino is embedded from `app/fonts/` (SIL OFL licence included);
-the other fonts load from Google Fonts, so the first load needs internet. To add a font, drop `<family>-<weight>.woff2` into `app/fonts/`.
-All styling is in `app/ui.py` and `.streamlit/config.toml`.
 
 ## Machine learning
 - `app/ml.py`: the wording model. TF-IDF character n-grams plus 3 features from the extractor, into a logistic regression. Trained ahead of time by `python model/train_wording.py` on `data/offers.csv` (316 labelled offers: 128 real Gulf offers, 8 real offers from Egypt and Jordan (`source=real_mena`: used for training only, never scored) and 180 synthetic; each real row weighted 10x) and saved as `model/wording_model.json` (vocabulary, IDF weights, coefficients). The app loads that file and scores with plain Python; the scores match scikit-learn to 1e-8 on all 316 offers. `tests/test_app.py` fails if the saved file no longer matches `data/offers.csv`, so re-run the training script after any label change. If the file is missing, `ml.py` falls back to training from `data/offers.csv` (needs scikit-learn and pandas). The 6 real rows behind the app's sample buttons (`demo=1`) are left out of training, so the scores you see on the samples are real predictions.
@@ -78,9 +49,5 @@ The alert level is 0.40 (`THRESHOLD` in `app/ml.py`), chosen by cross-validation
 
   What this means: the labels follow a written rule and the rule flags check that same rule, so the 100% rows are true **by construction**, not a sign of a perfect model, and the hybrid mostly copies the rules. The honest machine-learning number is the **text + fee-wording features** row: with no rule engine, the model separates misleading from fair wording with AUC 0.86 on offers from groups it never saw. The rules were also refined after looking at these offers; before refinement they scored 80% accuracy / 57% precision / 100% recall on 30 offers they had never seen (6 false alarms, now fixed and covered by `tests/`).
 - Final answer shown to the user: a fee next to a 0%/free promise is a **warning** (it is written in the text; the model score is shown as support). No fee but a model score of 50% or more is **watch**. Otherwise **clear**.
-- Data sources: 70 real offers collected by the builder plus 30 taken from bank and merchant pages (Riyad Bank, BSF, SAIB, ANB, Alinma, Al Rajhi, IKEA, Tefal, Jarir, ...), and 180 synthetic offers generated with AI and kept or deleted by hand. `data/unreviewed/` holds a further 180 web offers whose labels were suggested by AI and have **not** been reviewed; they are not used anywhere.
-- `data/offers.csv` is the master data file. `data/real_offers_labelling_sheet.csv` is an older copy (rows 101-120 are empty), so `data/combine.py` now refuses to overwrite `offers.csv` unless run with `--force`.
-- `model/train_extractor.py`: xlm-roberta-base term extractor (needs a GPU, e.g. Colab). Not trained; the app extracts terms with rules (`model/rules.py`), and the cost maths is plain code on purpose.
-
-## Web API (for the Lovable website)
-`api/main.py` (FastAPI) wraps the same engine: `POST /analyze`, `POST /analyze-photo`, `POST /cost`, `GET /health`. It runs from the `Dockerfile` (Hugging Face Spaces, Docker SDK). The front-end prompt and sample data are in `lovable/`.
+- Data sources: 128 real Gulf offers (verbatim text from bank, app and merchant pages, in Arabic and English), 8 real offers from Egypt and Jordan (training only) and 180 synthetic offers generated with AI and kept or deleted by hand.
+- `data/offers.csv` is the master data file.

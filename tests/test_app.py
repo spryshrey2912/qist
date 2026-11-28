@@ -1,5 +1,5 @@
-"""Runs app/app.py with a fake Streamlit so logic errors show up without a browser. Also tests the engine."""
-import os, sys, types, importlib, runpy
+"""Tests for the rule engine, cost maths and wording model (the code the live site runs in the browser)."""
+import os, sys
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, os.path.join(ROOT, "app"))
 import engine
@@ -49,86 +49,26 @@ def test_aljazira_card_plans():
     r = engine.cost(3000, 12, 0, 50, 1.0, "monthly")
     assert r["instalment"] == 280 and r["total_paid"] == 3410
 
-def test_custom_fonts_are_embedded():
-    import shutil, tempfile, ui
-    out = ui.css("en")                                       # Ronzino ships in app/fonts
-    assert "font-family:'Ronzino';font-weight:700" in out and "font-family:'Ronzino';font-weight:500" in out and "base64," in out
-    assert "var(--fn)" in out and "--fn:'Ronzino'" in out
-    tmp = tempfile.mkdtemp(); old = ui.FONT_DIR
-    try:
-        shutil.copy(os.path.join(old, "ronzino-700.woff2"), os.path.join(tmp, "bogus.woff2"))      # wrong name: ignored
-        ui.FONT_DIR = tmp
-        assert "@font-face" not in ui.css("en")
-    finally:
-        ui.FONT_DIR = old
-
-def test_alert_and_bold_and_tooltips():
-    import ui
-    a = ui.alert("Hidden fee found", "This offer says **\u201c0%\u201d** but charges **SAR 50**.", "tip text")
-    assert 'role="alert"' in a and "<strong>" in a and 'data-tip="tip text"' in a and "\n" not in a
-    v = ui.verdict("warn", "Warning", "A **bold** thing <b>", "why")
-    assert "<strong>bold</strong>" in v and "&lt;b&gt;" in v and 'role="alert"' in v      # bold works, raw HTML is escaped
+def test_explanations_in_both_languages():
     msgs, _, _ = engine.explain("en", [("zero_but_fee", {"fee": 50.0})])
     assert "SAR 50" in msgs[0] and "**" in msgs[0]
     msgs, _, _ = engine.explain("ar", [("zero_but_fee", {"fee": 50.0})])
     assert "50 ريال" in msgs[0]
-    for lang in ("en", "ar"):                              # the hidden-fee banner shows for the 0% + fee sample
-        _, html = run_app(lang, "Bank Aljazira. Interest Rate : 0% for 3 months. Processing Fees : SR 50. Installment Period : 3 months. Minimum Purchase : SR 1000")
-        assert "q-alert" in html
-
-def run_app(lang, text):
-    calls = []
-    class Ctx:
-        def __enter__(self): return self
-        def __exit__(self, *a): return False
-        def metric(self, *a, **k): calls.append(("metric", a))
-    st = types.ModuleType("streamlit")
-    st.set_page_config = lambda **k: calls.append(("cfg", k))
-    class S(dict):
-        __getattr__ = dict.get
-        __setattr__ = dict.__setitem__
-    st.session_state = S(lang=lang)
-    st.button = lambda *a, **k: False
-    html_seen = []
-    st.markdown = lambda s, **k: html_seen.append(s)
-    st.title = st.caption = st.subheader = st.info = st.success = st.warning = st.error = lambda *a, **k: None
-    st.selectbox = lambda label, opts, index=0, **k: opts[index]
-    st.text_area = lambda label, value="", **k: text if label.startswith(("Paste", "الصق")) else value
-    st.number_input = lambda label, **k: k.get("value", 0)
-    st.file_uploader = lambda *a, **k: None
-    st.components = types.SimpleNamespace(v1=types.SimpleNamespace(html=lambda s, **k: html_seen.append(s)))
-    st.container = lambda **k: Ctx()
-    st.columns = lambda n, **k: [Ctx() for _ in range(n if isinstance(n, int) else len(n))]
-    sys.modules["streamlit"] = st
-    runpy.run_path(os.path.join(ROOT, "app", "app.py"), run_name="__main__")
-    assert calls[0][0] == "cfg"                         # set_page_config first
-    joined = "".join(html_seen)
-    assert "<style>" in joined and "q-hero" in joined      # styling and hero were emitted
-    assert "\n\n" not in joined                           # no blank lines: Streamlit would turn them into code blocks
-    return calls, joined
 
 def test_hidden_fee_evidence():
-    import engine, ui
+    import engine
     t = "Buy now, 0% profit for 12 months!\nProcessing fee: SAR 50\nMinimum purchase SAR 1000"
     ev = engine.evidence(t, 50.0)
     assert ev["claim"][0].startswith("Buy now") and ev["fee"][0] == "Processing fee: SAR 50" and not ev["same_line"]
     assert t.splitlines()[1][ev["fee"][1]:ev["fee"][2]] == "SAR 50"       # the highlight is exactly the fee
-    assert "<mark>SAR 50</mark>" in ui.evidence(TXT_EN(), ev)
     assert engine.evidence("No fees at all", 50.0)["fee"] is None
 
-def TXT_EN():
-    import runpy, types
-    return {k: k for k in ("ev_t", "ev_claim", "ev_fee", "ev_diff", "ev_same")}
-
-def test_api_logic_and_ocr():
-    import json, analyze, ocr
-    from PIL import Image, ImageDraw
+def test_analyze_output_is_json_friendly():
+    import json, analyze
     r = analyze.analyze("Buy now, 0% profit for 12 months!\nProcessing fee: SAR 50\nCash price SAR 1200", "en")
     json.dumps(r)                                                         # must be JSON-friendly for the web API
     assert r["hidden_fee"]["amount"] == 50 and r["cost"]["total_paid"] > 1200 and r["flags"][0]["code"] == "zero_but_fee"
     assert analyze.analyze("hello", "ar")["hidden_fee"] is None and analyze.compute_cost(0, 12) is None
-    im = Image.new("RGB", (700, 80), "white"); ImageDraw.Draw(im).text((10, 30), "0% profit. Processing fee: SAR 50", fill="black")
-    assert callable(ocr.read_photo)                                       # app.py used to call a read_photo that did not exist
 
 def test_ml_wording_model():
     import ml
@@ -172,17 +112,8 @@ def test_sample_offers_not_in_training():
     a = analyze("قسّط 0%\nسيتم فرض رسوم قدرها 50 ريال سعودي على كل عملية.", "ar")
     assert a["verdict"]["level"] == "warning" and a["ml_info"]["n_real"] > 50
 
-def test_app_runs():
-    for lang in ("en", "ar"):
-        run_app(lang, "")
-        run_app(lang, "Split into 4 payments of SAR 300. Admin fee SAR 50. 0% profit. Cash price SAR 1200.")
-        run_app(lang, "عرض 0% هامش ربح لمدة 6 أشهر ورسوم 50 ريال")
-        run_app(lang, "nothing useful here")
-        run_app(lang, open(os.path.join(ROOT, 'tests', 'aljazira.txt'), encoding='utf-8').read())
-        run_app(lang, open(os.path.join(ROOT, 'tests', 'elantra.txt'), encoding='utf-8').read())
-
 if __name__ == "__main__":
-    for f in [test_engine_tasaheal, test_cost_from_monthly_rate, test_zero_with_fee_is_flagged, test_clean_zero_not_flagged, test_warranty_years_are_not_the_loan_term, test_absurd_inputs_warn, test_aljazira_card_plans, test_custom_fonts_are_embedded, test_alert_and_bold_and_tooltips, test_hidden_fee_evidence, test_api_logic_and_ocr, test_ml_wording_model, test_app_runs]:
+    for f in [test_engine_tasaheal, test_cost_from_monthly_rate, test_zero_with_fee_is_flagged, test_clean_zero_not_flagged, test_warranty_years_are_not_the_loan_term, test_absurd_inputs_warn, test_aljazira_card_plans, test_explanations_in_both_languages, test_hidden_fee_evidence, test_analyze_output_is_json_friendly, test_ml_wording_model]:
         f(); print("ok", f.__name__)
 
 

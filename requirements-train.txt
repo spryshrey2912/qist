@@ -1,7 +1,0 @@
-pandas
-scikit-learn
-transformers
-torch
-datasets
-accelerate
-seqeval

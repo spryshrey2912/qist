@@ -1,4 +1,4 @@
-"""One function that does everything the Streamlit page does, but returns plain data (JSON-friendly) for the web API."""
+"""One function that runs the whole check and returns plain data (JSON-friendly)."""
 import engine, ml
 
 def _loc(t):
@@ -23,7 +23,7 @@ def analyze(text, lang="en"):
     c = engine.candidates(text); d = engine.defaults(c, text)
     plans = {int(k): v for k, v in d["plans"].items()}
     n, rate = int(d["n_installments"]), float(d["profit_rate"])
-    if plans:                                                # same default plan choice as the Streamlit page
+    if plans:                                                # default plan choice
         n = n if n in plans else max(plans); rate = plans[n]
     price = float(d["cash_price"]) or float(d["example_price"])
     cost = compute_cost(price, n, d["installment_amount"], d["admin_fee"], rate, d["rate_kind"], d["admin_fee_pct"], d["admin_fee_cap"] or 0.0)
