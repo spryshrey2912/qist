@@ -9,7 +9,7 @@ import sys, json, warnings, numpy as np, pandas as pd
 warnings.filterwarnings("ignore")
 from sklearn.model_selection import StratifiedGroupKFold
 from sklearn.metrics import roc_auc_score, brier_score_loss
-from sklearn.pipeline import make_pipeline
+from sklearn.pipeline import make_pipeline, make_union
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import FunctionTransformer
@@ -17,6 +17,7 @@ sys.path.insert(0, "app"); import ml
 
 MODELS = {
     "text only (TF-IDF + LR)": lambda: make_pipeline(TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 4), sublinear_tf=True), LogisticRegression(max_iter=2000, class_weight="balanced")),
+    "text + fee-wording features (no rules)": lambda: make_pipeline(make_union(TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 4), sublinear_tf=True), FunctionTransformer(ml.lex_features)), LogisticRegression(max_iter=2000, class_weight="balanced")),
     "rule flags only (3 numbers)": lambda: make_pipeline(FunctionTransformer(ml.rule_features), LogisticRegression(max_iter=2000, class_weight="balanced")),
     "hybrid = text + rule flags (the app)": ml.make,
 }

@@ -69,11 +69,12 @@ All styling is in `app/ui.py` and `.streamlit/config.toml`.
 
 | model | accuracy | precision | recall | F1 | AUC | Brier (lower is better) |
 |---|---|---|---|---|---|---|
-| **text only** (learns from wording alone) | **81%** | **73%** | **52%** | **60%** | **0.86** | **0.14** |
+| text only (character n-grams alone) | 81% | 73% | 52% | 60% | 0.86 | 0.14 |
+| **text + fee-wording features** (no rule engine) | **83%** | **73%** | **63%** | **68%** | **0.86** | **0.12** |
 | rule flags only (circular, labels come from these rules) | 99% | 100% | 97% | 98% | 0.97 | 0.05 |
-| hybrid (the app; also circular) | 99% | 100% | 97% | 98% | 0.99 | 0.01 |
+| hybrid (the app; also circular) | 98% | 96% | 97% | 96% | 1.00 | 0.01 |
 
-  What this means: the labels follow a written rule and the rule flags check that same rule, so the 100% rows are true **by construction**, not a sign of a perfect model, and the hybrid mostly copies the rules. The honest machine-learning number is the **text-only** row: from examples alone, with no rules, the model separates misleading from fair wording with AUC 0.89 on offers from groups it never saw. The rules were also refined after looking at these offers; before refinement they scored 80% accuracy / 57% precision / 100% recall on 30 offers they had never seen (6 false alarms, now fixed and covered by `tests/`).
+  What this means: the labels follow a written rule and the rule flags check that same rule, so the 100% rows are true **by construction**, not a sign of a perfect model, and the hybrid mostly copies the rules. The honest machine-learning number is the **text + fee-wording features** row: with no rule engine, the model separates misleading from fair wording with AUC 0.86 on offers from groups it never saw. The rules were also refined after looking at these offers; before refinement they scored 80% accuracy / 57% precision / 100% recall on 30 offers they had never seen (6 false alarms, now fixed and covered by `tests/`).
 - Final answer shown to the user: a fee next to a 0%/free promise is a **warning** (it is written in the text; the model score is shown as support). No fee but a model score of 50% or more is **watch**. Otherwise **clear**.
 - Data sources: 70 real offers collected by the builder plus 30 taken from bank and merchant pages (Riyad Bank, BSF, SAIB, ANB, Alinma, Al Rajhi, IKEA, Tefal, Jarir, ...), and 180 synthetic offers generated with AI and kept or deleted by hand. `data/unreviewed/` holds a further 180 web offers whose labels were suggested by AI and have **not** been reviewed; they are not used anywhere.
 - `data/offers.csv` is the master data file. `data/real_offers_labelling_sheet.csv` is an older copy (rows 101-120 are empty), so `data/combine.py` now refuses to overwrite `offers.csv` unless run with `--force`.

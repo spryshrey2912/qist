@@ -23,14 +23,32 @@ def rule_features(texts):
         out.append([3.0 * ("zero_but_fee" in codes), 3.0 * ("zero_for_some_plans" in codes), 3.0 * bool(engine.fee_amounts(t, c))])
     return out
 
+_AR = str.maketrans("أإآٱىةئؤ٠١٢٣٤٥٦٧٨٩", "اااايهىو0123456789")
+_FEE = re.compile(r"(processing|administrative|admin|service|programme|program|conversion|one[- ]time|setup|set-up)\s+(fee|fees|charge|charges)|(fee|fees|charge)s? of|رسوم\s+(إدارية|ادارية|معالجة|خدمة|البرنامج|تحويل)|رسم\s+(إداري|اداري|مرة واحدة)|مرة واحدة")
+_NEG = re.compile(r"\b(no|without|zero|free of|nil)\b[^.\n]{0,40}\b(fee|fees|charge|charges)\b|(بدون|لا توجد|لا يوجد|دون|بلا)\s+(أي\s+)?رسوم|0\s*%\s*fees?")
+_CLAIM = re.compile(r"0\s*%|zero\s+(percent|interest|profit)|interest[- ]free|no (interest|profit)|free|بدون\s+(فوائد|هامش|ربح)|هامش ربح\s*0|صفر")
+_AMT = re.compile(r"(fee|fees|charge|رسوم|رسم)[^.\n]{0,40}?(sar|sr|aed|kd|bd|qr|ريال|\d)|(\d[\d,.]*\s*(%|sar|sr|aed|ريال))[^.\n]{0,25}(fee|fees|رسوم)")
+
+def lex_features(texts):
+    """Two wording features that do not use the rule engine: (1) a fee phrase ("processing fee", "one-time", "رسوم إدارية")
+    within 400 characters after a 0% / free claim, and (2) a fee phrase with an amount next to it; both are 0 when the
+    text says "no fee" / "بدون رسوم"."""
+    out = []
+    for t in texts:
+        n = t.lower().translate(_AR); neg = bool(_NEG.search(n))
+        fee = [m.start() for m in _FEE.finditer(n)]; claim = [m.start() for m in _CLAIM.finditer(n)]
+        near = any(0 <= f - c <= 400 for c in claim for f in fee)
+        out.append([float(near and not neg), float(bool(_AMT.search(n)) and not neg)])
+    return out
+
 def make():
-    """Training recipe (used by model/train_wording.py and the fallback): text n-grams + the three extractor features,
+    """Training recipe (used by model/train_wording.py and the fallback): text n-grams + the three extractor features + two fee-wording features,
     one logistic regression on top (the model learns how much to trust each)."""
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.linear_model import LogisticRegression
     from sklearn.pipeline import make_pipeline, make_union
     from sklearn.preprocessing import FunctionTransformer
-    feats = make_union(TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 4), sublinear_tf=True), FunctionTransformer(rule_features))
+    feats = make_union(TfidfVectorizer(analyzer="char_wb", ngram_range=(2, 4), sublinear_tf=True), FunctionTransformer(rule_features), FunctionTransformer(lex_features))
     return make_pipeline(feats, LogisticRegression(max_iter=2000, class_weight="balanced"))
 
 def fit_args(df):
@@ -69,6 +87,7 @@ def _score_saved(m, text):
     norm = math.sqrt(sum(v * v for v in w.values())) or 1.0
     z = m["intercept"] + sum(m["coef"][m["vocab"][g]] * v / norm for g, v in w.items())
     z += sum(c * x for c, x in zip(m["coef_rules"], rule_features([text])[0]))
+    z += sum(c * x for c, x in zip(m["coef_lex"], lex_features([text])[0]))
     return 1.0 / (1.0 + math.exp(-z))
 
 @functools.lru_cache(maxsize=1)
